@@ -1,0 +1,5 @@
+include_master.html
+인크루드 된 마스터 페이지(서버에서만 확인 가능)
+
+local_master.html
+로컬에서 확인 가능한 마스터 페이지

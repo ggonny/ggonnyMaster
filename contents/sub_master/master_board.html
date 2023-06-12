@@ -1,0 +1,2627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"> <!-- 파비콘 -->
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../../css/rwd_sub.css">
+
+    <title>마스터(중부)</title>
+</head>
+<body>
+    <!-- skipMenu -->
+    <div title="스킵메뉴" class="skipMenu">
+        <a href="#gnbmenu"><span>주메뉴 바로가기</span></a>
+        <a href="#content"><span>본문 바로가기</span></a>
+        <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!-- //skipMenu -->
+
+    <!-- header -->
+    <!-- <? include "../../ko23_include/header.html"; ?> -->
+    <header id="header">
+        <div class="header_top">
+            <div class="wrap">
+                <ul class="quick_link">
+                    <li><a href="../../con04/con04_04/FN100402.html">견학신청</a></li>
+                    <li><a href="https://visit.komipo.co.kr:8070" target="_blank" title="한국중부발전 출입신청 새창 열림">출입신청</a></li>
+                    <li><a href="https://mail.komipo.co.kr" target="_blank" title="중부인메일 새창 열림">중부메일</a></li>
+                </ul>
+                <!-- .family_pop(전력사이트 + 언어 + 팝업) -->
+                <ul class="family_pop">
+                    <li class="famliysite"><button type="button" title="관련(공공기관)사이트 열기">관련(공공기관)사이트</button>
+                        <!-- 관련(공공기관)사이트 -->
+                        <div class="family_site pop_wrap">
+                            <div class="inner">
+                                <p class="title">관련(공공기관)사이트</p>
+                                <dl>
+                                    <dt>기업지원시스템</dt>
+                                    <dd>
+                                        <a href="http://srm.kepco.net/" target="_blank" title="입찰정보 시스템 새창 열림">입찰정보 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:7441/" target="_blank" title="계약이행 실적증명발급 새창 열림">계약이행 실적증명발급</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://easyu.kospo.co.kr/easyuUser/;jsessionid=Rfx8xNwd1brJnz7FqgdiQJyVAQtAZOpMdP9Ex3McT18KqCneg2eYxdLTUhhjghwU.nbcwwas1_servlet_EAS1" target="_blank" title="기자재 공급 유자격 통합관리 새창 열림">기자재 공급 유자격 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="정비적격업체 통합관리 새창 열림">정비적격업체 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:8030" target="_blank" title="시험성적서 검증 시스템 새창 열림">시험성적서 검증 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://rec.komipo.co.kr:8557/WebContent/jsp/main/main.jsp" target="_blank" title="공급인증서(REC)거래 새창 열림">공급인증서(REC)거래</a>
+                                    </dd>
+                                </dl>
+                                <dl class="type2">
+                                    <dt>전력그룹사</dt>
+                                    <dd>
+                                        <a href="http://www.kepco.co.kr" target="_blank" title="한국전력공사 새창 열림">한국전력공사</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.genco.kr" target="_blank" title="발전회사협력본부 새창 열림">발전회사협력본부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.khnp.co.kr" target="_blank" title="한국수력원자력㈜ 새창 열림">한국수력원자력㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kdn.com" target="_blank" title="한전KDN㈜ 새창 열림">한전KDN㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.koenergy.kr" target="_blank" title="한국남동발전㈜ 새창 열림">한국남동발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepco-enc.com" target="_blank" title="한국전력기술㈜ 새창 열림">한국전력기술㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.iwest.co.kr" target="_blank" title="한국서부발전㈜ 새창 열림">한국서부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kps.co.kr" target="_blank" title="한전KPS㈜ 새창 열림">한전KPS㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kospo.co.kr" target="_blank" title="한국남부발전㈜ 새창 열림">한국남부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.knfc.co.kr" target="_blank" title="한전원자력연료㈜ 새창 열림">한전원자력연료㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.ewp.co.kr" target="_blank" title="한국동서발전㈜ 새창 열림">한국동서발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepid.co.kr" target="_blank" title="한전산업개발㈜ 새창 열림">한전산업개발㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kpx.or.kr" target="_blank" title="한국전력거래소 새창 열림">한국전력거래소</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>국내유관기관</dt>
+                                    <dd>
+                                        <a href="http://www.motie.go.kr" target="_blank" title="산업통상자원부 새창 열림">산업통상자원부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.acrc.go.kr" target="_blank" title="국민권익위원회 새창 열림">국민권익위원회</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.korea.go.kr" target="_blank" title="대한민국정부포털 새창 열림">대한민국정부포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.gov30.go.kr" target="_blank" title="정부3.0 새창 열림">정부3.0</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.data.go.kr" target="_blank" title="공공데이터포털 새창 열림">공공데이터포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.alio.go.kr" target="_blank" title="ALIO 새창 열림">ALIO</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.law.go.kr" target="_blank" title="법령정보센터 새창 열림">법령정보센터</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.moi.go.kr/frt/sub/a05/gwanboMain/screen.do" target="_blank" title="대한민국전자관보 새창 열림">대한민국전자관보</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <button type="button" class="close_btn" title="관련(공공기관)사이트 닫기">닫기</button>
+                        </div>
+                        <!-- //관련(공공기관)사이트 -->
+                    </li>
+                    <li class="lang"><button type="button" title="언어선택 열기">Language</button>
+                        <ul>
+                            <li><span class="on">KOREA</span></li>
+                            <li><a href="../../eng/index.html" target="_blank" title="영문페이지 새창 열림">ENGLISH</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_zone"><button type="button" title="알립니다 팝업 열기">알립니다!</button>
+                        <div class="popup_list pop_wrap">
+                            <div class="pop_slide inner">
+                                <p class="title">알립니다!</p>
+                                <ul>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner01.jpg" alt="2023년 4직급 신입직원 채용제도 개선사항 자세히 보기"></a></li>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner02.jpg" alt="전사·순직 군인 2048명의 유가족을 찾습니다! ☎044-200-7374/042-550-7387 유가족 찾기 바로가기 국민권익위원회 대한민국 국방부 국가보훈처"></a></li>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner03.jpg" alt="기획재정부 신속한 위기대응 및 경제 살리기 코로나19 경제지원 비상경제회의 위기대응의 중심이 되어 최선을 다하겠습니다."></a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- // .family_pop(전력사이트 + 언어 + 팝업) -->
+            </div>
+        </div>
+        <div class="header_btm wrap">
+            <h1 class="logo"><a href="../../index.html">KOMIPO 한국중부발전</a></h1>
+            <button type="button" class="open_btn nav_open" data-name="MENU" title="메뉴열기">
+                <span class="line line01"></span>
+                <span class="line line02"></span>
+                <span class="line line03"></span>
+            </button>
+            <!-- gnbmenu -->
+            <nav class="gnbmenu" id="gnbmenu">
+                <ul class="depth1">
+                    <!-- 1depth 활성화 : .depth1>li>a 클래스 .now 추가 / 2dpeth 활성화 : .depth2>ul>li에 클래스 .now 추가 / 3depth 활성화 : .depth3>li에 클래스 .now 추가 -->
+                    <!-- depth1>li의 자식메뉴가 있다면 클래스.more_depth 추가 / .depth2>ul>li의 자식메뉴가 있다면 클래스 .more 추가-->
+                    <!-- 2depth 링크 연결 X-->
+                    <li class="menu01 more_depth"><a href="#n" data-name="소통채널" class="now">소통채널</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">소통채널</p>
+                                <span>한국중부발전이 공유하는 정보는 <br/>국민 여러분과의 소통 에너지입니다.</span>
+                                <a href="#n" target="_blank" title="알리오 홈페이지 새창 열림" class="quick_menu link01">
+                                    <dl>
+                                        <dt>알리오(ALIO)</dt>
+                                        <dd>경영에 대한 중요한 정보를 국민에게 제공하고 있습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="#n" class="quick_menu link02">
+                                    <dl>
+                                        <dt>신문고</dt>
+                                        <dd>갑질 및 민원사항, 칭찬 사례 등 여러분의 의견을 듣겠습니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="more now"><a href="#n">사업실명제</a>
+                                    <ul class="depth3">
+                                        <li class="now"><a href="#n"><span>대상사업</span></a></li>
+                                        <li><a href="#n"><span>실명제목록</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 3depth가 없는 페이지이동 메뉴 -->
+                                <li><a href="#n">페이지 이동 메뉴</a></li>
+                                <!-- 3depth가 없는 새창 열림 메뉴 -->
+                                <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
+                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
+                                <li class="more"><a href="#n">정보공개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a></li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n" target="_blank" title="새창 열림">페이지 이동인 두줄짜리 메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu02"><a href="#n" data-name="회사소개" target="_blank" title="새창 열림">회사소개</a></li>
+                    <li class="menu03"><a href="#n" data-name="기업지원">기업지원</a></li>
+                    <li class="menu04 more_depth"><a href="#n" data-name="고객지원">고객지원</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">고객지원</p>
+                                <span>더 좋은 미래를 열어가는 중부인은 다양한 <br/>모습으로 고객을 지원하고 있습니다.</span>
+                                <a href="#n" class="quick_menu link09">
+                                    <dl>
+                                        <dt>발전소 견학신청</dt>
+                                        <dd>전기가 어떤 과정을 거쳐 생산 되는지 궁금하셨죠?</dd>
+                                    </dl>
+                                </a>
+                                <a href="#n" target="_blank" title="퇴직자 경력증명서 발급시스템 페이지 새창 열림" class="quick_menu link10">
+                                    <dl>
+                                        <dt>퇴직자 경력증명서 발급시스템</dt>
+                                        <dd>중부발전 퇴직자를 위한 경력증명서 온라인 신청ㆍ발급 서비스 입니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <!-- 3depth가 없는 페이지이동 메뉴 -->
+                                <li><a href="#n">페이지 이동 메뉴</a></li>
+                                <!-- 3depth가 없는 새창 열림 메뉴 -->
+                                <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
+                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
+                                <li class="more"><a href="#n">정보공개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a></li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n" target="_blank" title="새창 열림">페이지 이동인 두줄짜리 메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 
+            <div class="nav_bg">
+                <div class="wrap">
+                    <p class="title">KOMIPO<br/><strong>한국중부발전</strong></p>
+                    <p class="text">한국중부발전</p>
+                </div>
+            </div> 
+            -->
+            <!-- //gnbmenu -->
+            <!-- util_Box -->
+            <div class="util_Box">
+                <ul>
+                    <li class="hd_search">
+                        <label for="searchtext">
+                            <input type="text" id="searchtext" placeholder="검색어를 입력해 주세요">
+                        </label>
+                        <button type="button" class="top_search_btn">검색하기</button>
+                    </li>
+                    <li><button type="button" onclick="location.href='../con06/con06_01/sitemap.html' " class="util_sitemap">사이트맵 열기</button></li>
+                </ul>
+                <div class="top_searchBox">
+                    <div class="inner">
+                        <div class="search_wrap">
+                            <label for="searchtext2">
+                                <input type="text" id="searchtext2" placeholder="검색어를 입력해 주세요">
+                            </label>
+                            <button type="button" onclick="location.href='../con06/con06_01/search.html' " class="top_search_btn">검색하기</button>
+                        </div>
+                        <dl>
+                            <dt>ㆍ 인기 검색어</dt>
+                            <dd><a href="#n">윤준석</a></dd>
+                            <dd><a href="#n">대기배출사업장 청정연료전황 지원사업</a></dd>
+                            <dd><a href="#n">메탄올</a></dd>
+                            <dd><a href="#n">지역할당</a></dd>
+                        </dl>
+                    </div>
+                    <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                </div>
+            </div>
+            <!-- //util_Box -->
+        </div>
+        <div class="shadow2"></div>
+    </header>
+    <div class="shadow"></div>
+    <div class="shadow3"></div>
+    <!-- //header -->
+    
+    <!-- sub.container  -->
+    <section class="container">
+        <div class="wrap">
+            <!-- left_menu -->
+            <!-- <? include "../../ko23_include/left_menu.html"; ?> -->
+            <div class="left_menu">
+                <div class="left_title">
+                    <p>소통채널</p>
+                </div>
+                <ul class="depth_01">
+                    <li class="more_depth open"><a href="#n" class="now">사업실명제</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li class="now"><a href="#n"><span>대상사업</span></a></li>
+                                <li><a href="#n"><span>실명제목록</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">정보공개</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>정보공개제도 안내</span></a></li>
+                                <li><a href="#n"><span>정보공개 처리기준</span></a></li>
+                                <li><a href="#n"><span>정보공개 담당자</span></a></li>
+                                <li><a href="#n"><span>과거 정보목록</span></a></li>
+                                <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank" title="새창 열림"><span>정보공개 청구</span></a></li>
+                                <li><a href="#n"><span>비공개정보 세부기준</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">사전정보공표</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>리스트</span></a></li>
+                                <li><a href="#n"><span>상세보기</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="https://api.komipo.co.kr/" target="_blank" title="새창 열림">공공데이터</a></li>
+                    <li class="more_depth"><a href="#n">경영공시 개요</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>경영공시 안내</span></a></li>
+                                <li><a href="#n"><span>공시기준</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="no_depth"><a href="#n">경영공시</a></li>
+                    <li class="more_depth"><a href="#n">행정정보공표</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>업무추진비</span></a></li>
+                                <li><a href="#n"><span>사규</span></a></li>
+                                <li><a href="#n"><span>사규 제·개정 예고</span></a></li>
+                                <li><a href="#n"><span>계약정보공개</span></a></li>
+                                <li><a href="#n"><span>해외출장 및 연수보고</span></a></li>
+                                <li><a href="#n"><span>상품권 관리내역</span></a></li>
+                                <li><a href="#n"><span>인건비 예산과 집행현황</span></a></li>
+                                <li><a href="#n"><span>복지시설현황</span></a></li>
+                                <li><a href="#n"><span>친환경상품 구매실적/이행계획</span></a></li>
+                                <li><a href="#n"><span>협력기업 하도급 현황</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">반부패청렴센터</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>내부감사결과</span></a></li>
+                                <li><a href="#n"><span>외부감사결과</span></a></li>
+                                <li><a href="#n"><span>부패관련 징계 현황 공개</span></a></li>
+                                <li><a href="#n"><span>공무수행사인 현황</span></a></li>
+                                <li><a href="#n"><span>청렴도측정 및 부패방지 시책평가 결과</span></a></li>
+                                <li><a href="#n"><span>청탁금지법 상담내역</span></a></li>
+                                <li><a href="#n"><span>청렴 365 자료실</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">신고채널</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>레드휘슬(익명신고)</span></a></li>
+                                <li><a href="#n"><span>신문고(실명신고)</span></a></li>
+                                <li><a href="#n"><span>공익신고</span></a></li>
+                                <li><a href="#n"><span>이해충돌신고</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">프라이버시센터</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>프라이버시센터 소개</span></a></li>
+                                <li><a href="#n"><span>개인정보 보호 정책</span></a></li>
+                                <li><a href="#n"><span>개인정보 보호 활동</span></a></li>
+                                <li><a href="#n"><span>개인정보 처리요구</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">열린혁신 아이디어 발전소</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>열린혁신 아이디어 발전소</span></a></li>
+                                <li><a href="#n"><span>규제혁신 아이디어제안</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">인재채용</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>인사제도 안내</span></a></li>
+                                <li><a href="#n"><span>지원가이드</span></a></li>
+                                <li><a href="#n"><span>채용문의</span></a></li>
+                                <li><a href="#n"><span>채용공고</span></a></li>
+                                <li><a href="#n"><span>친인척 채용인원 공개</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- //left_menu -->
+            <!--LNB-->
+            <!-- <? include "../../ko23_include/lnb.html"; ?> -->
+            <div class="lnb">
+                <div class="wrap">
+                    <ul class="lnb_inner">
+                        <li class="home"><a href="../../index.html">home</a></li>
+                        <li class="depth01">
+                            <a href="#n"><span>소통채널</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">소통채널</a></li>
+                                <li><a href="#n">회사소개</a></li>
+                                <li><a href="#n">기업지원</a></li>
+                                <li><a href="#n">고객지원</a></li>
+                                <li><a href="https://www.komipo.co.kr/esg/main/main.do" target="_blank" title="새창 열림">ESG경영</a></li>
+                                <li><a href="#n">기업홍보</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02">
+                            <a href="#n"><span>사업실명제</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">사업실명제</a></li>
+                                <li><a href="#n">정보공개</a></li>
+                                <li><a href="#n">사전정보공표</a></li>
+                                <li><a href="#n" target="_blank" title="새창 열림">공공데이터</a></li>
+                                <li><a href="#n">경영공시 개요</a></li>
+                                <li><a href="#n">경영공시</a></li>
+                                <li><a href="#n">행정정보공표</a></li>
+                                <li><a href="#n">반부패청렴센터</a></li>
+                                <li><a href="#n">신고채널</a></li>
+                                <li><a href="#n">프라이버시센터</a></li>
+                                <li><a href="#n">열린혁신 아이디어 발전소</a></li>
+                                <li><a href="#n">인재채용</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth03">
+                            <a href="#n"><span>대상사업</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">대상사업</a></li>
+                                <li><a href="#n">실명제목록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="share_box">
+                        <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                            <ul class="share_list">
+                                <li><button type="button" class="share_urlbtn">URL로 공유하기</button></li>
+                                <li><button type="button" class="share_facebookbtn">Facebook으로 공유하기</button></li>
+                                <li><button type="button" class="share_mailbtn">메일로 공유하기</button></li>
+                            </ul>
+                        </li>
+                        <li><button type="button" class="print_btn">프린트하기</button></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//LNB-->
+
+            <!-- contents -->
+            <div id="content" class="contents">
+                <!-- sub_visual & path -->
+                <!-- <? include "../../ko23_include/sub_visual.html"; ?> -->
+                <div class="sub_visual sub01">
+                    <div class="inner">
+                        <h2>소개</h2>
+                        <ul class="path">
+                            <li><a href="#n" class="home">home</a></li> 
+                            <li><a href="#n">회사소개</a></li>
+                            <li><a href="#n">회사개요</a></li>
+                            <li><a href="#n">소개</a></li>
+                        </ul>
+                        <ul class="share_box">
+                            <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                                <ul class="share_list">
+                                    <li><button type="button" class="share_urlbtn">URL로 공유하기</button></li>
+                                    <li><button type="button" class="share_facebookbtn">Facebook으로 공유하기</button></li>
+                                    <li><button type="button" class="share_mailbtn">메일로 공유하기</button></li>
+                                </ul>
+                            </li>
+                            <li><button type="button" class="print_btn">프린트하기</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //sub_visual & path -->
+            
+                <!-- .contents>.inner -->
+                <div class="inner"> 
+                    <!-- .contents>.inner>.inner_top 본문내용 시작 -->
+                    <div class="inner_top">
+                        
+                        <h3 class="titleS"><span>컨텐츠 영역 최상단 타이틀 명</span></h3>
+                        <div class="near_link">
+                            <a href="#n" class="prev" target="_blank" title="새창 열림"><span>정보공개 모니터단</span></a>
+                            <a href="#n" class="next"><span>업무처리절차</span></a>
+                        </div>
+
+                        <div class="tab_wrap">
+                            <button type="button" class="now_tab">타이틀, 텍스트</button>
+                            <ul class="tabA f3 tab_link">
+                                <li><a href="master_title.html" data-name="타이틀, 텍스트">타이틀, 텍스트</a></li>
+                                <li class="current"><a href="master_board.html" data-name="게시판" title="선택된 탭메뉴">게시판</a></li>
+                                <li><a href="master_table.html" data-name="테이블">테이블</a></li>
+                                <li><a href="master_tab.html" data-name="탭구조">탭구조</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab_wrap">
+                            <ul class="tabB tab">
+                                <li class="current"><a href="#n" data-tab="board01" title="선택된 탭메뉴">공지게시판(기본)</a></li>
+                                <li><a href="#n" data-tab="board02">비밀번호 팝업 게시판</a></li>
+                                <li><a href="#n" data-tab="board03">의견, 댓글 게시판</a></li>
+                                <li><a href="#n" data-tab="board04">토글게시판</a></li>
+                                <li><a href="#n" data-tab="board05">QNA게시판</a></li>
+                                <li><a href="#n" data-tab="board06">상태표시 게시판</a></li>
+                                <li><a href="#n" data-tab="board07">우측 아이템 게시판</a></li>
+                                <li><a href="#n" data-tab="board08">다운로드게시판</a></li>
+                                <li><a href="#n" data-tab="board09">다운로드게시판(view없음)</a></li>
+                                <li><a href="#n" data-tab="board10">이미지 게시판</a></li>
+                            </ul>
+
+                            <div id="board01" class="box_con current">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">110</em> (<em class="count">1</em>/11)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>채용공고 게시판 리스트 확인(번호, 제목, 채용 시작일, 채용 종료일, 작성자, 작성일 )</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">채용 시작일</th>
+                                                <th scope="col">채용 종료일</th>
+                                                <th scope="col">작성자</th>
+                                                <th scope="col">작성일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1"><span class="notice">공지</span>2023년 4직급 신입직원 채용제도 개선사항 공지</a></td>
+                                                <td data-name="채용 시작일"><span>2022-12-16</span></td>
+                                                <td data-name="채용 종료일"><span>2022-12-30</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                           <tr onclick="location.href='#n'">
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1"><span class="notice">공지</span>한국중부발전(주) 비상임이사 후보자 모집 공고</a></td>
+                                                <td data-name="채용 시작일"><span>2022-12-16</span></td>
+                                                <td data-name="채용 종료일"><span>2022-12-30</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>                  
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">한국중부발전(주) 비상임이사 후보자 모집 공고</a></td>
+                                                <td data-name="채용 시작일"><span>2022-12-16</span></td>
+                                                <td data-name="채용 종료일"><span>2022-12-30</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">한국중부발전(주) 비상임이사 후보자 모집 공고</a></td>
+                                                <td data-name="채용 시작일"><span>2022-12-16</span></td>
+                                                <td data-name="채용 종료일"><span>2022-12-30</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">110</em> (<em class="count">1</em>/11)</p>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>채용공고 게시판 리스트 확인(번호, 제목, 채용 시작일, 채용 종료일, 작성자, 작성일 )</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">첨부파일</th>
+                                                <th scope="col">작성자</th>
+                                                <th scope="col">작성일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">2023년 4직급 신입직원 채용제도 개선사항 공지</a></td>
+                                                <td data-name="첨부파일"><span class="attach_btn ppt">첨부파일</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                           <tr onclick="location.href='#n'">
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">한국중부발전(주) 비상임이사 후보자 모집 공고</a></td>
+                                                <td data-name="첨부파일"><span class="attach_btn ppt">첨부파일</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>                  
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">한국중부발전(주) 비상임이사 후보자 모집 공고</a></td>
+                                                <td data-name="첨부파일"></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">한국중부발전(주) 비상임이사 후보자 모집 공고</a></td>
+                                                <td data-name="첨부파일"><span class="attach_btn ppt">첨부파일</span></td>
+                                                <td data-name="작성자"><span>이성국</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <table class="tableV">
+                                    <caption>채용공고 게시판 내용 확인(제목, 작성자, 작성일, 채용 시작일, 채용 종료일, 링크주소, 채용구분, 내용, 첨부파일)</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col />
+                                        <col style="width:185px;">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" data-name="제목" colspan="4" class="t_left view_title"> 2023년 4직급 신입직원 채용제도 개선사항 공지</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>작성자</span></th>
+                                            <td data-name="작성자" class="t_left"><span>이성국</span></td>
+                                            <th scope="row"><span>작성일</span></th>
+                                            <td data-name="작성일" class="t_left"><span>2022.08.03</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>채용 시작일</span></th>
+                                            <td data-name="채용 시작일" class="t_left"><span>2022-12-16</span></td>
+                                            <th scope="row"><span>채용 종료일</span></th>
+                                            <td data-name="채용 종료일" class="t_left"><span>2022-12-30</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>링크주소</span></th>
+                                            <td data-name="링크주소" class="t_left"><span> </span></td>
+                                            <th scope="row"><span>채용구분</span></th>
+                                            <td data-name="채용구분" class="t_left"><span>기타</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-name="내용" colspan="4" class="t_left view_wrap">
+                                                <div class="view_cts">
+                                
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px</p>
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                                                        
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>첨부파일</span></th>
+                                            <td data-name="첨부파일" colspan="3" class="attach_td t_left">
+                                                <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="viewList">
+                                    <div class="prevList">
+                                        <span>이전글</span>
+                                        <a href="#n" class="ellipsis1">이전글이 존재하지 않습니다.</a>
+                                    </div>
+                                    <div class="nextList">
+                                        <span>다음글</span>
+                                        <a href="#n" class="ellipsis1">한국중부발전(주) 비상임이사 후보자 모집 공고</a>
+                                    </div>
+                                </div>
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">목록</a>
+                                </div>
+
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board02" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <!-- 반응형시 우측에 붙는 요소 td에 클래스 .right_item를 추가해 주세요 -->
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>채용문의 게시판 리스트 확인(번호, 제목, 작성일, 상태 )</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">작성일</th>
+                                                <th scope="col">상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">채용문의 드립니다.</a></td>
+                                                <td data-name="작성일"><span>2022.07.01</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">3</td>
+                                                <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                <td data-name="작성일"><span>2022.07.01</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">2</td>
+                                                <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                <td data-name="작성일"><span>2022.07.01</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">1</td>
+                                                <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                <td data-name="작성일"><span>2022.07.01</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+                                
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="blue_btn">글쓰기</a>
+                                </div>
+
+                                <!-- 비밀번호 팝업 -->
+                                <div id="lock_board" class="pop_layer" role="dialog">
+                                    <p class="pop_title">비밀번호 입력</p>
+                                    <div class="pop_inner">
+                                        <div class="cts pop_lock">
+                                            <label class="first_Tab"><input type="password" title="비밀번호 입력" /></label>
+                                            <label><input type="button" value="확인" class="blue_btn"></label>
+                                        </div>
+                                    </div>
+                                    <a href="#n" class="pop_close last_Tab" data-button="lock_board">팝업닫기</a>
+                                </div>
+                                <!-- //비밀번호 팝업 -->
+
+                                <hr class="mt40 mb40">
+
+                                <ol class="step_area">
+                                    <li class="step01 active"><span>01</span><p class="title">개인정보수집 및 이용동의</p></li>
+                                    <li class="step02"><span>02</span><p class="title">본인인증</p></li>
+                                    <li class="step03"><span>03</span><p class="title">채용 Q&A 작성</p></li>
+                                </ol>
+        
+                                <h3 class="titleA">개인정보이용자 동의사항</h3>
+                                <div class="textArea">
+                                    <p>개인정보보호를 위한 이용자 동의사항</p>
+                                    <ul>
+                                        <li class="bullet_num" data-num="1."><p>개인정보의 수집 · 이용목적</p>
+                                            <ul>
+                                                <li><strong class="pointB">고객문의 사항 접수 처리</strong></li>
+                                            </ul>
+                                        </li>
+                                        <li class="bullet_num" data-num="2."><p>수집하는 개인정보의 항목</p>
+                                            <ul>
+                                                <li><strong class="pointB">필수항목 : 성명, 비밀번호, 제목, 작성일, 공개여부</strong></li>
+                                            </ul>
+                                        </li>
+                                        <li class="bullet_num" data-num="3."><p>개인정보의 보유 및 이용기간</p>
+                                            <ul>
+                                                <li><strong class="pointB">보유기간 : 1년</strong></li>
+                                            </ul>
+                                        </li>
+                                        <li class="bullet_num" data-num="4."><p>동의를 거부할 권리 및 동의 거부에 따른 안내</p>
+                                            <ul>
+                                                <li><p>귀하는 본 안내에 따른 개인정보 수집에 대하여 거부하실 수 있는 권리가 있습니다.</p></li>
+                                                <li><p>본 개인정보 수집에 대하여 거부하시는 경우, 당사의 채용 Q&A 서비스를 이용하실 수 없습니다.</p></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="agree_text">
+                                    <span>상기 내용을 숙지하시고 개인 정보 수집 및 이용에 동의하십니까?</span>
+                                    <div class="radiobox">
+                                        <label for="agree1"><input type="radio" name="memagree" id="agree1">동의함</label>
+                                        <label for="disagree1"><input type="radio" name="memagree" id="disagree1" checked>동의하지 않음</label>
+                                    </div>
+                                </div>
+        
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">취소</a>
+                                    <a href="#n" class="blue_btn">다음</a>
+                                </div> 
+
+                                <hr class="mt40 mb40">
+
+                                <ol class="step_area">
+                                    <li class="step01"><span>01</span><p class="title">개인정보수집 및 이용동의</p></li>
+                                    <li class="step02 active"><span>02</span><p class="title">본인인증</p></li>
+                                    <li class="step03"><span>03</span><p class="title">채용 Q&A 작성</p></li>
+                                </ol>
+        
+                                <p class="textC mt30">본인인증 시 수집하는 정보는 해당 인증기관에서 직접 수집하며, 인증 이외의 용도나 목적으로 사용되지 않습니다. <br/><span class="pointB">본인인증을 통해, 게시글 등록 및 수정/삭제가 가능합니다.</span></p>	
+                                
+                                <!-- 인증하기 -->
+                                <div class="certify_inner"> 
+                                    <div class="certify cer01">
+                                        <a href="#n" class="inner">
+                                            <p class="title">휴대폰 인증하기</p>
+                                        </a>
+                                    </div>						  
+                                    <div class="certify cer02">
+                                        <a href="#n" class="inner">
+                                            <p class="title">아이핀(I-PIN) 인증하기</p>
+                                        </a>
+                                    </div>  
+                                </div>
+                                <!-- 인증하기 -->
+
+                                <hr class="mt40 mb40">
+
+                                
+                                <ol class="step_area">
+                                    <li class="step01"><span>01</span><p class="title">개인정보수집 및 이용동의</p></li>
+                                    <li class="step02"><span>02</span><p class="title">본인인증</p></li>
+                                    <li class="step03 active"><span>03</span><p class="title">채용 Q&A 작성</p></li>
+                                </ol>
+                                
+                                <div class="alert_box">
+                                    <p>자료등록 시 본문 또는 첨부파일에 <span class="pointO">개인정보(주민등록번호, 휴대전화번호, 주소 등 개인을 식별할 수 있는 정보)</span>가 포함되지 않도록 유의하시기 바라며, 일방적인 주장, 비방, 욕설 등이 포함된 경우나 본 게시판의 성격에 맞지 않는 글, 개인정보가 포함된 글은 안내문 없이 부분 또는 전체 삭제될 수 있습니다. 개인정보가 포함된 글은 불특정 다수에게 개인정보가 노출되어 악용될 수 있으며, 특히 타인의 <span class="pointO">개인정보를 노출한 경우에는 개인정보보호법에 따라 처벌 받을 수 있음</span>을 알려드립니다.</p>
+                                </div>
+                                
+                                <div class="table_top text top_pill">
+                                    <p class="alert_p">욕설, 비방글, 개인정보가 포함된 게시글은 사전에 작성자 동의 없이 삭제됩니다.</p>
+                                    <p class="top_detail"><em class="pointR01">*</em> 는 필수항목입니다.</p>
+                                </div>
+                                
+                                <table class="tableW">
+                                    <caption>채용문의 게시판 문의 입력(제목, 작성자, 작성일, 공개여부, 내용, 첨부파일, 비밀번호 )</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col />
+                                        <col style="width:185px;">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col"><label for="title"><span class="pill"><em class="ico">필수항목</em>제목</span></label></th>
+                                            <td data-name="제목" colspan="3" class="pill">
+                                                <input type="text" class="w1P" id="title" maxlength="40" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><span class="pill"><em class="ico">필수항목</em>작성자</span></th>
+                                            <td data-name="작성자" class="pill"><span>홍길동</span></td>
+                                            <th scope="col"><span>작성일</span></th>
+                                            <td data-name="작성일"><span>2022.07.07</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><span class="pill"><em class="ico">필수항목</em>공개여부</span></th>
+                                            <td colspan="3" data-name="공개여부" class="pill">
+                                                <div class="radiobox">
+                                                    <label for="rbox_openGubunA"><input id="rbox_openGubunA" name="rbox_openGubun" type="radio" value="0">공개</label>
+                                                    <label  for="rbox_openGubunB"><input id="rbox_openGubunB" name="rbox_openGubun" type="radio" value="1" checked>비공개</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><label for="cts_text"><span class="pill"><em class="ico">필수항목</em>내용</span></label></th>
+                                            <td data-name="내용" colspan="3" class="pill">
+                                                <textarea id="cts_text"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><label for="file-name"><span>첨부파일</span></label></th>
+                                            <td data-name="첨부파일" colspan="3" class="attach_td">
+                                                <p class="table_p">※ 첨부파일은 <em class="pointB01">최대 5개</em> 까지 입니다.</p>
+                                                <div class="file_box">
+                                                    <div class="file_list">
+                                                        <input type="text" readonly class="file-name" id="file-name">
+                                                        <label for="upload01" class="file-label file_add">찾아보기</label>
+                                                        <input type="file" id="upload01" class="file-upload">
+                                                    </div>
+                                
+                                                    <div class="btn_area">
+                                                        <button type="button" class="add_btn"><span>추가</span></button>
+                                                        <button type="button" class="del_btn"><span>삭제</span></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><label for="userpwd"><span class="pill"><em class="ico">필수항목</em>비밀번호</span></label></th>
+                                            <td data-name="비밀번호" colspan="3" class="pill">
+                                                <input id="userpwd" type="password" title="비밀번호" minlength="9" autocomplete="off">
+                                                <p class="table_p">※ 글 수정과 삭제시 필요합니다. (특수문자,영문,숫자 조합으로 9글자이상 가능합니다.)</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">취소</a>
+                                    <a href="#n" class="border_btn">목록</a>
+                                    <a href="#n" class="blue_btn">등록</a>
+                                </div>
+
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board03" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>열린혁신 아이디어 발전소 게시판 리스트 확인(번호, 제목, 작성자, 작성일 )</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">작성자</th>
+                                                <th scope="col">작성일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">	2022 KOMIPO 혁신 100대 과제 아이디어 공모 <span class="reply_num">[3]</span></a></td>
+                                                <td data-name="작성자"><span>김승미</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                           <tr onclick="location.href='#n'">
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">	[4기 청년 에너지드림 리그] 최종 순위 공지</a></td>
+                                                <td data-name="작성자"><span>김승미</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>                  
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">	2022 KOMIPO 혁신 100대 과제 아이디어 공모</a></td>
+                                                <td data-name="작성자"><span>김승미</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">	2022 KOMIPO 혁신 100대 과제 아이디어 공모</a></td>
+                                                <td data-name="작성자"><span>김승미</span></td>
+                                                <td data-name="작성일"><span>2022.12.20</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <table class="tableV">
+                                    <caption>열린혁신 아이디어 발전소 게시판 내용 확인( 제목, 작성자, 작성일, 내용, 첨부파일)</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col />
+                                        <col style="width:185px;">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" data-name="제목" colspan="4" class="t_left view_title">2022 KOMIPO 혁신 100대 과제 아이디어 공모</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>작성자</span></th>
+                                            <td data-name="작성자" class="t_left"><span>김승미</span></td>
+                                            <th scope="row"><span>작성일</span></th>
+                                            <td data-name="작성일" class="t_left"><span>2022.08.03</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-name="내용" colspan="4" class="t_left view_wrap">
+                                                <div class="view_cts">
+
+                                                    <p>
+                                                        내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역
+                                                        패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩
+                                                        40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px
+                                                        내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px
+                                                    </p>
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역
+                                                        패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>첨부파일</span></th>
+                                            <td data-name="첨부파일" colspan="3" class="attach_td t_left">
+                                                <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="viewList">
+                                    <div class="prevList">
+                                        <span>이전글</span>
+                                        <a href="#n" class="ellipsis1">이전글이 존재하지 않습니다.</a>
+                                    </div>
+                                    <div class="nextList">
+                                        <span>다음글</span>
+                                        <a href="#n" class="ellipsis1">근무성적평정규정</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">목록</a>
+                                    <a href="#n" class="blue_btn">의견쓰기</a>
+                                </div>
+
+                                <h3 class="titleA">열린혁신 아이디어 발전소 의견 목록</h3>
+                                <ul class="reply_list">
+                                    <li>
+                                        <p class="title">비오는날 본사 1층에 우산 비닐 우산 커버가 비치되어있는데, 비닐쓰레기가 발생하여 매립 및 소각으로 인한 환경오염을 일으킬 수 있다고 생각합니다. 그래서, 건물 출입문에 비닐 커버 보다는 우산 빗물 제거기를 설치하여 환경을 더욱 생각하는 KOMIPO가 되었으면 좋겠습니다.</p>
+                                        <div class="tit"><span>인턴3</span><span>2018.11.08</span></div>
+                                    </li>
+                                    <li>
+                                        <p class="title">2층 테라스에 유치원생 아이들이 많이 오는데 현재 흡연구역이 바로 옆에 있습니다. 아이들에게 피해가 가지 않게 흡연부스 설치 혹은 흡연구역을 다른곳으로 이동하면 좋을거 같습니다.</p>
+                                        <div class="tit"><span>인턴사원</span><span>2018.10.25</span></div>
+                                    </li>
+                                    <li>
+                                        <p class="title">다음 인턴사원 모집을 할때에는 선호하는 업무처를 선택하는 방식으로 1~3지망을 선 모집하여 이동하였으면 좋겠습니다. 비록 체험형 이지만 자신의 관심분야와 희망분야가 너무 차이가 난다면 정작 부서에 가였다 하더라도 큰 도움이 되지 않을것 같습니다.</p>
+                                        <div class="tit"><span>인턴사원</span><span>2018.10.15</span></div>
+                                    </li>
+                                </ul>
+
+                                <hr class="mt40 mb40">
+
+                                <h3 class="titleA mt0">열린혁신 아이디어 발전소 의견 작성</h3>
+
+                                <div class="alert_box">
+                                    <p>자료등록 시 본문 또는 첨부파일에 <span class="pointO">개인정보(주민등록번호, 휴대전화번호, 주소 등 개인을 식별할 수 있는 정보)</span>가 포함되지 않도록 유의하시기 바라며, 일방적인 주장, 비방, 욕설 등이 포함된 경우나 본 게시판의 성격에 맞지 않는 글, 개인정보가 포함된 글은 안내문 없이 부분 또는 전체 삭제될 수 있습니다. 개인정보가 포함된 글은 불특정 다수에게 개인정보가 노출되어 악용될 수 있으며, 특히 타인의 <span class="pointO">개인정보를 노출한 경우에는 개인정보보호법에 따라 처벌 받을 수 있음</span>을 알려드립니다.</p>
+                                </div>
+                                
+                                <div class="table_top text top_pill">
+                                    <p class="top_detail"><em class="pointR01">*</em> 는 필수항목입니다.</p>
+                                </div>
+                                <table class="tableW">
+                                    <caption>열린혁신 아이디어 발전소 의견 입력(닉네임, 의견 등록)</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col"><label for="username"><span class="pill"><em class="ico">필수항목</em>닉네임</span></label></th>
+                                            <td data-name="닉네임" class="pill">
+                                                <input id="username" type="text" title="닉네임" maxlength="10">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><label for="cts_text"><span class="pill"><em class="ico">필수항목</em>의견 등록</span></label></th>
+                                            <td data-name="의견 등록" class="pill">
+                                                <textarea id="cts_text"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">취소</a>
+                                    <a href="#n" class="border_btn">목록</a>
+                                    <a href="#n" class="blue_btn">등록</a>
+                                </div>
+
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board04" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="qna_table">
+                                    <div class="t_head">
+                                        <ul>
+                                            <li class="num"><span>번호</span></li>
+                                            <li class="item_text"><span>문의내용</span></li>
+                                            <li class="date"><span>답변일자</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="t_body">
+                                        <div class="list">
+                                            <button type="button" class="title_btn" title="답변 열기">
+                                                <span class="t_num">3</span>
+                                                <span class="t_title">사이트가 정상적으로 들어가지지 않습니다. 확인 부탁 드립니다.</span>
+                                                <span class="t_date" data-name="답변일자">2023.02.23</span>
+                                            </button>
+                                            <div class="answer_view">
+                                                <dl>
+                                                    <dt>답변내용</dt>
+                                                    <dd>안녕하세요 중부발전 입니다. 어떤 페이지가 정상적으로 들어가지지 않는지 자세히 알려주시면 확인 드리겠습니다.</dd>
+                                                    <dt>조치사유</dt>
+                                                    <dd>조치 진행중입니다.</dd>
+                                                </dl>
+                                                <button type="button" class="close">답변닫기</button>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <button type="button" class="title_btn" title="답변 열기">
+                                                <span class="t_num">2</span>
+                                                <span class="t_title">사이트가 정상적으로 들어가지지 않습니다. 확인 부탁 드립니다.</span>
+                                                <span class="t_date" data-name="답변일자">2023.02.23</span>
+                                            </button>
+                                            <div class="answer_view">
+                                                <dl>
+                                                    <dt>답변내용</dt>
+                                                    <dd>안녕하세요 중부발전 입니다. 어떤 페이지가 정상적으로 들어가지지 않는지 자세히 알려주시면 확인 드리겠습니다.</dd>
+                                                    <dt>조치사유</dt>
+                                                    <dd>조치 진행중입니다.</dd>
+                                                </dl>
+                                                <button type="button" class="close">답변닫기</button>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <button type="button" class="title_btn" title="답변 열기">
+                                                <span class="t_num">1</span>
+                                                <span class="t_title">사이트가 정상적으로 들어가지지 않습니다. 확인 부탁 드립니다.</span>
+                                                <span class="t_date" data-name="답변일자">2023.02.23</span>
+                                            </button>
+                                            <div class="answer_view">
+                                                <dl>
+                                                    <dt>답변내용</dt>
+                                                    <dd>안녕하세요 중부발전 입니다. 어떤 페이지가 정상적으로 들어가지지 않는지 자세히 알려주시면 확인 드리겠습니다.</dd>
+                                                    <dt>조치사유</dt>
+                                                    <dd>조치 진행중입니다.</dd>
+                                                </dl>
+                                                <button type="button" class="close">답변닫기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+                                
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board05" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+
+                                <div class="qna_board">
+                                    <div class="t_body">
+                                        <div class="list">
+                                            <button type="button" class="title_btn" title="답변 열기">
+                                                <span class="tit_q">Q</span>
+                                                <span class="gubun">[체험 - 기아체험]</span>
+                                                <span class="t_title">사이트가 정상적으로 들어가지지 않습니다. 확인 부탁 드립니다.</span>
+                                            </button>
+                                            <div class="answer_view">
+                                                <span class="tit_a">A</span>
+                                                <div class="text_box">
+                                                    <p>네 가능합니다. </p>
+                                                    <p>세계시민교육은 한 학교에서 들을 수 있는 횟수를 따로 명시해서 제한하고 있지는 않습니다.</p>
+                                                    <p>다만 이미 다른 교육기관에서 신청을 했거나 강사님들의 스케줄 등으로 인해 상의하에 횟수가 조정 될 수 있습니다.</p>
+                                                    <p>자세한 문의는 <a href="http://wvschool.or.kr/Education/WorldCitizenEdu/EduIntroduce/Program/tab4.asp" target="_blank" class="a_link">http://wvschool.or.kr/Education/WorldCitizenEdu/EduIntroduce/Program/tab4.asp</a>나 첨부파일-지역본부 연락처를 통해 지역본부에 문의해주시면 더 상세한 정보를 얻으실 수 있습니다.</p>
+                                                </div>
+                                                <div class="attach_box">
+                                                    <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                    <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                    <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                    <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                    <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                                </div>
+                                                <button type="button" class="close">답변닫기</button>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <button type="button" class="title_btn" title="답변 열기">
+                                                <span class="tit_q">Q</span>
+                                                <span class="t_title">한 차시당 교육시간은 어떻게 되나요? 교육일정을 기관에서 정할 수 있나요?</span>
+                                            </button>
+                                            <div class="answer_view">
+                                                <span class="tit_a">A</span>
+                                                <div class="text_box">
+                                                    <p>네 가능합니다. </p>
+                                                    <p>세계시민교육은 한 학교에서 들을 수 있는 횟수를 따로 명시해서 제한하고 있지는 않습니다.</p>
+                                                    <p>다만 이미 다른 교육기관에서 신청을 했거나 강사님들의 스케줄 등으로 인해 상의하에 횟수가 조정 될 수 있습니다.</p>
+                                                    <p>자세한 문의는 <a href="http://wvschool.or.kr/Education/WorldCitizenEdu/EduIntroduce/Program/tab4.asp" target="_blank" class="a_link">http://wvschool.or.kr/Education/WorldCitizenEdu/EduIntroduce/Program/tab4.asp</a>나 첨부파일-지역본부 연락처를 통해 지역본부에 문의해주시면 더 상세한 정보를 얻으실 수 있습니다.</p>
+                                                </div>
+                                                <button type="button" class="close">답변닫기</button>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <button type="button" class="title_btn" title="답변 열기">
+                                                <span class="tit_q">Q</span>
+                                                <span class="t_title">학년단위로 신청해달라고 적혀있는데 전학년이 같이 들어야하나요?</span>
+                                            </button>
+                                            <div class="answer_view">
+                                                <span class="tit_a">A</span>
+                                                <div class="text_box">
+                                                    <p>네 가능합니다. </p>
+                                                    <p>세계시민교육은 한 학교에서 들을 수 있는 횟수를 따로 명시해서 제한하고 있지는 않습니다.</p>
+                                                    <p>다만 이미 다른 교육기관에서 신청을 했거나 강사님들의 스케줄 등으로 인해 상의하에 횟수가 조정 될 수 있습니다.</p>
+                                                    <p>자세한 문의는 <a href="http://wvschool.or.kr/Education/WorldCitizenEdu/EduIntroduce/Program/tab4.asp" target="_blank" class="a_link">http://wvschool.or.kr/Education/WorldCitizenEdu/EduIntroduce/Program/tab4.asp</a>나 첨부파일-지역본부 연락처를 통해 지역본부에 문의해주시면 더 상세한 정보를 얻으실 수 있습니다.</p>
+                                                </div>
+                                                <button type="button" class="close">답변닫기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+                                
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board06" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">4</em> (<em class="count">1</em>/1)</p>
+                                    </div>
+                                </div>
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>실명제목록 게시판 리스트 확인(번호, 제목, 사업분류, 기간, 상태)</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:280px">
+                                            <col style="width:180px">
+                                            <col style="width:100px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">사업분류</th>
+                                                <th scope="col">기간</th>
+                                                <th scope="col">상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">2022-9 신서천화력 건설사업</a></td>
+                                                <td data-name="사업분류"><span>재무적영향사업 (국외 투자사업)</span></td>
+                                                <td data-name="기간"><span>2013.08~2021.06</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state01">등록</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">2022-17 지능형 스마트발전소 추진을 위한 예측진단시스템 구축</a></td>
+                                                <td data-name="사업분류"><span>재무적영향사업 (국외 투자사업)</span></td>
+                                                <td data-name="기간"><span>2013.08~2021.06</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state02">진행중</span></td>
+                                            </tr>                  
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">2022-9 신서천화력 건설사업</a></td>
+                                                <td data-name="사업분류"><span>재무적영향사업 (국외 투자사업)</span></td>
+                                                <td data-name="기간"><span>2013.08~2021.06</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state03">완료</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">2022-9 신서천화력 건설사업</a></td>
+                                                <td data-name="사업분류"><span>재무적영향사업 (국외 투자사업)</span></td>
+                                                <td data-name="기간"><span>2013.08~2021.06</span></td>
+                                                <td data-name="상태" class="right_item"><span class="state state04">실패</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <table class="tableV">
+                                    <caption>실명제목록 게시판 내용 확인(제목, 작성일, 조회수, 사업분류, 기간, 진행상태, 소요예산, 담당부서, 담당자, 전화번호, 내용, 첨부파일)</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col />
+                                        <col style="width:185px;">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" data-name="제목" colspan="4" class="t_left view_title">2022-9 신서천화력 건설사업</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>작성일</span></th>
+                                            <td data-name="작성일" class="t_left"><span>2022.04.08</span></td>
+                                            <th scope="row"><span>조회수</span></th>
+                                            <td data-name="조회수" class="t_left"><span>28</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>사업분류</span></th>
+                                            <td data-name="사업분류" class="t_left"><span>재무적영향사업 (발전소 건설)</span></td>
+                                            <th scope="row"><span>기간</span></th>
+                                            <td data-name="기간" class="t_left"><span>2013.08~2021.06</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>진행상태</span></th>
+                                            <td data-name="진행상태" class="t_left"><span>종료</span></td>
+                                            <th scope="row"><span>소요예산</span></th>
+                                            <td data-name="소요예산" class="t_left"><span>1조6,138억원</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>담당부서</span></th>
+                                            <td data-name="담당부서" class="t_left"><span>전원개발처 전원기획실</span></td>
+                                            <th scope="row"><span>담당자</span></th>
+                                            <td data-name="담당자" class="t_left"><span>이충구 차장</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>전화번호</span></th>
+                                            <td colspan="3" class="t_left" data-name="전화번호"><span>070-7511-1412</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-name="내용" colspan="4" class="t_left view_wrap">
+                                                <div class="view_cts">
+                                
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px</p>
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                                
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>첨부파일</span></th>
+                                            <td data-name="첨부파일" colspan="3" class="attach_td t_left">
+                                                <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="viewList">
+                                    <div class="prevList">
+                                        <span>이전글</span>
+                                        <a href="#n" class="ellipsis1">이전글이 존재하지 않습니다.</a>
+                                    </div>
+                                    <div class="nextList">
+                                        <span>다음글</span>
+                                        <a href="#n" class="ellipsis1">2022-17 지능형 스마트발전소 추진을 위한 예측진단시스템 구축</a>
+                                    </div>
+                                </div>
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">목록</a>
+                                </div>
+
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board07" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>사전정보공표 게시판 리스트 확인(번호, 제목, 공표주기, 공표시기, 공표부서, 최근갱신일, 건수)</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">공표주기</th>
+                                                <th scope="col">공표시기</th>
+                                                <th scope="col">공표부서</th>
+                                                <th scope="col">최근갱신일</th>
+                                                <th scope="col">건수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n"  class="ellipsis1">감사계획</a></td>
+                                                <td data-name="공표주기"><span>매년</span></td>
+                                                <td data-name="공표시기"><span>4월</span></td>
+                                                <td data-name="공표부서"><span>감사실</span></td>
+                                                <td data-name="최근갱신일"><span>2022-03-28</span></td>
+                                                <td data-name="건수" class="right_item"><span >List : 9</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">공직기강 감찰결과</a></td>
+                                                <td data-name="공표주기"><span>매년</span></td>
+                                                <td data-name="공표시기"><span>4월</span></td>
+                                                <td data-name="공표부서"><span>감사실</span></td>
+                                                <td data-name="최근갱신일"><span>2022-03-28</span></td>
+                                                <td data-name="건수" class="right_item"><span >List : 35</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">감사계획</a></td>
+                                                <td data-name="공표주기"><span>매년</span></td>
+                                                <td data-name="공표시기"><span>4월</span></td>
+                                                <td data-name="공표부서"><span>감사실</span></td>
+                                                <td data-name="최근갱신일"><span>2022-03-28</span></td>
+                                                <td data-name="건수" class="right_item"><span >List : 9</span></td>
+                                            </tr>
+                                            <tr onclick="location.href='#n'">
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">감사계획</a></td>
+                                                <td data-name="공표주기"><span>매년</span></td>
+                                                <td data-name="공표시기"><span>4월</span></td>
+                                                <td data-name="공표부서"><span>감사실</span></td>
+                                                <td data-name="최근갱신일"><span>2022-03-28</span></td>
+                                                <td data-name="건수" class="right_item"><span >List : 9</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board08" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL">
+                                        <caption>상품권 관리내역 게시판 리스트 확인(번호, 제목, 작성자, 작성일, 다운로드)</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">작성자</th>
+                                                <th scope="col">작성일</th>
+                                                <th scope="col">다운로드</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>      
+                                            <tr>
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">상품권 관리내역(2022.09.30.) 업데이트</a></td>
+                                                <td data-name="작성자"><span>신민경</span></td>
+                                                <td data-name="작성일"><span>2022.10.24</span></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#adf" class="navy_btn down small">다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">상품권 관리내역(2022.06.30.) 업데이트</a></td>
+                                                <td data-name="작성자"><span>신민경</span></td>
+                                                <td data-name="작성일"><span>2022.09.24</span></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#n" class="navy_btn down small">다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">상품권 관리내역(2022.06.30.) 업데이트</a></td>
+                                                <td data-name="작성자"><span>신민경</span></td>
+                                                <td data-name="작성일"><span>2022.08.24</span></td>
+                                                <td data-name="다운로드" class="right_item"></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><a href="#n" class="ellipsis1">상품권 관리내역(2022.06.30.) 업데이트</a></td>
+                                                <td data-name="작성자"><span>신민경</span></td>
+                                                <td data-name="작성일"><span>2022.07.24</span></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#n" class="navy_btn down small">다운로드</a></td>
+                                            </tr>   
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <table class="tableV">
+                                    <caption>상품권 관리내역 내용 확인(제목, 작성자, 작성일, 내용, 첨부파일)</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col/>
+                                        <col style="width:185px;">
+                                        <col/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" data-name="제목" colspan="4" class="t_left view_title">상품권 관리내역(2022.09.30.) 업데이트</th>
+                                        </tr>  
+                                        <tr>
+                                            <th scope="row"><span>작성자</span></th>
+                                            <td data-name="작성자" class="t_left"><span>신민경</span></td>
+                                            <th scope="row"><span>작성일</span></th>
+                                            <td data-name="작성일" class="t_left"><span>2022.07.07</span></td>
+                                        </tr>                      
+                                        <tr>
+                                            <td data-name="내용" colspan="4" class="t_left view_wrap">
+                                                <div class="view_cts">
+            
+                                                    <p>
+                                                        내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 
+                                                    </p>
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+            
+                                                </div>
+                                            </td>
+                                        </tr>   
+                                        <tr>
+                                            <th scope="row"><span>첨부파일</span></th>
+                                            <td data-name="첨부파일" colspan="3" class="attach_td t_left">
+                                                <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                            </td>
+                                        </tr>                     
+                                    </tbody>
+                                </table>
+                                
+                                <div class="viewList">
+                                    <div class="prevList">
+                                        <span>이전글</span>
+                                        <a href="#n" class="ellipsis1">이전글이 존재하지 않습니다.</a>
+                                    </div>
+                                    <div class="nextList">
+                                        <span>다음글</span>
+                                        <a href="#n" class="ellipsis1">상품권 관리내역(2022.06.30.) 업데이트</a>
+                                    </div>
+                                </div>
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">목록</a>    
+                                </div>
+                                
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board09" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL hoverNone">
+                                        <caption>사규 게시판 리스트 확인(번호, 제목, 다운로드)</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:120px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">다운로드</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>      
+                                            <tr>
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><p class="ellipsis1">노동이사후보 선거관리규정</p></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#n" class="navy_btn down small" download>다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><p class="ellipsis1">공공건축심의위원회 설치및운영지침</p></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#n" class="navy_btn down small" download>다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><p class="ellipsis1">노동이사후보 선거관리규정</p></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#n" class="navy_btn down small" download>다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><p class="ellipsis1">노동이사후보 선거관리규정</p></td>
+                                                <td data-name="다운로드" class="right_item"><a href="#n" class="navy_btn down small" download>다운로드</a></td>
+                                            </tr>   
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="tableScroll">
+                                    <table class="tableL mob_tableL hoverNone">
+                                        <caption>친환경상품 구매실적/이행계획 게시판 리스트 확인(번호, 제목, 구매계획 다운로드, 구매실적 다운로드)</caption>
+                                        <colgroup>
+                                            <col style="width:80px">
+                                            <col />
+                                            <col style="width:140px">
+                                            <col style="width:140px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">제목</th>
+                                                <th scope="col">구매계획</th>
+                                                <th scope="col">구매실적</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>      
+                                            <tr>
+                                                <td class="t_num">4</td>
+                                                <td class="t_title"><p class="ellipsis1">2021년 녹색제품 구매실적 및 2022년 구매계획</p></td>
+                                                <td data-name="구매계획" class="right_item"><a href="#n" class="navy_btn down small">계획 다운로드</a></td>
+                                                <td data-name="구매실적" class="right_item"><a href="#n" class="navy_btn down small">실적 다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">3</td>
+                                                <td class="t_title"><p class="ellipsis1">2020년 녹색제품 구매실적 및 2021년 구매계획</p></td>
+                                                <td data-name="구매계획" class="right_item"><a href="#n" class="navy_btn down small">계획 다운로드</a></td>
+                                                <td data-name="구매실적" class="right_item"><a href="#n" class="navy_btn down small">실적 다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">2</td>
+                                                <td class="t_title"><p class="ellipsis1">2020년 녹색제품 구매실적 및 2021년 구매계획</p></td>
+                                                <td data-name="구매계획" class="right_item"><a href="#n" class="navy_btn down small">계획 다운로드</a></td>
+                                                <td data-name="구매실적" class="right_item"><a href="#n" class="navy_btn down small">실적 다운로드</a></td>
+                                            </tr>   
+                                            <tr>
+                                                <td class="t_num">1</td>
+                                                <td class="t_title"><p class="ellipsis1">2020년 녹색제품 구매실적 및 2021년 구매계획</p></td>
+                                                <td data-name="구매계획" class="right_item"><a href="#n" class="navy_btn down small">계획 다운로드</a></td>
+                                                <td data-name="구매실적" class="right_item"><a href="#n" class="navy_btn down small">실적 다운로드</a></td>
+                                            </tr>   
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <!-- //게시판 -->
+                            </div>
+
+                            <div id="board10" class="box_con">
+                                <!-- 게시판 -->
+
+                                <form action="/" name="" method="post">
+                                    <fieldset>
+                                        <legend>게시물 검색</legend>
+        
+                                        <div class="searchArea">
+                                            <label for="searchCnd">검색어 유형</label>
+                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                <option>제목</option>
+                                                <option>내용</option>
+                                                <option>작성자</option>
+                                            </select>
+                                            <label for="search02">검색어 입력</label>
+                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                            <div class="btn_area">
+                                                <a href="#n" class="black_btn">검색</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+        
+                                <div class="table_top">
+                                    <div class="total">
+                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                    </div>
+                                </div>
+
+                                <div class="gallery_board">
+									<ul>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_noimg.jpg" alt="2020년도 제주발전본부 장학금 전달식 개최">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">2020년도 제주발전본부 장학금 전달식 개최</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img02.jpg" alt="민간과의 동반성장을 위한 고장예측 기술 나눔 본격 추진">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">민간과의 동반성장을 위한 고장예측 기술 나눔 본격 추진</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img03.jpg" alt="건강하고 밝은 모습으로 학교에서 만나요!">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">건강하고 밝은 모습으로 학교에서 만나요!</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img04.jpg" alt="코로나-19를 함께 이겨냅시다!">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">코로나-19를 함께 이겨냅시다!</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img04.jpg" alt="코로나-19를 함께 이겨냅시다!">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">코로나-19를 함께 이겨냅시다!</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img04.jpg" alt="코로나-19를 함께 이겨냅시다!">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">코로나-19를 함께 이겨냅시다!</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img04.jpg" alt="코로나-19를 함께 이겨냅시다!">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">코로나-19를 함께 이겨냅시다!</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#n">
+											<div class="imgArea">
+												<img src="../../images/sub/gallery_img04.jpg" alt="코로나-19를 함께 이겨냅시다!">
+											</div>
+											<div class="txtArea">
+												<p class="ellipsis2">코로나-19를 함께 이겨냅시다!코로나-19를 함께 이겨냅시다!코로나-19를 함께 이겨냅시다!</p>
+												<p class="tit"><span>2022.02.10</span></p>
+											</div>
+										</a>
+									</li>
+									</ul>
+								</div>
+
+                                <div class="paging">
+                                    <button type="button" class="first"><span>처음페이지로</span></button>
+                                    <button type="button" class="prev"><span>이전페이지로</span></button>
+                                    <a href="#n" class="num on">1</a>
+                                    <a href="#n" class="num">2</a>
+                                    <a href="#n" class="num">3</a>
+                                    <a href="#n" class="num">4</a>
+                                    <a href="#n" class="num">5</a>
+                                    <a href="#n" class="num">6</a>
+                                    <a href="#n" class="num">7</a>
+                                    <a href="#n" class="num">8</a>
+                                    <a href="#n" class="num">9</a>
+                                    <a href="#n" class="num">10</a>
+                                    <button type="button" class="next"><span>다음페이지로</span></button>
+                                    <button type="button" class="last"><span>마지막페이지로</span></button>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+                                <div class="gallery_board regional_cts">
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.brcn.go.kr/farm.do" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner09.jpg" alt="보령시 농업 기술인센터">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">보령시 농업 기술인센터</p>
+                                                    <p>천혜의 환경과 인정이 넘치는 곳! <br/>보령시 농업기술센터입니다.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.nurungz.com" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner08.jpg" alt="보령 누룽지과자">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">보령 누룽지과자</p>
+                                                    <p>밥을 하고, 반죽 해서 다시 하나씩 구워낸 수제누룽지과자!</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.gillseong.com/" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner07.jpg" alt="길성 토굴 새우젓">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">길성 토굴 새우젓</p>
+                                                    <p>청정한 바다의 맛을 그대로 고객님께 전해드립니다.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.moyanggim.modoo.at" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner06.jpg" alt="대천 모양맛김">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">대천 모양맛김</p>
+                                                    <p>재미있고 다양한 모양의 맛김을 생산합니다.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blog.naver.com/parkhohh2" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner05.jpg" alt="스테비아 코리아">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">스테비아 코리아</p>
+                                                    <p>보령 미산면 봉성리 농촌체험마을. <br/>비누, 양초, 도토리묵, 두부 만들기 체험!</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://blog.naver.com/spacerabb" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner04.jpg" alt="발효정원">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">발효정원</p>
+                                                    <p>맛있는 장이 익어가는 발효정원입니다. <br/>된장, 간장, 고추장, 청국장, 식초, 조청</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.imslab.kr" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner03.jpg" alt="자연건강테크">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">자연건강테크</p>
+                                                    <p>실속을 가득담은 전통시장브랜드 <br/>보령아지매</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://smartstore.naver.com/todaysfarmer" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner02.jpg" alt="서천마산협동조합">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">서천마산협동조합</p>
+                                                    <p>오늘의 파마(today`s famer) 충남 서천 마을 파머들의 농산물</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.한국도라지.com" target="_blank" title="새창 열기">
+                                                <div class="imgArea">
+                                                    <img src="../../../images/sub/regional_corner01.jpg" alt="한국도라지">
+                                                </div>
+                                                <div class="txtArea">
+                                                    <p class="title">한국도라지</p>
+                                                    <p>생도라지를 직접 재배해서 생산한 안전하고 믿을 수 있는, 한국도라지</p>
+                                                </div>
+                                            </a>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+
+                                <hr class="mt40 mb40">
+
+
+                                <table class="tableV">
+                                    <caption>이미지게시판 내용 확인(번호, 제목, 작성자, 작성일, 내용, 조회수)</caption>
+                                    <colgroup>
+                                        <col style="width:185px;">
+                                        <col />
+                                        <col style="width:185px;">
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col" data-name="제목" colspan="4" class="t_left view_title">건강하고 밝은 모습으로 학교에서 만나요!</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>작성자</span></th>
+                                            <td data-name="작성자" class="t_left"><span>민희준</span></td>
+                                            <th scope="row"><span>작성일</span></th>
+                                            <td data-name="작성일" class="t_left"><span>2022.07.07</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-name="내용" colspan="4" class="t_left view_wrap">
+                                                <div class="view_cts">
+                        
+                                                    <p>
+                                                        내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩
+                                                        40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역
+                                                        패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px
+                                                        내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px
+                                                    </p>
+                                                    <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                                                    <p><img src="../../images/sub/regional_corner09.jpg" alt=""></p>
+                                                    
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><span>첨부파일</span></th>
+                                            <td data-name="첨부파일" colspan="3" class="attach_td t_left">
+                                                <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        
+                                <div class="viewList">
+                                    <div class="prevList">
+                                        <span>이전글</span>
+                                        <a href="#n" class="ellipsis1">이전글이 존재하지 않습니다.</a>
+                                    </div>
+                                    <div class="nextList">
+                                        <span>다음글</span>
+                                        <a href="#n" class="ellipsis1">예약취소요청합니다.</a>
+                                    </div>
+                                </div>
+                                <div class="btn_area mt40">
+                                    <a href="#n" class="border_btn">목록</a>
+                                </div>
+
+
+
+                                <!-- //게시판 -->
+                            </div>
+                            
+                        </div>
+
+                    
+                        
+                        
+
+
+                    </div>
+                    <!-- .contents>.inner>.inner_top 본문내용 끝 -->
+
+                    <!--만족도-->
+                    <!-- <? include "../../ko23_include/satisfaction.html"; ?> -->
+                    <!-- 담당부서: .manager / 전화번호: .tel_num / 팩스번호: .fax_num / 이메일: .email_adr -->
+                    <section class="satisfaction">
+                        <h4 class="hide">담당자 및 홈페이지 만족도조사</h4>
+                        <div class="top">
+                            <dl class="manager">
+                                <dt>담당부서</dt>
+                                <dd>총무부</dd>
+                            </dl>
+                            <dl class="tel_num">
+                                <dt>전화번호</dt>
+                                <dd><a href="#n" tabindex="-1" class="mobile_telNo" data-tel="tel:070-5000-1218">070-5000-1218</a></dd>
+                            </dl>
+                            <dl class="refresh">
+                                <dt>최종업데이트 : </dt>
+                                <dd>2023. 05. 16</dd>
+                            </dl>
+                        </div>
+                        <div class="btm">
+                            <div>
+                                <p>홈페이지 만족도 <span>현재 페이지의 만족도를 평가해 주십시요. 의견을 수렴하여 빠른 시일 내에 반영하겠습니다.</span></p>
+                                <div class="radiobox">
+                                    <div>
+                                        <input type="radio" name="star" id="star05" checked="">
+                                        <label for="star05"><span>매우만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star04">
+                                        <label for="star04"><span>만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star03">
+                                        <label for="star03"><span>보통</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star02">
+                                        <label for="star02"><span>불만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star01">
+                                        <label for="star01"><span>매우불만족</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="satis_btn">
+                                <a href="#n" class="blue_btn">등록하기</a>
+                            </p>
+                        </div>
+                    </section>
+                    <!--//만족도-->
+                </div>
+                <!-- .contents>.inner -->
+            </div>
+            <!-- //contents -->
+        </div>
+    </section>
+    <!-- //sub.container  -->
+
+    <!-- footer -->
+    <!-- <? include "../../ko23_include/footer.html"; ?> -->
+    <div class="footer">
+        <!-- 관련기관 배너 -->
+        <section class="footer_banner">
+            <div class="wrap">
+                <h3 class="hide">관련기관 배너</h3>
+                <div class="banner">
+                    <ul class="banner_slide">
+                        <li><a href="http://www.motie.go.kr/" target="_blank" title="산업통상자원부 페이지로 새창 열림" tabindex="0"><img src="../../images/common/banner01.jpg" alt="산업통상자원부"></a></li>
+                        <li><a href="http://www.gov.kr" target="_blank" title="정부24 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner02.jpg" alt="정부24"></a></li>
+                        <li><a href="http://www.alio.go.kr" target="_blank" title="ALIO 공공기관 경영정보 공개시스템 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner03.jpg" alt="ALIO 공공기관 경영정보 공개시스템"></a></li>
+                        <li><a href="http://www.korea.go.kr/main" target="_blank" title="대한민국 정부포털 나에게 필요한 공공서비스 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner04.jpg" alt="대한민국 정부포털 나에게 필요한 공공서비스"></a></li>
+                        <li><a href="https://www.komipo.co.kr/kor/content/390/main.do?mnCd=FN120203" target="_blank" title="지역 특산물 코너 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner05.jpg" alt="지역 농·수·축산물 코너"></a></li>
+                        <li><a href="http://www.nongsarang.co.kr/" target="_blank" title="농사랑 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner06.jpg" alt="충남 농사랑"></a></li>
+                        <li><a href="http://1398.acrc.go.kr/case/ISGAcase" target="_blank" title="청탁금지법 통합검색 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner07.jpg" alt="청탁금지법 통합검색"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/corr/hpgCorrtReqStep1.do" target="_blank" title="청탁금지법위반신고 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner08.jpg" alt="청탁금지법위반신고"></a></li>
+                        <li><a href="http://www.acrc.go.kr/acrc/board.do?command=searchDetail&menuId=050205" target="_blank" title="공익신고 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner09.jpg" alt="공익신고"></a></li>
+                        <li><a href="http://www.epeople.go.kr/jsp/user/bw/front/UBwIntroduction.jsp" target="_blank" title="예산낭비 신고센터 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner10.jpg" alt="예산낭비 신고센터"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/req/hpgPssStep1.do" target="_blank" title="복지·보조금 부정 신고센터 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner11.jpg" alt="복지·보조금 부정 신고센터"></a></li>
+                        <li><a href="http://tv.mpss.go.kr/web/main/main.do" target="_blank" title="국민안전방송 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner12.jpg" alt="국민안전방송"></a></li>
+                    </ul>
+                    <div class="control">
+                        <button type="button" class="prev_btn">이전 슬라이드로 이동</button>
+                        <button type="button" class="next_btn">다음 슬라이드로 이동</button>
+                        <button type="button" class="ctr_btn pause">일시정지</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //관련기관 배너 -->
+        <footer id="footer">
+            <div class="top">
+                <div class="wrap">
+                    <div class="left">
+                            <a href="../con06/con06_01/privacy.html" class="pointC">ㆍ개인정보처리방침</a>
+                            <a href="../con02/con02_11/FN020909.html">ㆍ찾아오시는 길</a>
+                            <a href="../con06/con06_01/sitemap.html" class="f_sitemap">ㆍ사이트 맵</a>
+                            <a href="../con02/con02_10/FN021601.html">ㆍ부서별 전화번호</a>
+                        </div>
+                    <ul class="footer_link">
+                        <li><a href="https://blog.naver.com/komipo_official" target="_blank" title="BLOG 페이지 새창 열림" class="blog_tit">한국중부발전 공식 블로그</a></li>
+                        <li><a href="https://www.facebook.com/komipo" target="_blank" title="FACEBOOK 페이지 새창 열림" class="facebook_tit">한국중부발전 페이스북</a></li>
+                        <li><a href="https://www.instagram.com/komipo_official" target="_blank" title="INSTAGRAM 페이지 새창 열림" class="instagram_tit">한국중부발전 인스타그램</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCew6PRDs_1tIZ0tGvqgpDWw" target="_blank" title="YOUTUBE 페이지 새창 열림" class="youtube_tit">한국중부발전 유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm">
+                <div class="wrap">
+                    <div class="address">
+                        <a href="../../index.html" class="foot_logo">KOMIPO 한국중부발전</a>
+                        <address>
+                            <p>본사 : (33439)충청남도 보령시 보령북로 160 / </p><br/>
+                            <p>대표자명 : 김호빈 / </p>
+                            <p>사업자등록번호 : 120-86-19170 / </p><br/>
+                            <p>대표전화 : <a href="#n" tabindex="-1" data-tel="tel:070-7511-1114" class="mobile_telNo">070-7511-1114</a> / </p>
+                            <p>FAX : 070-7511-1046</p>
+                            <p class="copyright">COPYRIGHT © 2023 KOREA MIDLAND POWER Co., LTD. <br/>ALL RIGHTS RESERVED.</p>
+                        </address>
+                    </div>
+                    <div class="mark">
+                        <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"
+                            title="한국웹접근성인증평가원 새창열림" class="accessibility">국가공인 웹 접근성 품질인증마크</a>
+                        <a href="#n" title="ISMSP 인증서 새창열림" class="isms-p">ISMSP 인증마크</a>
+                        <a href="#n" title="S&P 보도자료 상세보기" class="awards_logo">S&P logo</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!--탑으로 이동버튼-->
+        <div class="top_move">
+            <span class="arrow"></span>
+        </div>
+        <!--//탑으로 이동버튼-->
+    </div>
+    <!-- //footer -->
+    
+    <script src="../../js/jquery-3.6.3.min.js"></script>    
+    <script src="../../js/jquery-ui.min.js"></script>    
+    <script src="../../js/slick.min.js"></script>    
+    <script src="../../js/common.js"></script>    
+    <script src="../../js/sub.js"></script>    
+    
+</body>
+</html>

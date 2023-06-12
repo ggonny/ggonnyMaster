@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> <!-- 파비콘 -->
+    <link rel="stylesheet" type="text/css" href="ko23_css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="ko23_css/slick.css">
+    <link rel="stylesheet" type="text/css" href="ko23_css/ko23_main.css">
+    <link rel="stylesheet" type="text/css" href="ko23_css/ko23_rwd_main.css">
+
+    <title>한국중부발전(주)</title>
+</head>
+<body>
+    <!-- skipMenu -->
+    <div title="스킵메뉴" class="skipMenu">
+        <a href="#gnbmenu"><span>주메뉴 바로가기</span></a>
+        <a href="#content"><span>본문 바로가기</span></a>
+        <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!-- //skipMenu -->
+
+    <!-- header -->
+    <header id="header">
+        <div class="header_top">
+            <div class="wrap">
+                <ul class="quick_link">
+                    <li><a href="contents/con04/con04_04/FN100402.html">견학신청</a></li>
+                    <li><a href="https://visit.komipo.co.kr:8070" target="_blank" title="한국중부발전 출입신청 새창 열림">출입신청</a></li>
+                    <li><a href="https://mail.komipo.co.kr" target="_blank" title="중부인메일 새창 열림">중부메일</a></li>
+                </ul>
+                <!-- .family_pop(전력사이트 + 언어 + 팝업) -->
+                <ul class="family_pop">
+                    <li class="famliysite"><button type="button" title="관련(공공기관)사이트 열기">관련(공공기관)사이트</button>
+                        <!-- 관련(공공기관)사이트 -->
+                        <div class="family_site pop_wrap">
+                            <div class="inner">
+                                <p class="title">관련(공공기관)사이트</p>
+                                <dl>
+                                    <dt>기업지원시스템</dt>
+                                    <dd>
+                                        <a href="http://srm.kepco.net/" target="_blank" title="입찰정보 시스템 새창 열림">입찰정보 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:7441/" target="_blank" title="계약이행 실적증명발급 새창 열림">계약이행 실적증명발급</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://easyu.kospo.co.kr/easyuUser/;jsessionid=Rfx8xNwd1brJnz7FqgdiQJyVAQtAZOpMdP9Ex3McT18KqCneg2eYxdLTUhhjghwU.nbcwwas1_servlet_EAS1"
+                                            target="_blank" title="기자재 공급 유자격 통합관리 새창 열림">기자재 공급 유자격 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="정비적격업체 통합관리 새창 열림">정비적격업체 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:8030" target="_blank" title="시험성적서 검증 시스템 새창 열림">시험성적서 검증 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://rec.komipo.co.kr:8557/WebContent/jsp/main/main.jsp" target="_blank"
+                                            title="공급인증서(REC)거래 새창 열림">공급인증서(REC)거래</a>
+                                    </dd>
+                                </dl>
+                                <dl class="type2">
+                                    <dt>전력그룹사</dt>
+                                    <dd>
+                                        <a href="http://www.kepco.co.kr" target="_blank" title="한국전력공사 새창 열림">한국전력공사</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.genco.kr" target="_blank" title="발전회사협력본부 새창 열림">발전회사협력본부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.khnp.co.kr" target="_blank" title="한국수력원자력㈜ 새창 열림">한국수력원자력㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kdn.com" target="_blank" title="한전KDN㈜ 새창 열림">한전KDN㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.koenergy.kr" target="_blank" title="한국남동발전㈜ 새창 열림">한국남동발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepco-enc.com" target="_blank" title="한국전력기술㈜ 새창 열림">한국전력기술㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.iwest.co.kr" target="_blank" title="한국서부발전㈜ 새창 열림">한국서부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kps.co.kr" target="_blank" title="한전KPS㈜ 새창 열림">한전KPS㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kospo.co.kr" target="_blank" title="한국남부발전㈜ 새창 열림">한국남부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.knfc.co.kr" target="_blank" title="한전원자력연료㈜ 새창 열림">한전원자력연료㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.ewp.co.kr" target="_blank" title="한국동서발전㈜ 새창 열림">한국동서발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepid.co.kr" target="_blank" title="한전산업개발㈜ 새창 열림">한전산업개발㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kpx.or.kr" target="_blank" title="한국전력거래소 새창 열림">한국전력거래소</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>국내유관기관</dt>
+                                    <dd>
+                                        <a href="http://www.motie.go.kr" target="_blank" title="산업통상자원부 새창 열림">산업통상자원부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.acrc.go.kr" target="_blank" title="국민권익위원회 새창 열림">국민권익위원회</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.korea.go.kr" target="_blank" title="대한민국정부포털 새창 열림">대한민국정부포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.gov30.go.kr" target="_blank" title="정부3.0 새창 열림">정부3.0</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.data.go.kr" target="_blank" title="공공데이터포털 새창 열림">공공데이터포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.alio.go.kr" target="_blank" title="ALIO 새창 열림">ALIO</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.law.go.kr" target="_blank" title="법령정보센터 새창 열림">법령정보센터</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.moi.go.kr/frt/sub/a05/gwanboMain/screen.do" target="_blank"
+                                            title="대한민국전자관보 새창 열림">대한민국전자관보</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <button type="button" class="close_btn" title="관련(공공기관)사이트 닫기">닫기</button>
+                        </div>
+                        <!-- //관련(공공기관)사이트 -->
+                    </li>
+                    <li class="lang"><button type="button" title="언어선택 열기">Language</button>
+                        <ul>
+                            <li><span class="on">KOREA</span></li>
+                            <li><a href="eng/index.html" target="_blank" title="영문페이지 새창 열림">ENGLISH</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_zone"><button type="button" title="알립니다 팝업 열기">알립니다!</button>
+                        <div class="popup_list pop_wrap">
+                            <div class="pop_slide inner">
+                                <p class="title">알립니다!</p>
+                                <ul>
+                                    <li><a href="#n"><img src="images/common/pop_banner01.jpg" alt="2023년 4직급 신입직원 채용제도 개선사항 자세히 보기"></a></li>
+                                    <li><a href="#n"><img src="images/common/pop_banner02.jpg" alt="전사·순직 군인 2048명의 유가족을 찾습니다! ☎044-200-7374/042-550-7387 유가족 찾기 바로가기 국민권익위원회 대한민국 국방부 국가보훈처"></a></li>
+                                    <li><a href="#n"><img src="images/common/pop_banner03.jpg" alt="기획재정부 신속한 위기대응 및 경제 살리기 코로나19 경제지원 비상경제회의 위기대응의 중심이 되어 최선을 다하겠습니다."></a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- // .family_pop(전력사이트 + 언어 + 팝업) -->
+            </div>
+        </div>
+        <div class="header_btm wrap">
+            <h1 class="logo"><a href="index.html">KOMIPO 한국중부발전</a></h1>
+            <button type="button" class="open_btn nav_open" data-name="MENU" title="메뉴열기">
+                <span class="line line01"></span>
+                <span class="line line02"></span>
+                <span class="line line03"></span>
+            </button>
+            <!-- gnbmenu -->
+            <nav class="gnbmenu" id="gnbmenu">
+                <ul class="depth1">
+                    <li class="menu01 more_depth"><a href="contents/con01/con01_01/FN011102.html" data-name="소통채널">소통채널</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">소통채널</p>
+                                <span>한국중부발전이 공유하는 정보는 <br>국민 여러분과의 소통 에너지입니다.</span>
+                                <a href="http://www.alio.go.kr/" target="_blank" title="알리오 홈페이지 새창 열림" class="quick_menu link01">
+                                    <dl>
+                                        <dt>알리오(ALIO)</dt>
+                                        <dd>경영에 대한 중요한 정보를 국민에게 제공하고 있습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="contents/con01/con01_07/FN011702.html" class="quick_menu link02">
+                                    <dl>
+                                        <dt>신문고</dt>
+                                        <dd>갑질 및 민원사항, 칭찬 사례 등 여러분의 의견을 듣겠습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="contents/con01/con01_09/FN012001.html" class="quick_menu link03">
+                                    <dl>
+                                        <dt>인재채용</dt>
+                                        <dd>한국중부발전의 가장 큰 자원은 사람입니다.</dd>
+                                    </dl>
+                                </a> 
+                                <a href="contents/con01/con01_01/FN010603.html" class="quick_menu link14">
+                                    <dl>
+                                        <dt>주요사업 및 경영성과</dt>
+                                        <dd>주요 경영정보를 대국민에게 제공하고 있습니다.</dd>
+                                    </dl>
+                                </a> 
+                            </div>
+                            <ul>
+                                <li class="more"><p>사업실명제</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_01/FN011102.html"><span>대상사업</span></a></li>
+                                        <li><a href="contents/con01/con01_01/FN011101.html"><span>실명제목록</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>정보공개</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_02/FN011201.html"><span>정보공개제도 안내</span></a></li>
+                                        <li><a href="contents/con01/con01_02/FN011202.html"><span>정보공개 처리기준</span></a></li>
+                                        <li><a href="contents/con01/con01_02/FN011206.html"><span>정보공개 담당자</span></a></li>
+                                        <li><a href="contents/con01/con01_02/FN011205.html"><span>과거 정보목록</span></a></li>
+                                        <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank" title="새창 열림"><span>정보공개 청구</span></a></li>
+                                        <li><a href="contents/con01/con01_02/FN011207.html"><span>비공개정보 세부기준</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>사전정보공표</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_03/FN011301.html"><span>사전정보공표</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>공공데이터</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://api.komipo.co.kr/" target="_blank" title="새창 열림"><span>공공데이터</span></a></li>
+                                        <li><a href="contents/con01/con01_03/FN011402.html"><span>아이디어 공모</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>경영공시 개요</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_04/FN010501.html"><span>경영공시 안내</span></a></li>
+                                        <li><a href="contents/con01/con01_04/FN010502.html"><span>공시기준</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>경영공시</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_10/FN010608.html"><span>경영공시</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>행정정보공표</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_05/FN010712.html"><span>업무추진비</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010703.html"><span>사규</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010704.html"><span>사규 제·개정 예고</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010705.html"><span>계약정보공개</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN01070601.html"><span>해외출장 및 연수보고</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010708.html"><span>상품권 관리내역</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010709.html"><span>인건비 예산과 집행현황</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010710.html"><span>복지시설현황</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010711.html"><span>친환경상품 구매실적/이행계획</span></a></li>
+                                        <li><a href="contents/con01/con01_05/FN010713.html"><span>협력기업 하도급 현황</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>반부패청렴센터</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_06/FN010901.html"><span>내부감사결과</span></a></li>
+                                        <li><a href="contents/con01/con01_06/FN010902.html"><span>외부감사결과</span></a></li>
+                                        <li><a href="contents/con01/con01_06/FN01090301.html"><span>부패관련 징계 현황 공개</span></a></li>
+                                        <li><a href="contents/con01/con01_06/FN010906.html"><span>공무수행사인 현황</span></a></li>
+                                        <li><a href="contents/con01/con01_06/FN010905.html"><span>청렴도측정 및 부패방지 시책평가 결과</span></a></li>
+                                        <li><a href="contents/con01/con01_06/FN01090302.html"><span>청탁금지법 상담내역</span></a></li>
+                                        <li><a href="contents/con01/con01_06/FN010908.html"><span>청렴 365 자료실</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>신고채널</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_07/FN011701.html"><span>레드휘슬(익명신고)</span></a></li>
+                                        <li><a href="contents/con01/con01_07/FN011702.html"><span>신문고(실명신고)</span></a></li>
+                                        <li><a href="contents/con01/con01_07/FN011703.html"><span>공익신고</span></a></li>
+                                        <li><a href="contents/con01/con01_07/FN011704.html"><span>이해충돌신고</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>프라이버시센터</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_07/FN011801.html"><span>프라이버시센터 소개</span></a></li>
+                                        <li><a href="contents/con01/con01_07/FN011802.html"><span>개인정보 보호 정책</span></a></li>
+                                        <li><a href="contents/con01/con01_07/FN01180301.html"><span>개인정보 보호 활동</span></a></li>
+                                        <li><a href="contents/con01/con01_07/FN011804.html"><span>개인정보 처리요구</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more line2"><p>열린혁신 아이디어 발전소</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_08/FN011901.html"><span>열린혁신 아이디어 발전소</span></a></li>
+                                        <li><a href="contents/con01/con01_08/FN011902.html"><span>규제혁신 아이디어제안</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>인재채용</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con01/con01_09/FN012001.html"><span>인사제도 안내</span></a></li>
+                                        <li><a href="contents/con01/con01_09/FN012002.html"><span>지원가이드</span></a></li>
+                                        <li><a href="contents/con01/con01_09/FN012003.html"><span>채용문의</span></a></li>
+                                        <li><a href="contents/con01/con01_09/FN012004.html"><span>채용공고</span></a></li>
+                                        <li><a href="contents/con01/con01_09/FN012005.html"><span>친인척 채용인원 공개</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu02 more_depth"><a href="contents/con02/con02_01/FN020101.html" data-name="회사소개">회사소개</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">회사소개</p>
+                                <span>꿈을 향한 아름다운 변화, <br>한국중부발전이 이어갑니다.</span>
+                                <a href="contents/con02/con02_06/FN021101.html" class="quick_menu link04">
+                                    <dl>
+                                        <dt>발전소 소개</dt>
+                                        <dd>고품질의 안정적인 전력을 공급 하고 있습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="contents/con02/con02_08/FN021401.html" class="quick_menu link05">
+                                    <dl>
+                                        <dt>해외발전사업 개척현황</dt>
+                                        <dd>기술력으로 해외시장을 개척해 나가고 있습니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="more"><p>회사개요</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_01/FN020101.html"><span>소개</span></a></li>
+                                        <li><a href="contents/con02/con02_01/FN020102.html"><span>연혁</span></a></li>
+                                        <li><a href="contents/con02/con02_01/FN020103.html"><span>조직도</span></a></li>
+                                        <li><a href="contents/con02/con02_01/FN02010701.html"><span>분장업무</span></a></li>
+                                        <li><a href="contents/con02/con02_01/FN020104.html"><span>정관</span></a></li>
+                                        <li><a href="contents/con02/con02_01/FN020108.html"><span>CI/캐릭터</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>CEO</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_02/FN020301.html"><span>CEO</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>이사회</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_03/FN021701.html"><span>경영진소개</span></a></li>
+                                        <li><a href="contents/con02/con02_03/FN02170201.html"><span>개최현황</span></a></li>
+                                        <li><a href="contents/con02/con02_03/FN02170301.html"><span>제도소개</span></a></li>
+                                        <li><a href="contents/con02/con02_03/FN021706.html"><span>임원추천위원회</span></a></li>
+                                        <li><a href="contents/con02/con02_03/FN021707.html"><span>이사회 경영 제언 관리</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>2040비전</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_04/FN020501.html"><span>KOMIPO 경영전략체계</span></a></li>
+                                        <li><a href="contents/con02/con02_04/FN020502.html"><span>KOMIPO 4 Way</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>투자정보</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_05/FN020607.html"><span>재무현황</span></a></li>
+                                        <li><a href="contents/con02/con02_05/FN020605.html"><span>재무제표</span></a></li>
+                                        <li><a href="contents/con02/con02_05/FN020604.html"><span>외부감사보고서</span></a></li>
+                                        <li><a href="contents/con02/con02_05/FN020606.html"><span>결산공고</span></a></li>
+                                        <li><a href="contents/con02/con02_05/FN02060201.html"><span>IR자료실</span></a></li>
+                                        <li><a href="contents/con02/con02_05/FN020603.html"><span>신용등급</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>사업장소개</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_06/FN021101.html"><span>발전소소개</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021102.html"><span>보령발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021103.html"><span>인천발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021104.html"><span>서울발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021105.html"><span>신서천발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021106.html"><span>제주발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021107.html"><span>세종발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021108.html"><span>신보령발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021109.html"><span>발전설비현황</span></a></li>
+                                        <li><a href="contents/con02/con02_06/FN021110.html"><span>발전실적 및 계획</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>국내사업</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_07/FN021301.html"><span>국내사업 소개</span></a></li>
+                                        <li><a href="contents/con02/con02_07/FN021302.html"><span>화력발전소 운영</span></a></li>
+                                        <li><a href="contents/con02/con02_07/FN021303.html"><span>신재생에너지</span></a></li>
+                                        <li><a href="contents/con02/con02_07/FN021304.html"><span>발전소건설</span></a></li>
+                                        <li><a href="contents/con02/con02_07/FN021305.html"><span>SPC사업</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>해외사업</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_08/FN021401.html"><span>해외사업개요</span></a></li>
+                                        <li><a href="contents/con02/con02_08/FN021402.html"><span>해외발전사업</span></a></li>
+                                        <li><a href="contents/con02/con02_08/FN021403.html"><span>해외신재생사업</span></a></li>
+                                        <li><a href="contents/con02/con02_08/FN021404.html"><span>기술자문분야</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>에너지신산업</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_09/FN021501.html"><span>에너지신산업</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>부서별 전화번호</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_10/FN021601.html"><span>본사</span></a></li>
+                                        <li><a href="contents/con02/con02_10/FN021601.html"><span>사업소</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>찾아오시는 길</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con02/con02_11/FN020909.html"><span>본사</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020901.html"><span>보령발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020902.html"><span>인천발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020903.html"><span>서울발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020904.html"><span>신서천발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020905.html"><span>제주발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020906.html"><span>원주그린열병합발전소</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020907.html"><span>세종발전본부</span></a></li>
+                                        <li><a href="contents/con02/con02_11/FN020908.html"><span>신보령발전본부</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu03 more_depth"><a href="contents/con03/con03_02/FN090101.html" data-name="기업지원">기업지원</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">기업지원</p>
+                                <span>기업생태계 조성과 발전을 위해 상생의 <br>마음으로 중소기업을 지원하고 있습니다.</span>
+                                <a href="https://www.komipo.co.kr/KomipoWwg/" target="_blank" title="중소기업 동반성장 페이지 새창 열림" class="quick_menu link06">
+                                    <dl>
+                                        <dt>중소기업 동반성장</dt>
+                                        <dd>중소기업 동반성장 홈페이지로 이동하실 수 있습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="http://srm.kepco.net" target="_blank" title="입찰공고 페이지 새창 열림" class="quick_menu link07">
+                                    <dl>
+                                        <dt>입찰공고</dt>
+                                        <dd>한국중부발전에서 사용하는 입찰시스템 이용 안내입니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="contents/con03/con03_03/FN090901.html" class="quick_menu link08">
+                                    <dl>
+                                        <dt>규제혁신센터</dt>
+                                        <dd>한국중부발전에서 운영하는 규제혁신센터 소개입니다.</dd>
+                                    </dl>
+                                </a> 
+                            </div>
+                            <ul>
+                                <!-- <li><a href="contents/con03/con03_01/FN091001.html">품질경영</a></li> -->
+                                <li class="more"><p>동반성장오픈플랫폼</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://www.komipo.co.kr/KomipoWwg/cmsmain.do?scode=S01" target="_blank" title="새창 열림"><span>동반성장오픈플랫폼</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>입찰정보</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con03/con03_02/FN090101.html"><span>입찰안내</span></a></li>
+                                        <li><a href="https://srm.kepco.net/index.do" target="_blank" title="새창 열림"><span>입찰공고ㆍ일반계약 정보공개</span></a></li>
+                                        <li><a href="contents/con03/con03_02/FN09010401.html"><span>수의계약 정보공개</span></a></li>
+                                        <li><a href="contents/con03/con03_02/FN090105.html"><span>입찰서식 자료실</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>선금ㆍ실적증명시스템</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://crm.komipo.co.kr:7441/" target="_blank" title="새창 열림"><span>선금ㆍ실적증명시스템</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more line2"><p>기자재 공급 유자격 통합관리</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://easyu.kospo.co.kr/easyuUser/user/login" target="_blank" title="새창 열림"><span>기자재 공급 유자격 통합관리</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>정비적격업체 통합관리</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="새창 열림"><span>정비적격업체 통합관리</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>RPSㆍREC 관리시스템</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://newrec.komipo.co.kr/service/main" target="_blank" title="새창 열림"><span>RPSㆍREC 관리시스템</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>품질검사 협업시스템</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://crm.komipo.co.kr:4758/CoWorkInt/cmsmain.do?scode=S01&pcode=loginF" target="_blank" title="새창 열림"><span>품질검사 협업시스템</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>규제혁신센터</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con03/con03_03/FN090901.html"><span>규제혁신센터 소개</span></a></li>
+                                        <li><a href="contents/con03/con03_03/FN090902.html"><span>기업 규제애로 신고</span></a></li>
+                                        <li><a href="contents/con03/con03_03/FN090905.html"><span>규제입증요청</span></a></li>
+                                        <li><a href="contents/con03/con03_03/FN090903.html"><span>기업민원 보호ㆍ서비스 헌장</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more line2"><p>온실가스 외부감축 관리시스템</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://cemp.komipo.co.kr:6010/main.do" target="_blank" title="새창 열림"><span>온실가스 외부감축 관리시스템</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>신기술거래소</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://crm.komipo.co.kr:5010/cmsmain.do?scode=S01&pcode=loginF" target="_blank" title="새창 열림"><span>신기술거래소</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu04 more_depth"><a href="contents/con04/con04_01/FN100101.html" data-name="고객지원">고객지원</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">고객지원</p>
+                                <span>더 좋은 미래를 열어가는 중부인은 다양한 <br>모습으로 고객을 지원하고 있습니다.</span>
+                                <a href="contents/con04/con04_04/FN100402.html" class="quick_menu link09">
+                                    <dl>
+                                        <dt>발전소 견학신청</dt>
+                                        <dd>전기가 어떤 과정을 거쳐 생산 되는지 궁금하셨죠?</dd>
+                                    </dl>
+                                </a>
+                                <a href="https://www.komipo.co.kr/career/careerMain.do" target="_blank" title="퇴직자 경력증명서 발급시스템 페이지 새창 열림" class="quick_menu link10">
+                                    <dl>
+                                        <dt>퇴직자 경력증명서 발급시스템</dt>
+                                        <dd>중부발전 퇴직자를 위한 경력증명서 온라인 신청ㆍ발급 서비스 입니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="more"><p>공지사항</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_01/FN100101.html"><span>공지사항</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>출입신청</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://visit.komipo.co.kr:8070/" target="_blank" title="새창 열림"><span>출입신청</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>보령에너지월드</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_02/FN100305.html"><span>에너지월드 소개</span></a></li>
+                                        <li><a href="contents/con04/con04_02/FN100306.html"><span>사이버체험관</span></a></li>
+                                        <li><a href="contents/con04/con04_02/FN100303.html"><span>에너지월드 FAQ</span></a></li>
+                                        <li><a href="contents/con04/con04_02/FN100304.html"><span>찾아오시는 길</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>서울 코미포 에너지움</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_03/FN101501.html"><span>KOMIPO ENERGEUM 소개</span></a></li>
+                                        <li><a href="contents/con04/con04_03/FN101503.html"><span>찾아오시는 길</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>발전소 견학</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_04/FN100401.html"><span>견학안내</span></a></li>
+                                        <li><a href="contents/con04/con04_04/FN100402.html"><span>견학신청</span></a></li>
+                                        <li><a href="contents/con04/con04_04/FN100403.html"><span>예약현황</span></a></li>
+                                        <li><a href="contents/con04/con04_04/FN100404.html"><span>견학도움자료</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>고객문의</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_05/FN100802.html"><span>Q&A</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>정규직 전환 알림방</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_06/FN100904.html"><span>정규직 전환 알림방</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>시설물 이용신청</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con04/con04_06/FN101301.html"><span>이용안내</span></a></li>
+                                        <li><a href="contents/con04/con04_06/FN101302.html"><span>이용신청</span></a></li>
+                                        <li><a href="#n"><span>예약현황</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu05"><a href="contents/esg/index.html" target="_blank" title="새창 열림" data-name="ESG경영">ESG경영</a></li>
+                    <li class="menu06 more_depth"><a href="contents/con05/con05_01/FN120101.html" data-name="기업홍보">기업홍보</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">기업홍보</p>
+                                <span>고객과의 진정한 소통을 통한 <br>열린경영을 실현하겠습니다.</span>
+                                <a href="contents/con05/con05_04/FN120403.html" class="quick_menu link11">
+                                    <dl>
+                                        <dt>KOMIPO 영상뉴스</dt>
+                                        <dd>눈부신 경제성장의 핵심동력인 KOMIPO 전력산업 뉴스입니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="contents/con05/con05_02/FN120203.html" class="quick_menu link12">
+                                    <dl>
+                                        <dt>지역 농ㆍ수ㆍ축산물 코너</dt>
+                                        <dd>보령의 다양한 농ㆍ수ㆍ축산물을 소개합니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="contents/con05/con05_07/FN120901.html" class="quick_menu link13">
+                                    <dl>
+                                        <dt>비대면 문화예술제</dt>
+                                        <dd>지역사회 문화예술인들과 함께하는 한국중부발전 비대면 문화예술제</dd>
+                                    </dl>
+                                </a> 
+                            </div>
+                            <ul>
+                                <li class="more"><p>보도자료</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_01/FN120101.html"><span>보도자료</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>상생소식</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_02/FN120203.html"><span>지역농수축산물 코너</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>SNS</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_03/FN120301.html"><span>SNS</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>홍보영상</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_04/FN120402.html"><span>홍보영상</span></a></li>
+                                        <li><a href="contents/con05/con05_04/FN120403.html"><span>KOMIPO 영상뉴스</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>기업광고</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_01/FN120501.html"><span>이미지광고</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>사업우수사례</p>
+                                    <ul class="depth3">
+                                        <li><a href="https://www.komipo.co.kr/popup/20220303/index.html#page=1" target="_blank" title="새창 열림"><span>사업우수사례</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>사보</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_06/FN120701.html"><span>사보PDF(1호~현재)</span></a></li>
+                                        <li><a href="http://komipo-webzine.co.kr/page/vol19/index.html" target="_blank" title="새창 열림"><span>사보웹진(102호~현재)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>비대면 문화예술제</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_07/FN120901.html"><span>비대면 문화예술제</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>온라인교육</p>
+                                    <ul class="depth3">
+                                        <li><a href="contents/con05/con05_08/FN121001.html"><span>온라인교육</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="more"><p>한국중부발전 20년사</p>
+                                    <ul class="depth3">
+                                        <li><a href="http://komipohis.co.kr/index.html" target="_blank" title="새창 열림"><span>한국중부발전 20년사</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <div class="nav_bg">
+                <div class="wrap">
+                    <p class="title">KOMIPO<br><strong>한국중부발전</strong></p>
+                    <p class="text">한국중부발전</p>
+                </div>
+            </div> -->
+            <!-- //gnbmenu -->
+            <!-- util_Box -->
+            <div class="util_Box">
+                <ul>
+                    <li class="hd_search">
+                        <label for="searchtext">
+                            <input type="text" id="searchtext" placeholder="검색어를 입력해 주세요">
+                        </label>
+                        <button type="button" onclick="location.href='contents/con06/con06_01/search.html' " class="top_search_btn">검색하기</button>
+                    </li>
+                    <li><button type="button" onclick="location.href='contents/con06/con06_01/sitemap.html' " class="util_sitemap">사이트맵 열기</button></li>
+                </ul>
+                <div class="top_searchBox">
+                    <div class="inner">
+                        <div class="search_wrap">
+                            <label for="searchtext2">
+                                <input type="text" id="searchtext2" placeholder="검색어를 입력해 주세요">
+                            </label>
+                            <button type="button" onclick="location.href='contents/con06/con06_01/search.html' " class="top_search_btn">검색하기</button>
+                        </div>
+                        <dl>
+                            <dt>ㆍ 인기 검색어</dt>
+                            <dd><a href="#n">윤준석</a></dd>
+                            <dd><a href="#n">대기배출사업장 청정연료전황 지원사업</a></dd>
+                            <dd><a href="#n">메탄올</a></dd>
+                            <dd><a href="#n">지역할당</a></dd>
+                        </dl>
+                    </div>
+                    <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                </div>
+            </div>
+            <!-- //util_Box -->
+        </div>
+        <div class="shadow2"></div>
+    </header>
+    <div class="shadow"></div>
+    <div class="shadow3"></div>
+    <!-- //header -->
+
+    <!-- main -->
+    <main id="content">
+        <!-- top_cts -->
+        <div class="top_cts">
+            <div class="cts_inner">
+                <!-- visual_banner -->
+                <section class="visual_wrap">
+                    <h3 class="hide">메인 비주얼</h3>
+                    <div class="visual_banner">
+                        <ul>
+                            <li><a href="contents/con02/con02_01/FN020101.html"><img src="images/main/banner01.jpg" alt="Green Energy Leader Creating a Clean Tommorrow 친환경으로 미래를 여는 에너지 전문기업"></a></li>
+                            <li><a href="https://komipo.ovice.in/lobby/guest" target="_blank"><img src="images/main/banner03.jpg" alt="KOMI Planet 가상홍보관 중부발전 최초상륙"></a></li>
+                            <li><a href="https://komipo.saramin.co.kr/service/komipo/2558/applicant/apply/index.asp" target="_blank"><img src="images/main/banner02.jpg" alt="We Invite You, 열정 넘치는 여러분을 중부가족으로 모십니다"></a></li>
+                        </ul>
+                        <div class="control">
+                            <button type="button" class="ctr_btn pause">일시정지</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- //visual_banner -->
+                <!-- 퀵메뉴 -->
+                <section class="main_quickmenu">
+                    <h3>삶의 가치를 높이는 클린 에너지 리더, <strong>한국중부발전</strong></h3>
+                    <ul>
+                        <li class="list01"><a href="http://komipohis.co.kr/index.html" target="_blank" title="새창 열림"><span>중부발전 20년사</span></a></li>
+                        <li class="list02"><a href="https://www.komipo.co.kr/KomipoWwg/" target="_blank" title="새창 열림"><span>동반성장</span></a></li>
+                        <li class="list03"><a href="contents/esg/esg_03/ESG030201.html" target="_blank" title="새창 열림"><span>사회공헌</span></a></li>
+                        <li class="list04"><a href="contents/con01/con01_09/FN012004.html"><span>채용공고</span></a></li>
+                        <li class="list05"><a href="contents/con04/con04_02/FN100305.html"><span>보령 에너지월드</span></a></li>
+                        <li class="list06"><a href="contents/con04/con04_03/FN101501.html"><span>서울 에너지움</span></a></li>
+                    </ul>
+                </section>
+                <!-- //퀵메뉴 -->
+            </div>
+            <!-- 소식 게시판(전체소식, 공지사항, 보도자료, 상생소식) -->
+            <!-- 전체소식: 4개(공지사항+보도자료 최신게시글), 공지사항: 4개(최신글), 보도자료: 4개(최신글), 상생소식: 전체 데이터 넣어주세요 -->
+            <section class="board_wrap">
+                <div class="cts_inner">
+                    <h3 class="hide">소식 게시판(전체소식, 공지사항, 보도자료, 상생소식)</h3>
+            
+                    <!-- 모바일시 샐렉트 박스 -->
+                    <label for="board_mobile"></label>
+                    <select class="board_mobile" id="board_mobile">
+                        <option value="fullnews" data-name="전체소식">전체소식</option>
+                        <option value="notice" data-name="공지사항">공지사항</option>
+                        <option value="press" data-name="보도자료">보도자료</option>
+                        <option value="winwinnews" data-name="상생소식">상생소식</option>
+                    </select>
+                    <!-- //모바일시 샐렉트 박스 -->
+            
+                    <!-- 공지사항: .name01, 보도자료: .name02, 상생소식: .name03 -->
+                    <ul class="tabM board">
+                        <li data-tab="fullnews" class="on">
+                            <a href="#n">전체소식</a>
+                            <div id="fullnews" class="tab_content current">
+                                <div class="tab_slide">
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <p class="name name01">공지사항</p>
+                                            <p class="ellipsis1">한국중부발전 정부 R&D 과제 참여기관 공모</p>
+                                            <p class="ellipsis2 text">2023년도 1차 에너지기술개발사업 신규지원대상 연구개발과제 공고* 관련 참여기관 공모(주관기관 : 한국중부발전)</p>
+                                            <p class="date">2023.02.06</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con05/con05_01/FN120101_view.html">
+                                            <span class="name name02">보도자료</span>
+                                            <p class="ellipsis1">발전소 소각재 및 CO2활용 광물탄산화 기술개발 협약</p>
+                                            <p class="ellipsis2 text">중부발전, 발전소 소각재 및 CO2활용 광물탄산화 기술개발 협약</p>
+                                            <p class="date">2023.02.02</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <span class="name name01">공지사항</span>
+                                            <p class="ellipsis1">건설공사 안전점검 수행기관 지정공고(02/07마감)</p>
+                                            <p class="ellipsis2 text">공사명 : 보령발전본부 SLP 취수로 교량 조성공사<br>위 공사에 대한 건설공사 안전점검 수행기관 지정공고를 붙임과 같이 게시합니다.</p>
+                                            <p class="date">2023.01.31</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <span class="name name01">공지사항</span>
+                                            <p class="ellipsis1">건설공사 안전점검 수행기관 지정공고(정정) (1/31 마감)</p>
+                                            <p class="ellipsis2 text"> 공사명 : 공업용수관 보수를 위한 흙막이가시설 설치<br>위 공사에 대한 건설공사 안전점검 수행기관 지정공고(정정)를 붙임과 같이 게시합니다.</p>
+                                            <p class="date">2023.01.25</p>
+                                        </a>
+                                    </div>                                  
+                                </div>
+            
+                                <div class="control">
+                                    <button type="button" class="ctr_btn pause">일시정지</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-tab="notice">
+                            <a href="#n">공지사항</a>
+                            <div id="notice" class="tab_content">
+                                <div class="tab_slide">
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <p class="name name01">공지사항</p>
+                                            <p class="ellipsis1">한국중부발전 정부 R&D 과제 참여기관 공모</p>
+                                            <p class="ellipsis2 text">2023년도 1차 에너지기술개발사업 신규지원대상 연구개발과제 공고* 관련 참여기관 공모(주관기관 : 한국중부발전)</p>
+                                            <p class="date">2023.02.06</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <span class="name name01">공지사항</span>
+                                            <p class="ellipsis1">건설공사 안전점검 수행기관 지정공고(02/07마감)</p>
+                                            <p class="ellipsis2 text">공사명 : 보령발전본부 SLP 취수로 교량 조성공사<br>위 공사에 대한 건설공사 안전점검 수행기관 지정공고를 붙임과 같이 게시합니다.</p>
+                                            <p class="date">2023.01.31</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <span class="name name01">공지사항</span>
+                                            <p class="ellipsis1">건설공사 안전점검 수행기관 지정공고(정정) (1/31 마감)</p>
+                                            <p class="ellipsis2 text"> 공사명 : 공업용수관 보수를 위한 흙막이가시설 설치<br>위 공사에 대한 건설공사 안전점검 수행기관 지정공고(정정)를 붙임과 같이 게시합니다.</p>
+                                            <p class="date">2023.01.25</p>
+                                        </a>
+                                    </div>  
+                                    <div class="board_list">
+                                        <a href="contents/con04/con04_01/FN100101_view.html">
+                                            <span class="name name01">공지사항</span>
+                                            <p class="ellipsis1">청렴 취약시기(설 명절기간 전후) 경각심 고취를 위한 청렴 예보 관심단계 발령</p>
+                                            <p class="ellipsis2 text">2023년1월19일~1월27일<br>공기업 청렴사회협의회 제안</p>
+                                            <p class="date">2023.01.19</p>
+                                        </a>
+                                    </div>  
+                                </div>
+            
+                                <div class="control">
+                                    <button type="button" class="ctr_btn pause">일시정지</button>
+                                </div>
+                                <a href="contents/con04/con04_01/FN100101.html" class="more">공지사항 더보기</a>
+                            </div>
+                        </li>
+                        <li data-tab="press">
+                            <a href="#n">보도자료</a>
+                            <div id="press" class="tab_content">
+                                <div class="tab_slide">
+                                    <div class="board_list">
+                                        <a href="contents/con05/con05_01/FN120101_view.html">
+                                            <span class="name name02">보도자료</span>
+                                            <p class="ellipsis1">발전소 소각재 및 CO2활용 광물탄산화 기술개발 협약</p>
+                                            <p class="ellipsis2 text">중부발전, 발전소 소각재 및 CO2활용 광물탄산화 기술개발 협약</p>
+                                            <p class="date">2023.02.02</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con05/con05_01/FN120101_view.html">
+                                            <span class="name name02">보도자료</span>
+                                            <p class="ellipsis1">WFUNA(유엔협회세계연맹), WFUNA(유엔협회세계연맹),</p>
+                                            <p class="ellipsis2 text">한국중부발전, WFUNA(유엔협회세계연맹), 도시문제해결 창업대회: Citypreneurs 공동추진 업무협약 체결</p>
+                                            <p class="date">2023.01.23</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con05/con05_01/FN120101_view.html">
+                                            <span class="name name02">보도자료</span>
+                                            <p class="ellipsis1">노·사·협력기업이 함께하는 안전다짐 행사 개최</p>
+                                            <p class="ellipsis2 text">한국중부발전, 노·사·협력기업이 함께하는 안전다짐 행사 개최</p>
+                                            <p class="date">2023.01.17</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="contents/con05/con05_01/FN120101_view.html">
+                                            <span class="name name02">보도자료</span>
+                                            <p class="ellipsis1">전사적 ESG경영 실천을 위한 설 명절 행복나눔 사회공헌활동 시행</p>
+                                            <p class="ellipsis2 text">한국중부발전, 전사적 ESG경영 실천을 위한 설 명절 행복나눔 사회공헌활동 시행</p>
+                                            <p class="date">2023.01.17</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <button type="button" class="ctr_btn pause">일시정지</button>
+                                </div>
+                                <a href="contents/con05/con05_01/FN120101.html" class="more">보도자료 더보기</a>
+                            </div>
+                        </li>
+                        <li data-tab="winwinnews">
+                            <a href="#n">상생소식</a>
+                            <div id="winwinnews" class="tab_content">
+                                <div class="tab_slide">
+                                    <div class="board_list">
+                                        <a href="http://www.brcn.go.kr/farm.do" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">보령시 농업 기술인센터</p>
+                                            <p class="ellipsis2 text">천혜의 환경과 인정이 넘치는 곳! 보령시 농업기술센터입니다.</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="https://www.nurungz.com/" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">보령 누룽지과자</p>
+                                            <p class="ellipsis2 text">밥을 하고, 반죽 해서 다시 하나씩 구워낸 수제누룽지과자!</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="http://www.gillseong.com/" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">길성 토굴 새우젓</p>
+                                            <p class="ellipsis2 text">청정한 바다의 맛을 그대로 고객님께 전해드립니다.</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="https://moyanggim.modoo.at/" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">대천 모양맛김</p>
+                                            <p class="ellipsis2 text">재미있고 다양한 모양의 맛김을 생산합니다.</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="https://blog.naver.com/NBlogTop.naver?isHttpsRedirect=true&blogId=parkhohh2" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">스테비아 코리아</p>
+                                            <p class="ellipsis2 text">보령 미산면 봉성리 농촌체험마을. 비누, 양초, 도토리묵, 두부 만들기 체험!</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="https://blog.naver.com/spacerabb" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">발효정원</p>
+                                            <p class="ellipsis2 text">맛있는 장이 익어가는 발효정원입니다. 된장, 간장, 고추장, 청국장, 식초, 조청</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="https://blog.naver.com/nh_tech" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">자연건강테크</p>
+                                            <p class="ellipsis2 text">실속을 가득담은 전통시장브랜드 보령아지매</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="https://smartstore.naver.com/todaysfarmer" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">서천마산협동조합</p>
+                                            <p class="ellipsis2 text">오늘의 파마(today`s famer) 충남 서천 마을 파머들의 농산물</p>
+                                        </a>
+                                    </div>
+                                    <div class="board_list">
+                                        <a href="http://www.xn--3e0b73jv9co4yqin.com/" target="_blank" title="새창 열림">
+                                            <span class="name name03">상생소식</span>
+                                            <p class="ellipsis1">한국도라지</p>
+                                            <p class="ellipsis2 text">생도라지를 직접 재배해서 생산한 안전하고 믿을 수 있는, 한국도라지</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <button type="button" class="ctr_btn pause">일시정지</button>
+                                </div>
+                                <a href="contents/con05/con05_02/FN120203.html" class="more">상생소식 더보기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- //소식 게시판 -->
+        </div>
+        <!-- //top_cts -->
+
+        <!-- mid_cts -->
+        <div class="mid_cts">
+            <div class="cts_inner">
+                <!-- 고객별 맞춤 컨텐츠 -->
+                <section class="customer_menu">
+                    <h3>고객별 맞춤 <strong>컨텐츠</strong></h3>
+                    
+                    <!-- 모바일시 샐렉트 박스 -->
+                    <label for="customer_mobile"></label>
+                    <select class="customer_mobile" id="customer_mobile">
+                        <option value="customer01" data-name="일반고객">일반고객</option>
+                        <option value="customer02" data-name="기업고객">기업고객</option>
+                        <option value="customer03" data-name="지역사회">지역사회</option>
+                        <option value="customer04" data-name="입사희망자">입사희망자</option>
+                        <option value="customer05" data-name="주주/투자자">입사희망자</option>
+                    </select>
+                    <!-- //모바일시 샐렉트 박스 -->
+
+                    <ul>
+                        <li data-tab="customer01" class="on">
+                            <a href="#n" class="menu_title">일반고객</a>
+                            <ul id="customer01" class="tab_content current">
+                                <li><a href="contents/con01/con01_02/FN011201.html" class="ico01"><span>정보공개</span></a></li>
+                                <li><a href="contents/con01/con01_03/FN011301.html" class="ico02"><span>사전정보공표</span></a></li>
+                                <li><a href="contents/con01/con01_10/FN010608.html" class="ico03"><span>경영공시</span></a></li>
+                                <li><a href="contents/con01/con01_06/FN010901.html" class="ico04"><span>반부패청렴센터</span></a></li>
+                                <li><a href="contents/con02/con02_01/FN020101.html" class="ico05"><span>회사개요</span></a></li>
+                                <li><a href="contents/con02/con02_06/FN021101.html" class="ico06"><span>사업장소개</span></a></li>
+                                <li><a href="contents/con02/con02_07/FN021301.html" class="ico07"><span>국내사업</span></a></li>
+                                <li><a href="contents/con02/con02_08/FN021401.html" class="ico08"><span>해외사업</span></a></li>
+                                <li><a href="contents/con02/con02_09/FN021501.html" class="ico09"><span>에너지신산업</span></a></li>
+                                <li><a href="contents/con04/con04_05/FN100802.html" class="ico10"><span>고객문의</span></a></li>
+                                <li><a href="contents/con05/con05_03/FN120301.html" class="ico11"><span>SNS</span></a></li>
+                                <li><a href="contents/con05/con05_01/FN120501.html" class="ico12"><span>기업광고</span></a></li>
+                                <li><a href="contents/con05/con05_08/FN121001.html" class="ico13"><span>온라인교육</span></a></li>
+                            </ul>
+                        </li>
+                        <li data-tab="customer02">
+                            <a href="#n" class="menu_title">기업고객</a>
+                            <ul id="customer02" class="tab_content">
+                                <li><a href="contents/con01/con01_02/FN011201.html" class="ico01"><span>정보공개</span></a></li>
+                                <li><a href="contents/con01/con01_10/FN010608.html" class="ico03"><span>경영공시</span></a></li>
+                                <li><a href="contents/con01/con01_06/FN010901.html" class="ico04"><span>반부패청렴센터</span></a></li>
+                                <li><a href="contents/con02/con02_01/FN020101.html" class="ico05"><span>회사개요</span></a></li>
+                                <li><a href="contents/con02/con02_06/FN021101.html" class="ico06"><span>사업장소개</span></a></li>
+                                <li><a href="contents/con02/con02_11/FN020909.html" class="ico14"><span>찾아오시는 길</span></a></li>
+                                <li><a href="https://www.komipo.co.kr/KomipoWwg/" target="_blank" title="새창 열림" class="ico15"><span>동반성장플랫폼</span></a></li>
+                                <li><a href="contents/con03/con03_02/FN090101.html" class="ico16"><span>입찰정보</span></a></li>
+                                <li><a href="https://crm.komipo.co.kr:7441/" target="_blank" title="새창 열림" class="ico17"><span>선금ㆍ실적증명</span></a></li>
+                                <li><a href="https://newrec.komipo.co.kr/service/main" target="_blank" title="새창 열림" class="ico18"><span>RPSㆍREC</span></a></li>
+                                <li><a href="contents/con05/con05_01/FN120101.html" class="ico19"><span>보도자료</span></a></li>
+                                <li><a href="contents/con05/con05_04/FN120402.html" class="ico20"><span>홍보영상</span></a></li>
+                                <li><a href="contents/con05/con05_08/FN121001.html" class="ico13"><span>온라인교육</span></a></li>
+                            </ul>
+                        </li>
+                        <li data-tab="customer03">
+                            <a href="#n" class="menu_title">지역사회</a>
+                            <ul id="customer03" class="tab_content">
+                                <li><a href="contents/con01/con01_02/FN011201.html" class="ico01"><span>정보공개</span></a></li>
+                                <li><a href="contents/con01/con01_10/FN010608.html" class="ico03"><span>경영공시</span></a></li>
+                                <li><a href="contents/con01/con01_07/FN011701.html" class="ico21"><span>신고채널</span></a></li>
+                                <li><a href="contents/con02/con02_01/FN020101.html" class="ico05"><span>회사개요</span></a></li>
+                                <li><a href="contents/con02/con02_06/FN021101.html" class="ico06"><span>사업장소개</span></a></li>
+                                <li><a href="contents/con02/con02_07/FN021301.html" class="ico07"><span>국내사업</span></a></li>
+                                <li><a href="contents/con02/con02_09/FN021501.html" class="ico09"><span>에너지신산업</span></a></li>
+                                <li><a href="contents/con02/con02_11/FN020909.html" class="ico14"><span>찾아오시는 길</span></a></li>
+                                <li><a href="contents/con04/con04_02/FN100305.html" class="ico22"><span>보령에너지월드</span></a></li>
+                                <li><a href="contents/con04/con04_03/FN101501.html" class="ico23"><span>서울코미포에너지</span></a></li>
+                                <li><a href="contents/con04/con04_04/FN100401.html" class="ico24"><span>발전소 견학</span></a></li>
+                                <li><a href="contents/con04/con04_05/FN100802.html" class="ico10"><span>고객문의</span></a></li>
+                                <li><a href="contents/con05/con05_02/FN120203.html" class="ico25"><span>상생소식</span></a></li>
+                            </ul>
+                        </li>
+                        <li data-tab="customer4">
+                            <a href="#n" class="menu_title">입사희망자</a>
+                            <ul id="customer04" class="tab_content">
+                                <li><a href="contents/con01/con01_02/FN011201.html" class="ico01"><span>정보공개</span></a></li>
+                                <li><a href="contents/con01/con01_10/FN010608.html" class="ico03"><span>경영공시</span></a></li>
+                                <li><a href="contents/con01/con01_09/FN012001.html" class="ico26"><span>인재채용</span></a></li>
+                                <li><a href="contents/con02/con02_01/FN020101.html" class="ico05"><span>회사개요</span></a></li>
+                                <li><a href="contents/con02/con02_04/FN020501.html" class="ico27"><span>2040비전</span></a></li>
+                                <li><a href="contents/con02/con02_06/FN021101.html" class="ico06"><span>사업장소개</span></a></li>
+                                <li><a href="contents/con02/con02_07/FN021301.html" class="ico07"><span>국내사업</span></a></li>
+                                <li><a href="contents/con02/con02_08/FN021401.html" class="ico08"><span>해외사업</span></a></li>
+                                <li><a href="contents/con02/con02_09/FN021501.html" class="ico09"><span>에너지신산업</span></a></li>
+                                <li><a href="contents/con04/con04_05/FN100802.html" class="ico10"><span>고객문의</span></a></li>
+                                <li><a href="contents/con05/con05_01/FN120101.html" class="ico19"><span>보도자료</span></a></li>
+                                <li><a href="contents/con05/con05_03/FN120301.html" class="ico11"><span>SNS</span></a></li>
+                                <li><a href="contents/con05/con05_01/FN120501.html" class="ico12"><span>기업광고</span></a></li>
+                            </ul>
+                        </li>
+                        <li data-tab="customer05">
+                            <a href="#n" class="menu_title">주주/투자자</a>
+                            <ul id="customer05" class="tab_content">
+                                <li><a href="contents/con01/con01_02/FN011201.html" class="ico01"><span>정보공개</span></a></li>
+                                <li><a href="contents/con01/con01_03/FN011301.html" class="ico02"><span>사전정보공표</span></a></li>
+                                <li><a href="contents/con01/con01_10/FN010608.html" class="ico03"><span>경영공시</span></a></li>
+                                <li><a href="contents/con01/con01_06/FN010901.html" class="ico04"><span>반부패청렴센터</span></a></li>
+                                <li><a href="contents/con02/con02_01/FN020101.html" class="ico05"><span>회사개요</span></a></li>
+                                <li><a href="contents/con02/con02_04/FN020501.html" class="ico27"><span>2040비전</span></a></li>
+                                <li><a href="contents/con02/con02_06/FN021101.html" class="ico06"><span>사업장소개</span></a></li>
+                                <li><a href="contents/con02/con02_07/FN021301.html" class="ico07"><span>국내사업</span></a></li>
+                                <li><a href="contents/con02/con02_08/FN021401.html" class="ico08"><span>해외사업</span></a></li>
+                                <li><a href="contents/con02/con02_09/FN021501.html" class="ico09"><span>에너지신산업</span></a></li>
+                                <li><a href="https://www.komipo.co.kr/KomipoWwg/" target="_blank" title="새창 열림" class="ico15"><span>동반성장플랫폼</span></a></li>
+                                <li><a href="contents/con03/con03_02/FN090101.html" class="ico16"><span>입찰정보</span></a></li>
+                                <li><a href="contents/con05/con05_01/FN120101.html" class="ico19"><span>보도자료</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- //고객별 맞춤 컨텐츠 -->
+            </div>
+        </div>
+        <!-- //mid_cts -->
+
+        <!-- btm_cts -->
+        <div class="btm_cts">
+            <div class="cts_inner">
+                <!-- 국내사업, 해외사업 -->
+                <section class="business_wrap">
+                    <h3 class="hide">국내사업, 해외사업 소개</h3>
+
+                    <!-- 페이지커스텀 -->
+                    <ul class="business_paging">
+                        <li class="on" data-tab="domestic"><a href="#n">국내사업</a></li>
+                        <li data-tab="overseas"><a href="#n">해외사업</a></li>
+                    </ul>
+                    <!-- //페이지커스텀 -->
+
+                    <div class="business_slide">
+                        <!-- 국내사업 -->
+                        <div id="domestic" class="domestic tab_content current">
+                            <div class="inner">
+                                <p class="text_info">전기가 있어 더욱 아름다운 세상을 <br>한국중부발전이 함께 만들어갑니다</p>
+                                <ul class="domestic_info">
+                                    <li class="list01">
+                                        <a href="contents/con02/con02_06/FN021103.html">
+                                            <p class="title"><em>인천</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 1,480MW</p>
+                                        </a>
+                                    </li>
+                                    <li class="list02">
+                                        <a href="contents/con02/con02_06/FN021104.html">
+                                            <p class="title"><em>서울</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 746MW</p>
+                                        </a>
+                                    </li>
+                                    <li class="list03">
+                                        <a href="contents/con02/con02_06/FN021102.html">
+                                            <p class="title"><em>보령</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 4,418MW</p>
+                                        </a>
+                                    </li>
+                                    <li class="list04">
+                                        <a href="contents/con02/con02_06/FN021107.html">
+                                            <p class="title"><em>세종</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 545MW</p>
+                                        </a>
+                                    </li>
+                                    <li class="list05">
+                                        <a href="contents/con02/con02_06/FN021105.html">
+                                            <p class="title"><em>신서천</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 1,022MW</p>
+                                        </a>
+                                    </li>
+                                    <li class="list06">
+                                        <a href="contents/con02/con02_06/FN021108.html">
+                                            <p class="title"><em>신보령</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 2,046MW</p>
+                                        </a>
+                                    </li>
+                                    <li class="list07">
+                                        <a href="contents/con02/con02_06/FN021106.html">
+                                            <p class="title"><em>제주</em>발전본부</p>
+                                            <p class="text"><span>설비현황 : </span>총 482MW</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="contents/con02/con02_06/FN021101.html" class="more">발전소 자세히보기</a>
+                            </div>
+                        </div>
+                        <!-- //국내사업 -->
+                        <!-- 해외사업 -->
+                        <div id="overseas" class="overseas tab_content">
+                            <div class="inner">
+                                <p class="text_info">무한한 가능성의 빛으로 세상을 <br>밝혀 나가고 있습니다</p>
+                                <div class="overseas_tit">
+                                    <span class="tit01">운영중</span>
+                                    <span class="tit02">건설중</span>
+                                    <span class="tit03">개발중</span>
+                                    <span class="tit04">현지법인</span>
+                                </div>
+                                <ul class="overseas_info">
+                                    <li>
+                                        <dl>
+                                            <dt>운영중</dt>
+                                            <dd>스타브로 풍력사업</dd>
+                                            <dd>왐푸 수력사업</dd>
+                                            <dd>땅가무스 수력사업</dd>
+                                            <dd>탄중자티 O&M사업</dd>
+                                            <dd>찌레본1 발전사업</dd>
+                                            <dd>엘라라 태양광사업</dd>
+                                            <dd>엘라라 태양광사업</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>건설중</dt>
+                                            <dd>프리메라 태양광사업</dd>
+                                            <dd>구바버겟 풍력사업</dd>
+                                            <dd>자바9, 10 기술자문사업</dd>
+                                            <dd>반풍 O&M 사업</dd>
+                                            <dd>찌레본2 발전사업</dd>
+                                            <dd>콘초밸리 태양광사업</dd>
+                                        </dl>
+                                    </li>                              
+                                    <li>
+                                        <dl>
+                                            <dt>개발중</dt>
+                                            <dd>시보르빠 수력사업</dd>
+                                            <dd>달비 태양광사업</dd>
+                                            <dd>볼더3 태양광+ESS사업</dd>
+                                        </dl>
+                                    </li>  
+                                    <li>
+                                        <dl>
+                                            <dt>현지법인</dt>
+                                            <dd>KOMIPO Europe</dd>
+                                            <dd>KOMIPO Asia</dd>
+                                            <dd>KOMIPO Global</dd>
+                                            <dd>KOMIPO Global</dd>
+                                        </dl>
+                                    </li>  
+                                </ul>
+                                <a href="contents/con02/con02_08/FN021401.html" class="more">해외사업 자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //해외사업 -->
+                    <div class="control">
+                        <button type="button" class="prev_btn">이전 슬라이드로 이동</button>
+                        <button type="button" class="next_btn">다음 슬라이드로 이동</button>
+                        <button type="button" class="ctr_btn pause">일시정지</button>
+                    </div>
+                </section>
+                <!-- //국내사업, 해외사업 -->
+                <!-- 입찰정보, 신고센터 -->
+                <section class="info_center_wrap">
+                    <h3 class="hide">입찰정보, 신고센터</h3>
+                    <div class="info_center">
+                        <ul class="tabM info_cts">
+                            <li data-tab="bidinfo" class="on">
+                                <a href="#n">입찰정보</a>
+                                <div id="bidinfo" class="tab_content current">
+                                    <p class="text">공급업체포탈(SRM)에 가입하신 후 <br>참여해 주시기 바랍니다</p>
+                                    <ul>
+                                        <li class="list01"><a href="https://crm.komipo.co.kr:7441/" target="_blank" title="새창 열림">계약이행 실적 증명서</a></li>
+                                        <li class="list02"><a href="https://easyu.kospo.co.kr/easyuUser/user/login" target="_blank" title="새창 열림">기자재 공급 유자격 통합관리</a></li>
+                                        <li class="list03"><a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="새창 열림">정비적격업체 통합관리</a></li>
+                                        <li class="list04"><a href="https://newrec.komipo.co.kr/service/main" target="_blank" title="새창 열림">RPSㆍREC 관리시스템</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li data-tab="reportcenter">
+                                <a href="#n">신고센터</a>
+                                <div id="reportcenter" class="tab_content">
+                                    <p class="text">사회적 책임을 다하여 맑고 <br>깨끗한 세상을 만들어 가겠습니다</p>
+                                    <ul>
+                                        <li class="list01"><a href="contents/con01/con01_07/FN011701.html">레드휘슬 익명신고</a></li>
+                                        <li class="list02"><a href="contents/con01/con01_07/FN011702.html#n">중부발전 신문고</a></li>
+                                        <li class="list03"><a href="contents/con01/con01_07/FN011703.html">공익침해행위 신고</a></li>
+                                        <li class="list04"><a href="contents/con01/con01_07/FN011704.html">이해충돌방지 신고</a></li>
+                                    </ul>
+                                </div>
+                            </li>                     
+                        </ul>
+                    </div>
+                </section>
+                <!-- //입찰정보, 신고센터 -->
+            </div>
+        </div>
+        <!-- //btm_cts -->
+    </main>
+    <!-- //main -->
+
+    <!-- footer -->
+    <div class="footer">
+        <!-- 관련기관 배너 -->
+        <section class="footer_banner">
+            <div class="wrap">
+                <h3 class="hide">관련기관 배너</h3>
+                <div class="banner">
+                    <ul class="banner_slide">
+                        <li><a href="http://www.motie.go.kr/" target="_blank" title="산업통상자원부 페이지로 새창 열림" tabindex="0"><img
+                                    src="images/common/banner01.jpg" alt="산업통상자원부"></a></li>
+                        <li><a href="http://www.gov.kr" target="_blank" title="정부24 페이지로 새창열림" tabindex="0"><img
+                                    src="images/common/banner02.jpg" alt="정부24"></a></li>
+                        <li><a href="http://www.alio.go.kr" target="_blank" title="ALIO 공공기관 경영정보 공개시스템 페이지로 새창열림"
+                                tabindex="0"><img src="images/common/banner03.jpg" alt="ALIO 공공기관 경영정보 공개시스템"></a></li>
+                        <li><a href="http://www.korea.go.kr/main" target="_blank" title="대한민국 정부포털 나에게 필요한 공공서비스 페이지로 새창열림"
+                                tabindex="0"><img src="images/common/banner04.jpg" alt="대한민국 정부포털 나에게 필요한 공공서비스"></a>
+                        </li>
+                        <li><a href="https://www.komipo.co.kr/kor/content/390/main.do?mnCd=FN120203" target="_blank"
+                                title="지역 특산물 코너 페이지로 새창열림" tabindex="0"><img src="images/common/banner05.jpg"
+                                    alt="지역 농·수·축산물 코너"></a></li>
+                        <li><a href="http://www.nongsarang.co.kr/" target="_blank" title="농사랑 페이지로 새창열림" tabindex="0"><img
+                                    src="images/common/banner06.jpg" alt="충남 농사랑"></a></li>
+                        <li><a href="http://1398.acrc.go.kr/case/ISGAcase" target="_blank" title="청탁금지법 통합검색 페이지로 새창열림"
+                                tabindex="0"><img src="images/common/banner07.jpg" alt="청탁금지법 통합검색"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/corr/hpgCorrtReqStep1.do" target="_blank"
+                                title="청탁금지법위반신고 페이지로 새창열림" tabindex="0"><img src="images/common/banner08.jpg"
+                                    alt="청탁금지법위반신고"></a></li>
+                        <li><a href="http://www.acrc.go.kr/acrc/board.do?command=searchDetail&menuId=050205" target="_blank"
+                                title="공익신고 페이지로 새창열림" tabindex="0"><img src="images/common/banner09.jpg"
+                                    alt="공익신고"></a></li>
+                        <li><a href="http://www.epeople.go.kr/jsp/user/bw/front/UBwIntroduction.jsp" target="_blank"
+                                title="예산낭비 신고센터 페이지로 새창열림" tabindex="0"><img src="images/common/banner10.jpg"
+                                    alt="예산낭비 신고센터"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/req/hpgPssStep1.do" target="_blank"
+                                title="복지·보조금 부정 신고센터 페이지로 새창열림" tabindex="0"><img src="images/common/banner11.jpg"
+                                    alt="복지·보조금 부정 신고센터"></a></li>
+                        <li><a href="http://tv.mpss.go.kr/web/main/main.do" target="_blank" title="국민안전방송 페이지로 새창열림"
+                                tabindex="0"><img src="images/common/banner12.jpg" alt="국민안전방송"></a></li>
+                    </ul>
+                    <div class="control">
+                        <button type="button" class="prev_btn">이전 슬라이드로 이동</button>
+                        <button type="button" class="next_btn">다음 슬라이드로 이동</button>
+                        <button type="button" class="ctr_btn pause">일시정지</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //관련기관 배너 -->
+        <footer id="footer">
+            <div class="top">
+                <div class="wrap">
+                    <div class="left">
+                        <a href="contents/con06/con06_01/privacy.html" class="pointC">ㆍ개인정보처리방침</a>
+                        <a href="contents/con02/con02_11/FN020909.html">ㆍ찾아오시는 길</a>
+                        <a href="contents/con06/con06_01/sitemap.html" class="f_sitemap">ㆍ사이트 맵</a>
+                        <a href="contents/con02/con02_10/FN021601.html">ㆍ부서별 전화번호</a>
+                    </div>
+                    <ul class="footer_link">
+                        <li><a href="https://blog.naver.com/komipo_official" target="_blank" title="BLOG 페이지 새창 열림" class="blog_tit">한국중부발전 공식 블로그</a></li>
+                        <li><a href="https://www.facebook.com/komipo" target="_blank" title="FACEBOOK 페이지 새창 열림" class="facebook_tit">한국중부발전 페이스북</a></li>
+                        <li><a href="https://www.instagram.com/komipo_official" target="_blank" title="INSTAGRAM 페이지 새창 열림" class="instagram_tit">한국중부발전 인스타그램</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCew6PRDs_1tIZ0tGvqgpDWw" target="_blank" title="YOUTUBE 페이지 새창 열림" class="youtube_tit">한국중부발전 유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm">
+                <div class="wrap">
+                    <div class="address">
+                        <a href="index.html" class="foot_logo">KOMIPO 한국중부발전</a>
+                        <address>
+                            <p>본사 : (33439)충청남도 보령시 보령북로 160 / </p><br>
+                            <p>대표자명 : 김호빈 / </p>
+                            <p>사업자등록번호 : 120-86-19170 / </p><br>
+                            <p>대표전화 : <a href="#n" tabindex="-1" data-tel="tel:070-7511-1114" class="mobile_telNo">070-7511-1114</a> / </p>
+                            <p>FAX : 070-7511-1046</p>
+                            <p class="copyright">COPYRIGHT © 2023 KOREA MIDLAND POWER Co., LTD. <br>ALL RIGHTS RESERVED.</p>
+                        </address>
+                    </div>
+                    <div class="mark">
+                        <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"
+                            title="한국웹접근성인증평가원 새창열림" class="accessibility">국가공인 웹 접근성 품질인증마크</a>
+                        <a href="#n" title="ISMSP 인증서 새창열림" class="isms-p">ISMSP 인증마크</a>
+                        <a href="#n" title="S&P 보도자료 상세보기" class="awards_logo">S&P logo</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- //footer -->
+
+    <!--탑으로 이동버튼-->
+    <!-- <div class="top_move">
+        <span class="arrow"></span>
+    </div> -->
+    <!--//탑으로 이동버튼-->
+    
+    <script src="ko23_js/jquery-3.2.1.min.js"></script>    
+    <script src="ko23_js/jquery-ui.min.js"></script>    
+    <script src="ko23_js/slick.min.js"></script>
+    <script src="ko23_js/ko23_common.js"></script>    
+    <script src="ko23_js/ko23_main.js"></script>    
+</body>
+</html>

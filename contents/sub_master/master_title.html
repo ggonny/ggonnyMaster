@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"> <!-- 파비콘 -->
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../../css/rwd_sub.css">
+
+    <title>마스터(중부)</title>
+</head>
+<body>
+    <!-- skipMenu -->
+    <div title="스킵메뉴" class="skipMenu">
+        <a href="#gnbmenu"><span>주메뉴 바로가기</span></a>
+        <a href="#content"><span>본문 바로가기</span></a>
+        <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!-- //skipMenu -->
+
+    <!-- header -->
+    <!-- <? include "../../ko23_include/header.html"; ?> -->
+    <header id="header">
+        <div class="header_top">
+            <div class="wrap">
+                <ul class="quick_link">
+                    <li><a href="../../con04/con04_04/FN100402.html">견학신청</a></li>
+                    <li><a href="https://visit.komipo.co.kr:8070" target="_blank" title="한국중부발전 출입신청 새창 열림">출입신청</a></li>
+                    <li><a href="https://mail.komipo.co.kr" target="_blank" title="중부인메일 새창 열림">중부메일</a></li>
+                </ul>
+                <!-- .family_pop(전력사이트 + 언어 + 팝업) -->
+                <ul class="family_pop">
+                    <li class="famliysite"><button type="button" title="관련(공공기관)사이트 열기">관련(공공기관)사이트</button>
+                        <!-- 관련(공공기관)사이트 -->
+                        <div class="family_site pop_wrap">
+                            <div class="inner">
+                                <p class="title">관련(공공기관)사이트</p>
+                                <dl>
+                                    <dt>기업지원시스템</dt>
+                                    <dd>
+                                        <a href="http://srm.kepco.net/" target="_blank" title="입찰정보 시스템 새창 열림">입찰정보 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:7441/" target="_blank" title="계약이행 실적증명발급 새창 열림">계약이행 실적증명발급</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://easyu.kospo.co.kr/easyuUser/;jsessionid=Rfx8xNwd1brJnz7FqgdiQJyVAQtAZOpMdP9Ex3McT18KqCneg2eYxdLTUhhjghwU.nbcwwas1_servlet_EAS1" target="_blank" title="기자재 공급 유자격 통합관리 새창 열림">기자재 공급 유자격 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="정비적격업체 통합관리 새창 열림">정비적격업체 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:8030" target="_blank" title="시험성적서 검증 시스템 새창 열림">시험성적서 검증 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://rec.komipo.co.kr:8557/WebContent/jsp/main/main.jsp" target="_blank" title="공급인증서(REC)거래 새창 열림">공급인증서(REC)거래</a>
+                                    </dd>
+                                </dl>
+                                <dl class="type2">
+                                    <dt>전력그룹사</dt>
+                                    <dd>
+                                        <a href="http://www.kepco.co.kr" target="_blank" title="한국전력공사 새창 열림">한국전력공사</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.genco.kr" target="_blank" title="발전회사협력본부 새창 열림">발전회사협력본부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.khnp.co.kr" target="_blank" title="한국수력원자력㈜ 새창 열림">한국수력원자력㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kdn.com" target="_blank" title="한전KDN㈜ 새창 열림">한전KDN㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.koenergy.kr" target="_blank" title="한국남동발전㈜ 새창 열림">한국남동발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepco-enc.com" target="_blank" title="한국전력기술㈜ 새창 열림">한국전력기술㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.iwest.co.kr" target="_blank" title="한국서부발전㈜ 새창 열림">한국서부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kps.co.kr" target="_blank" title="한전KPS㈜ 새창 열림">한전KPS㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kospo.co.kr" target="_blank" title="한국남부발전㈜ 새창 열림">한국남부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.knfc.co.kr" target="_blank" title="한전원자력연료㈜ 새창 열림">한전원자력연료㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.ewp.co.kr" target="_blank" title="한국동서발전㈜ 새창 열림">한국동서발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepid.co.kr" target="_blank" title="한전산업개발㈜ 새창 열림">한전산업개발㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kpx.or.kr" target="_blank" title="한국전력거래소 새창 열림">한국전력거래소</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>국내유관기관</dt>
+                                    <dd>
+                                        <a href="http://www.motie.go.kr" target="_blank" title="산업통상자원부 새창 열림">산업통상자원부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.acrc.go.kr" target="_blank" title="국민권익위원회 새창 열림">국민권익위원회</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.korea.go.kr" target="_blank" title="대한민국정부포털 새창 열림">대한민국정부포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.gov30.go.kr" target="_blank" title="정부3.0 새창 열림">정부3.0</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.data.go.kr" target="_blank" title="공공데이터포털 새창 열림">공공데이터포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.alio.go.kr" target="_blank" title="ALIO 새창 열림">ALIO</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.law.go.kr" target="_blank" title="법령정보센터 새창 열림">법령정보센터</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.moi.go.kr/frt/sub/a05/gwanboMain/screen.do" target="_blank" title="대한민국전자관보 새창 열림">대한민국전자관보</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <button type="button" class="close_btn" title="관련(공공기관)사이트 닫기">닫기</button>
+                        </div>
+                        <!-- //관련(공공기관)사이트 -->
+                    </li>
+                    <li class="lang"><button type="button" title="언어선택 열기">Language</button>
+                        <ul>
+                            <li><span class="on">KOREA</span></li>
+                            <li><a href="../../eng/index.html" target="_blank" title="영문페이지 새창 열림">ENGLISH</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_zone"><button type="button" title="알립니다 팝업 열기">알립니다!</button>
+                        <div class="popup_list pop_wrap">
+                            <div class="pop_slide inner">
+                                <p class="title">알립니다!</p>
+                                <ul>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner01.jpg" alt="2023년 4직급 신입직원 채용제도 개선사항 자세히 보기"></a></li>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner02.jpg" alt="전사·순직 군인 2048명의 유가족을 찾습니다! ☎044-200-7374/042-550-7387 유가족 찾기 바로가기 국민권익위원회 대한민국 국방부 국가보훈처"></a></li>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner03.jpg" alt="기획재정부 신속한 위기대응 및 경제 살리기 코로나19 경제지원 비상경제회의 위기대응의 중심이 되어 최선을 다하겠습니다."></a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- // .family_pop(전력사이트 + 언어 + 팝업) -->
+            </div>
+        </div>
+        <div class="header_btm wrap">
+            <h1 class="logo"><a href="../../index.html">KOMIPO 한국중부발전</a></h1>
+            <button type="button" class="open_btn nav_open" data-name="MENU" title="메뉴열기">
+                <span class="line line01"></span>
+                <span class="line line02"></span>
+                <span class="line line03"></span>
+            </button>
+            <!-- gnbmenu -->
+            <nav class="gnbmenu" id="gnbmenu">
+                <ul class="depth1">
+                    <!-- 1depth 활성화 : .depth1>li>a 클래스 .now 추가 / 2dpeth 활성화 : .depth2>ul>li에 클래스 .now 추가 / 3depth 활성화 : .depth3>li에 클래스 .now 추가 -->
+                    <!-- depth1>li의 자식메뉴가 있다면 클래스.more_depth 추가 / .depth2>ul>li의 자식메뉴가 있다면 클래스 .more 추가-->
+                    <!-- 2depth 링크 연결 X-->
+                    <li class="menu01 more_depth"><a href="#n" data-name="소통채널" class="now">소통채널</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">소통채널</p>
+                                <span>한국중부발전이 공유하는 정보는 <br/>국민 여러분과의 소통 에너지입니다.</span>
+                                <a href="#n" target="_blank" title="알리오 홈페이지 새창 열림" class="quick_menu link01">
+                                    <dl>
+                                        <dt>알리오(ALIO)</dt>
+                                        <dd>경영에 대한 중요한 정보를 국민에게 제공하고 있습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="#n" class="quick_menu link02">
+                                    <dl>
+                                        <dt>신문고</dt>
+                                        <dd>갑질 및 민원사항, 칭찬 사례 등 여러분의 의견을 듣겠습니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="more now"><a href="master_title.html">마스터 정리</a>
+                                    <ul class="depth3">
+                                        <li class="now"><a href="master_title.html"><span>타이틀, 텍스트</span></a></li>
+                                        <li><a href="master_board.html"><span>게시판</span></a></li>
+                                        <li><a href="master_table.html"><span>테이블</span></a></li>
+                                        <li><a href="master_tab.html"><span>탭 구조</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 3depth가 없는 페이지이동 메뉴 -->
+                                <li><a href="#n">페이지 이동 메뉴</a></li>
+                                <!-- 3depth가 없는 새창 열림 메뉴 -->
+                                <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
+                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
+                                <li class="more"><a href="#n">정보공개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a></li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n" target="_blank" title="새창 열림">페이지 이동인 두줄짜리 메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu02"><a href="#n" data-name="회사소개" target="_blank" title="새창 열림">회사소개</a></li>
+                    <li class="menu03"><a href="#n" data-name="기업지원">기업지원</a></li>
+                    <li class="menu04 more_depth"><a href="#n" data-name="고객지원">고객지원</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">고객지원</p>
+                                <span>더 좋은 미래를 열어가는 중부인은 다양한 <br/>모습으로 고객을 지원하고 있습니다.</span>
+                                <a href="#n" class="quick_menu link09">
+                                    <dl>
+                                        <dt>발전소 견학신청</dt>
+                                        <dd>전기가 어떤 과정을 거쳐 생산 되는지 궁금하셨죠?</dd>
+                                    </dl>
+                                </a>
+                                <a href="#n" target="_blank" title="퇴직자 경력증명서 발급시스템 페이지 새창 열림" class="quick_menu link10">
+                                    <dl>
+                                        <dt>퇴직자 경력증명서 발급시스템</dt>
+                                        <dd>중부발전 퇴직자를 위한 경력증명서 온라인 신청ㆍ발급 서비스 입니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <!-- 3depth가 없는 페이지이동 메뉴 -->
+                                <li><a href="#n">페이지 이동 메뉴</a></li>
+                                <!-- 3depth가 없는 새창 열림 메뉴 -->
+                                <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
+                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
+                                <li class="more"><a href="#n">정보공개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a></li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n" target="_blank" title="새창 열림">페이지 이동인 두줄짜리 메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 
+            <div class="nav_bg">
+                <div class="wrap">
+                    <p class="title">KOMIPO<br/><strong>한국중부발전</strong></p>
+                    <p class="text">한국중부발전</p>
+                </div>
+            </div> 
+            -->
+            <!-- //gnbmenu -->
+            <!-- util_Box -->
+            <div class="util_Box">
+                <ul>
+                    <li class="hd_search">
+                        <label for="searchtext">
+                            <input type="text" id="searchtext" placeholder="검색어를 입력해 주세요">
+                        </label>
+                        <button type="button" class="top_search_btn">검색하기</button>
+                    </li>
+                    <li><button type="button" onclick="location.href='../con06/con06_01/sitemap.html' " class="util_sitemap">사이트맵 열기</button></li>
+                </ul>
+                <div class="top_searchBox">
+                    <div class="inner">
+                        <div class="search_wrap">
+                            <label for="searchtext2">
+                                <input type="text" id="searchtext2" placeholder="검색어를 입력해 주세요">
+                            </label>
+                            <button type="button" onclick="location.href='../con06/con06_01/search.html' " class="top_search_btn">검색하기</button>
+                        </div>
+                        <dl>
+                            <dt>ㆍ 인기 검색어</dt>
+                            <dd><a href="#n">윤준석</a></dd>
+                            <dd><a href="#n">대기배출사업장 청정연료전황 지원사업</a></dd>
+                            <dd><a href="#n">메탄올</a></dd>
+                            <dd><a href="#n">지역할당</a></dd>
+                        </dl>
+                    </div>
+                    <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                </div>
+            </div>
+            <!-- //util_Box -->
+        </div>
+        <div class="shadow2"></div>
+    </header>
+    <div class="shadow"></div>
+    <div class="shadow3"></div>
+    <!-- //header -->
+    
+    <!-- sub.container  -->
+    <section class="container">
+        <div class="wrap">
+            <!-- left_menu -->
+            <!-- <? include "../../ko23_include/left_menu.html"; ?> -->
+            <div class="left_menu">
+                <div class="left_title">
+                    <p>소통채널</p>
+                </div>
+                <ul class="depth_01">
+                    <li class="more_depth open"><a href="#n" class="now">사업실명제</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li class="now"><a href="#n"><span>대상사업</span></a></li>
+                                <li><a href="#n"><span>실명제목록</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">정보공개</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>정보공개제도 안내</span></a></li>
+                                <li><a href="#n"><span>정보공개 처리기준</span></a></li>
+                                <li><a href="#n"><span>정보공개 담당자</span></a></li>
+                                <li><a href="#n"><span>과거 정보목록</span></a></li>
+                                <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank" title="새창 열림"><span>정보공개 청구</span></a></li>
+                                <li><a href="#n"><span>비공개정보 세부기준</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">사전정보공표</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>리스트</span></a></li>
+                                <li><a href="#n"><span>상세보기</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="https://api.komipo.co.kr/" target="_blank" title="새창 열림">공공데이터</a></li>
+                    <li class="more_depth"><a href="#n">경영공시 개요</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>경영공시 안내</span></a></li>
+                                <li><a href="#n"><span>공시기준</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="no_depth"><a href="#n">경영공시</a></li>
+                    <li class="more_depth"><a href="#n">행정정보공표</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>업무추진비</span></a></li>
+                                <li><a href="#n"><span>사규</span></a></li>
+                                <li><a href="#n"><span>사규 제·개정 예고</span></a></li>
+                                <li><a href="#n"><span>계약정보공개</span></a></li>
+                                <li><a href="#n"><span>해외출장 및 연수보고</span></a></li>
+                                <li><a href="#n"><span>상품권 관리내역</span></a></li>
+                                <li><a href="#n"><span>인건비 예산과 집행현황</span></a></li>
+                                <li><a href="#n"><span>복지시설현황</span></a></li>
+                                <li><a href="#n"><span>친환경상품 구매실적/이행계획</span></a></li>
+                                <li><a href="#n"><span>협력기업 하도급 현황</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">반부패청렴센터</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>내부감사결과</span></a></li>
+                                <li><a href="#n"><span>외부감사결과</span></a></li>
+                                <li><a href="#n"><span>부패관련 징계 현황 공개</span></a></li>
+                                <li><a href="#n"><span>공무수행사인 현황</span></a></li>
+                                <li><a href="#n"><span>청렴도측정 및 부패방지 시책평가 결과</span></a></li>
+                                <li><a href="#n"><span>청탁금지법 상담내역</span></a></li>
+                                <li><a href="#n"><span>청렴 365 자료실</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">신고채널</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>레드휘슬(익명신고)</span></a></li>
+                                <li><a href="#n"><span>신문고(실명신고)</span></a></li>
+                                <li><a href="#n"><span>공익신고</span></a></li>
+                                <li><a href="#n"><span>이해충돌신고</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">프라이버시센터</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>프라이버시센터 소개</span></a></li>
+                                <li><a href="#n"><span>개인정보 보호 정책</span></a></li>
+                                <li><a href="#n"><span>개인정보 보호 활동</span></a></li>
+                                <li><a href="#n"><span>개인정보 처리요구</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">열린혁신 아이디어 발전소</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>열린혁신 아이디어 발전소</span></a></li>
+                                <li><a href="#n"><span>규제혁신 아이디어제안</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">인재채용</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>인사제도 안내</span></a></li>
+                                <li><a href="#n"><span>지원가이드</span></a></li>
+                                <li><a href="#n"><span>채용문의</span></a></li>
+                                <li><a href="#n"><span>채용공고</span></a></li>
+                                <li><a href="#n"><span>친인척 채용인원 공개</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- //left_menu -->
+            <!--LNB-->
+            <!-- <? include "../../ko23_include/lnb.html"; ?> -->
+            <div class="lnb">
+                <div class="wrap">
+                    <ul class="lnb_inner">
+                        <li class="home"><a href="../../index.html">home</a></li>
+                        <li class="depth01">
+                            <a href="#n"><span>소통채널</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">소통채널</a></li>
+                                <li><a href="#n">회사소개</a></li>
+                                <li><a href="#n">기업지원</a></li>
+                                <li><a href="#n">고객지원</a></li>
+                                <li><a href="https://www.komipo.co.kr/esg/main/main.do" target="_blank" title="새창 열림">ESG경영</a></li>
+                                <li><a href="#n">기업홍보</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02">
+                            <a href="#n"><span>사업실명제</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">사업실명제</a></li>
+                                <li><a href="#n">정보공개</a></li>
+                                <li><a href="#n">사전정보공표</a></li>
+                                <li><a href="#n" target="_blank" title="새창 열림">공공데이터</a></li>
+                                <li><a href="#n">경영공시 개요</a></li>
+                                <li><a href="#n">경영공시</a></li>
+                                <li><a href="#n">행정정보공표</a></li>
+                                <li><a href="#n">반부패청렴센터</a></li>
+                                <li><a href="#n">신고채널</a></li>
+                                <li><a href="#n">프라이버시센터</a></li>
+                                <li><a href="#n">열린혁신 아이디어 발전소</a></li>
+                                <li><a href="#n">인재채용</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth03">
+                            <a href="#n"><span>대상사업</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">대상사업</a></li>
+                                <li><a href="#n">실명제목록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="share_box">
+                        <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                            <ul class="share_list">
+                                <li><button type="button" class="share_urlbtn">URL로 공유하기</button></li>
+                                <li><button type="button" class="share_facebookbtn">Facebook으로 공유하기</button></li>
+                                <li><button type="button" class="share_mailbtn">메일로 공유하기</button></li>
+                            </ul>
+                        </li>
+                        <li><button type="button" class="print_btn">프린트하기</button></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//LNB-->
+
+            <!-- contents -->
+            <div id="content" class="contents">
+                <!-- sub_visual & path -->
+                <!-- <? include "../../ko23_include/sub_visual.html"; ?> -->
+                <div class="sub_visual sub01">
+                    <div class="inner">
+                        <h2>소개</h2>
+                        <ul class="path">
+                            <li><a href="#n" class="home">home</a></li> 
+                            <li><a href="#n">회사소개</a></li>
+                            <li><a href="#n">회사개요</a></li>
+                            <li><a href="#n">소개</a></li>
+                        </ul>
+                        <ul class="share_box">
+                            <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                                <ul class="share_list">
+                                    <li><button type="button" class="share_urlbtn">URL로 공유하기</button></li>
+                                    <li><button type="button" class="share_facebookbtn">Facebook으로 공유하기</button></li>
+                                    <li><button type="button" class="share_mailbtn">메일로 공유하기</button></li>
+                                </ul>
+                            </li>
+                            <li><button type="button" class="print_btn">프린트하기</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //sub_visual & path -->
+            
+                <!-- .contents>.inner -->
+                <div class="inner"> 
+                    <!-- .contents>.inner>.inner_top 본문내용 시작 -->
+                    <div class="inner_top">
+                        
+                        <h3 class="titleS"><span>컨텐츠 영역 최상단 타이틀 명</span></h3>
+                        <div class="near_link">
+                            <a href="#n" class="prev" target="_blank" title="새창 열림"><span>정보공개 모니터단</span></a>
+                            <a href="#n" class="next"><span>업무처리절차</span></a>
+                        </div>
+
+                        <div class="tab_wrap">
+                            <button type="button" class="now_tab">타이틀, 텍스트</button>
+                            <ul class="tabA f3 tab_link">
+                                <li class="current"><a href="master_title.html" data-name="타이틀, 텍스트" title="선택된 탭메뉴">타이틀, 텍스트</a></li>
+                                <li><a href="master_board.html" data-name="게시판">게시판</a></li>
+                                <li><a href="master_table.html" data-name="테이블">테이블</a></li>
+                                <li><a href="master_tab.html" data-name="탭구조">탭구조</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="titleBig">
+                            <p>대문 문구 바텀 50px / 클래스 div.titleBig>p</p>
+                        </div>
+                        <p class="textC">대문문구와 세트 / 클래스 .textC 대문문구와 세트 / 클래스 .textC<br>대문문구와 세트 / 클래스 .textC 대문문구와 세트 / 클래스 .textC 대문문구와 세트 / 클래스 .textC 대문문구와 세트 / 클래스 .textC</p>
+                        
+                        <p class="titleT">환경과 사회, 사람을 중시하는 <span class="tit">미래가치 창출</span>에 앞장서겠습니다</p>
+
+                        <h3 class="titleA">대타이틀 바텀 30px / 탑 50px / 클래스 .titleA</h3>
+                                                
+                        <h4 class="titleB">중타이틀 바텀 30px / 클래스 .titleB</h4>
+                        
+                        <h5 class="titleC">소타이틀 바텀 20px / 클래스 .titleC</h5>
+
+                        <h4 class="titleD">병합버전타이틀<span>바텀20px 바텀20px  바텀20px</span></h4>
+
+                        <div class="title_wrap">
+                            <h3 class="titleA">타이틀과 우측 요소 있을 시 사용 타이틀에 클래스 .left 추가 / 클래스 .title_wrap</h3>
+
+                            <div class="right btn_area">
+                                <a href="#n" class="navy_btn">다운로드</a>
+                                <a href="#n" class="navy_btn">다운로드</a>
+                            </div>
+                        </div>
+
+                        <p class="textA">강조 텍스트 라인하이트 30px / 마지막 글 바텀 30px / 클래스 .textA</p>
+
+                        <p class="textB">일반 텍스트 라인하이트 28px / 마지막 글 바텀 30px / 클래스 .textB / <span class="pointB">포인트 컬러 01 .pointB</span> / <span class="pointO">포인트 컬러 01 .pointO</span> / <span class="pointR">포인트 컬러 01 .pointR</span> / <span class="pointG">포인트 컬러 01 .pointG</span></p>
+                        
+                        <p class="alert_p">욕설, 비방글, 개인정보가 포함된 게시글은 사전에 작성자 동의 없이 삭제됩니다.</p>
+
+                        <div class="title_wrap typeB">
+                            <p class="alert_p">정보공개청구는 "정보공개 - 정보공개청구" 페이지를 이용해주시기 바랍니다.</p>
+                            <div class="btn_area right">
+                                <a href="https://www.open.go.kr" target="_blank" class="navy_btn link"><span>바로가기</span></a>
+                                <a href="#n" class="navy_btn link pop_open" data-button="regulation">게시물 규제기준 보기</a>
+                            </div>
+                        </div>
+
+                        <ul class="bullet_wrap">
+                            <li class="bullet01">
+                                <p>li 내용 텍스트 바텀 15px / 2줄일 경우 라인하이트 24px / 텍스트 사이 바텀 10px / 클래스 .bullet01</p>
+                            </li>
+                            <li class="bullet01">
+                                <p>li 내용 텍스트 바텀 15px / 2줄일경우 라인하이트 24px / 텍스트 사이 바텀 10px / 마지막 글 바텀 30px</p>
+                                <ul>
+                                    <li class="bullet02">
+                                        <p>li 세부 텍스트 라인하이트 24px / 마지막 글 바텀 30px / 클래스 .bullet02</p>
+                                    </li>
+                                    <li class="bullet02">
+                                        <p>li 세부 텍스트 라인하이트 24px / 마지막 글 바텀 30px / 클래스 .bullet02</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="bullet_wrap no_wrap">
+                            <li class="bullet01"><span class="item">발전소 소개</span>당진 발전본부</li>
+                            <li class="bullet01"><span class="item">보령 발전본부</span>국내 전체 전력설비의 3.50%를 차지하는 대규모 발전단지로 유연탄 화력, LNG복합화력, 태양광, 소수력, 연료전지의 설비를 운영 중이며, 우드펠릿과 유기성 고형연료(하수슬러지)를 화력발전소에서 혼소하는 설비와 습식아민 이산화탄소 포집 설비까지 다양한 설비를 보유한 국내 최고의 종합 발전단지입니다.</li>
+                        </ul>
+
+                        <ol class="bullet_wrap">
+                            <li class="bullet_num01"><span class="count">1</span> 정보주체에게 동의를 얻은 경우
+                                <ul>
+                                    <li class="bullet_num02">신청 또는 변경 시 허위내용의 등록</li>
+                                    <li class="bullet_num02">타인(소수를 포함)에게 위해를 가하는 행위
+                                        <ul>
+                                            <li class="bullet_Kr">타인의 ID(아이디), PASSWORD(비밀번호) 및 타인으로 가장하는 행위</li>
+                                            <li class="bullet_Kr">타인과의 관계를 허위로 명시하는 행위</li>
+                                            <li class="bullet_Kr">타인을 비방할 목적으로 사실 또는 허위의 사실을 적시하여 명예를 훼손하는 행위</li>
+                                            <li class="bullet_Kr">외설 또는 폭력적인 메시지, 화상 음성 기타 공서양속에 반하는 정보를 서비스에 공개 또는 게시하는 행위</li>
+                                            <li class="bullet_Kr">미술관과 기타 제3자의 저작권 등 지적 재산권에 대한 침해하는 행위</li>
+                                            <li class="bullet_Kr">미술관 및 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위</li>
+                                            <li class="bullet_Kr">미술관의 동의 없이 영리를 목적으로 서비스를 사용하는 행위</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bullet_num01"><span class="count">2</span> 다른 법률에 특별한 규정이 있는 경우</li>
+                            <li class="bullet_num01"><span class="count">3</span> 범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우</li>
+                        </ol>
+
+                        <p class="bullet_num" data-num="1.">li가 아닌 태그로 숫자 불릿 사용 시  .bullet_num</p>
+
+                        <!-- 주요 알림 텍스트 -->
+                        <div class="alert_box">
+                            <p>자료등록 시 본문 또는 첨부파일에 <span class="pointO">개인정보(주민등록번호, 휴대전화번호, 주소 등 개인을 식별할 수 있는 정보)</span>가 포함되지 않도록 유의하시기 바라며, 일방적인 주장, 비방, 욕설 등이 포함된경우나 본 게시판의 성격에 맞지 않는 글, 개인정보가 포함된 글은 안내문 없이 부분 또는 전체 삭제될 수 있습니다. 개인정보가 포함된 글은 불특정 다수에게 개인정보가 노출되어 악용될 수 있으며, 특히 타인의 <span class="pointO">개인정보를 노출한 경우에는 개인정보보호법에 따라 처벌 받을 수 있음</span>을 알려드립니다.</p>
+                        </div>
+                        <div class="alert_box typeB">
+                            <span class="bullet01">이용문의 : 정보보안처 ICT기획부 차장 서보천</span>
+                            <span class="bullet01">전화 : <a href="#n" tabindex="-1" data-tel="tel:070-7511-1614" class="mobile_telNo">070-7511-1614</a></span>
+                            <span class="bullet01">이메일 : <a href="mailto:triumph@komipo.co.kr" class="mail_ico">triumph@komipo.co.kr</a></span>                      
+                        </div>
+                
+
+                        <ul class="bullet_wrap f2 mt0">
+                            <li class="bullet01"><span>임직원 비리, 공직기강 문란행위</span></li>
+                            <li class="bullet01"><span>압력, 청탁, 금품 및 향응 수수행위</span></li>
+                            <li class="bullet01"><span>공사계약, 자재납품 관련 비리</span></li>
+                            <li class="bullet01"><span>하도급 불공정 행위</span></li>
+                            <li class="bullet01"><span>허위공사, 부실공사, 회계부정</span></li>
+                            <li class="bullet01"><span>예산낭비, 품위손상사례 및 기타</span></li>
+                            <li class="bullet01 pop_hover_wrap" tabindex="0"><span class="pop_hover" data-name="sinmungo_unfair">갑질 및 부당업무 지시</span>
+                                <!-- 갑질 및 부당업무 지시 팝업 -->
+                                <div id="sinmungo_unfair" class="pop_hover_layer">
+                                    <p class="pop_title t_center">갑질 및 부당업무 지시</p>
+                                    <div class="pop_inner">
+                                        <p class="bullet02">폭언, 인격 모독성 발언</p>
+                                        <p class="bullet02">업무분장 외 업무지시(선배가 후배에게 자기 일을 떠넘김)</p>
+                                        <p class="bullet02">강압적 업무지시(공개된 자리에서 질책, 장시간 세워두고 업무지시 등)</p>
+                                        <p class="bullet02">부하직원에게 사적 노무 지시(개인 책상 정리, 설거지, 이삿짐 나르기 등)</p>
+                                        <p class="bullet02">휴가 사용 시 제한 및 불필요한 질문 등</p>
+                                        <p class="bullet02">성희롱 및 차별대우(어떤 특정 직원에 대한 편애)</p>
+                                        <p class="bullet02">특정 업체와 유착관계 형성 또는 업무처리 지연</p>
+                                    </div>
+                                </div>
+                                <!-- //갑질 및 부당업무 지시 팝업 -->
+                            </li>
+                        </ul>
+
+
+                        <h3 class="titleA">복잡한 이미지 디스크립션(접근성 준수)</h3>
+                        <!-- 이미지 확대보기 (보더있을 시: 클래스 .view_expand.type02 추가), 확대보기 팝업 안 이미지의 max-width값은 해당이미지의 width값으로 넣어주세요 -->
+                        <!-- 이미지의 aria-labelledby와 .discription_wrap의 아이디 일치 -->
+                        <div class="view_expand">
+                            <p class="img_wrap">
+                                <img src="../../../images/sub/organ_img01.jpg" aria-labelledby="longdiscriptionA" alt="전체 조직도">
+                            </p>
+
+                            <a href="#n" class="view_btn" data-button="img_pop01">확대보기</a>
+                        
+                            <!--확대보기 팝업-->
+                            <div id="img_pop01" class="img_pop">
+                                <div class="img_inner">
+                                    <img src="../../../images/sub/organ_img01.jpg" alt="전체 조직도" style="max-width:1400px">
+                                </div>
+                                <button class="img_close" data-button="img_pop01">닫기</button>
+                            </div>
+                            <!--//확대보기 팝업-->
+
+                            <div class="discription_wrap" id="longdiscriptionA">
+                                <h3>사장</h3>
+                                <ul>
+                                    <li>상임감사위원</li>
+                                    <li>감사실</li>
+                                </ul>
+                                <ul>
+                                    <li>안전보건처</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>기획관리본부(상임이사)</dt>
+                                            <dd>기획전략처</dd>
+                                            <dd>경영관리처</dd>
+                                            <dd>연료계약처</dd>
+                                            <dd>ESG경영처</dd>
+                                            <dd>정보보안처</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>기술안전본부(상임이사)</dt>
+                                            <dd>발전환경처</dd>
+                                            <dd>전원개발처</dd>
+                                        </dl>
+                                        <ul>
+                                            <li>미래사업단</li>
+                                            <li>KOMIPO 기술연구원</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>보령발전본부</li>
+                                    <li>신보령발전본부</li>
+                                    <li>신서천발전본부</li>
+                                    <li>인천발전본부</li>
+                                    <li>서울발전본부</li>
+                                    <li>세종발전본부</li>
+                                    <li>제주발전본부</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="titleA">반응형 이미지맵</h3>
+                        <div class="project_img">
+                            <img src="../../images/sub/imgMap.jpg" usemap="#imgMap">
+        
+                            <map name="imgMap">
+                                <area target="_blank" title="1번 링크" href="#n" coords="266,200,101" shape="circle">
+                                <area target="_blank" title="2번 링크" href="#n" coords="701,200,103" shape="circle">
+                                <area target="_blank" title="3번 링크" href="#n" coords="1135,200,102" shape="circle">
+                            </map>
+                        </div>
+
+                        <h3 class="titleA">회원가입</h3>
+                        <button type="button" class="btn pop_open" data-button="joinTerms_pop">약관 보기 (팝업내부 스크롤 있는 경우도 포커스 가도록 추가함! div.scroll에 tabindex="0" 추가 후 내용을 감싸는 자식 div 필요)</button>
+
+                        <div id="joinTerms_pop" class="pop_layer" role="dialog">
+                            <p class="pop_title">이용약관</p>
+                            <div class="pop_inner">
+                                <div class="cts textArea scroll" tabindex="0">
+                                    <div>
+                                        <strong>[제 1조] 목적</strong>
+                                        <p>본 약관은 사회복지법인 월드비전(이하 "회사"라 함)가 제공하는 월드비전 및 월드비전 관련 제반 서비스 이용과 관련하여 회사와 이용자의 권리, 의무 및 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+            
+                                        <strong>[제 2조] 용어의 정리</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+                                                <ol>
+                                                    <li>"서비스"라 함은 구현되는 단말기(PC, TV, 휴대형단말기 등의 각종 유무선 장치를 포함)와 상관없이 "회원"이 이용할 수 있는 월드비전 및 월드비전 관련 제반 서비스를 의미합니다.</li>
+                                                    <li>"홈페이지 회원(이하 "회원"이라 함)"이라 함은 회사의 "서비스"에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 "서비스"를 이용하는 이용자ID(아이디)를 부여 받은 자를 말합니다.</li>
+                                                    <li>"후원회원"이라 함은 월드비전의 사회복지사업에 참여하기 위해 후원금을 정기적 혹은 일시적으로 납부하는 자를 말합니다.</li>
+                                                    <li>"비회원"이란 월드비전 홈페이지 및 월드비전 관련 제반 서비스에 회원가입을 하지 않고 서비스를 이용하는 자를 말합니다.</li>
+                                                    <li>"메일회원"이라 함은 월드비전에 e-mail 주소만을 제공하여 월드비전 홈페이지가 발송하는 메일을 수신하는 것을 내용으로 하는 서비스 이용 계약을 체결한 자를 말한다.</li>
+                                                    <li>"이용계약"이라 함은 서비스 이용과 관련하여 회사와 이용자 간에 체결하는 계약을 말합니다.</li>
+                                                    <li>"아이디(ID)"라 함은 "회원"의 식별과 "서비스" 이용을 위하여 "회원"이 정하고 "회사"가 승인하는 문자와 숫자의 조합을 의미합니다.</li>
+                                                    <li>"비밀번호"라 함은 "회원"이 부여 받은 "아이디와 일치되는 "회원"임을 확인하고 비밀보호를 위해 "회원" 자신이 정한 문자 또는 숫자의 조합을 의미합니다.</li>
+                                                    <li>"회원탈퇴(이하 "탈퇴"라 함)"라 함은 "회사" 또는 "회원"이 홈페이지 이용계약을 해약하는 행위를 말합니다.</li>
+                                                    <li>"후원해지"라 함은 "회사" 또는 "후원회원"이 홈페이지 회원탈퇴와는 별도로 후원을 중단하는 행위를 말합니다.</li>
+                                                    <li>"게시물"이라 함은 "회원"이 "서비스"를 이용함에 있어 "서비스상"에 게시한 부호ㆍ문자ㆍ음성ㆍ음향ㆍ화상ㆍ동영상 등의 정보 형태의 글, 사진, 동영상 및 각종 파일과 링크 등을 의미합니다.</li>
+                                                </ol>
+                                            </li>
+                                            <li class="bullet_num" data-num="2."><p>본 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계 법령 및 서비스 운영 기준에서 정하는 바에 의합니다.</p></li>
+                                        </ul>
+                                        
+                                        <strong>[제 3조] 약관의 게시와 개정</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 이 약관의 내용을 "회원"이 쉽게 알 수 있도록 서비스 초기 화면에 게시합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 "약관의규제에관한법률", "정보통신망이용촉진및정보보호등에관한법률(이하 "정보통신망법")" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 서비스의 초기화면 및 공지사항에 그 적용일자 7일 전부터 적용일자 전일까지 적용합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 공지외에 일정기간 서비스 내 전자우편, 전자쪽지, 로그인시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 7일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</p></li>
+                                            <li class="bullet_num" data-num="5."><p>회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사는 이용계약을 해지할 수 있습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 4조] 약관의 해석</strong>
+                                        <p>본 약관에서 명시하지 않은 사항은 전기통신사업법 등 관계 법령 또는 상관례에 따릅니다.</p>
+            
+                                        <strong>[제 5조] 이용계약의 성립</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>이용계약은 이용자의 본 약관에 대한 동의와 이용신청에 대하여 회사가 이를 승낙함으로써 성립합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>이용신청 당시, 이용자가 회원가입 페이지의 '동의'버튼을 누름으로써 본 약관에 동의하는 것으로 간주됩니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 6조] 이용계약의 체결</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>이용계약은 "회원"이 되고자 하는 자가 약관의 내용에 대하여 동의를 한 다음 회원가입신청을 하고 "회사"가 이러한 신청에 대하여 승낙함으로써 체결됩니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 "회원"이 되고자 하는 자의 신청에 대하여 "서비스" 이용을 승낙함을 원칙으로 합니다. 다만, "회사"는 다음 각 호에 해당하는 신청에 대하여는 승낙을 하지 않거나 사후에 이용계약을 해지할 수 있습니다.</p>
+                                                <ol>
+                                                    <li>실명이 아니거나 타인의 명의를 이용한 경우</li>
+                                                    <li>14세 미만 아동이 법정대리인(부모 등)의 동의를 얻지 아니한 경우</li>
+                                                    <li>이용자의 귀책사유로 인하여 승인이 불가능하거나 기타 규정한 제반 사항을 위반하며 신청하는 경우</li>
+                                                    <li>부정한 용도로 본 서비스를 이용하고자 하는 경우</li>
+                                                    <li>사회의 안녕과 질서, 미풍양속을 저해할 목적으로 신청한 경우</li>
+                                                    <li>허위정보를 기재하거나, "회사"가 제시하는 내용을 기재하지 않은 경우</li>
+                                                </ol>
+                                            </li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"는 "회원"의 종류에 따라 전문기관을 통한 실명확인 및 본인인증을 요청할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>제2항에 따라 회원가입신청의 승낙을 하지 아니하거나 유보한 경우, "회사"는 원칙적으로 이를 가입신청자에게 알리도록 합니다.</p></li>
+                                            <li class="bullet_num" data-num="5."><p>이용계약의 성립 시기는 "회사"가 가입완료를 신청절차 상에서 표시한 시점으로 합니다.</p></li>
+                                            <li class="bullet_num" data-num="6."><p>"회사"는 "회원"에 대해 회사정책에 따라 등급별로 구분하여 이용시간, 이용횟수, 서비스 메뉴 등을 세분하여 이용에 차등을 둘 수 있습니다.(후원여부)</p></li>
+                                        </ul>
+            
+                                        <strong>[제 7조] 변경</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회원"은 개인정보관리화면을 통하여 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다. 다만, 서비스 관리를 위해 필요한 실명, 주민등록번호, 아이디 등은 수정이 불가능합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회원"은 회원가입신청 시 기재한 사항이 변경되었을 경우 온라인으로 수정을 하거나 전자우편 기타 방법으로 "회사"에 대하여 그 변경사항을 알려야 합니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>제2항의 변경사항을 "회사"에 알리지 않아 발생한 불이익에 대하여 "회사"는 책임지지 않습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 8조] 개인정보보호 의무</strong>
+                                        <p>"회사"는 "정보통신망법" 등 관계 법령이 정하는 바에 따라 "회원"의 개인정보를 보호하기 위해 노력합니다. 개인정보의 보호 및 사용에 대해서는 관련법 및 "회사"의 개인정보취급방침이 적용됩니다. 다만, "회사"의 공식 사이트 이외의 링크된 사이트에서는 "회사"의 개인정보취급방침이 적용되지 않습니다. 또한 "회사"는 "회원"의 귀책사유로 인해 노출된 정보에 대해서 일체의 책임을 지지 않습니다.</p>
+            
+                                        <strong>[제 9조] 회원의 아이디 및 비밀번호 관리에 대한 의무</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회원"의 "아이디"와 "비밀번호"에 관한 관리책임은 "회원"에게 있으며, 이를 제3자가 이용하도록 하여서는 안 됩니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 "회원"의 "아이디"가 개인정보 유출 우려가 있거나, 반사회적 또는 미풍양속에 어긋나거나 "회사" 및 "회사"의 운영자로 오인한 우려가 있는 경우, 해당 "아이디"의 이용을 제한할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회원"은 "아이디" 및 "비밀번호"가 도용되거나 제3자가 사용하고 있음을 인지한 경우에는 이를 즉시 "회사"에 통지하고 "회사"의 안내에 따라야 합니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>제3항의 경우에 해당 "회원"이 "회사"에 그 사실을 통지하지 않거나, 통지한 경우에도 "회사"의 안내에 따르지 않아 발생한 불이익에 대하여 "회사"는 책임지지 않습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 10조] 회원에 대한 통지</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"가 "회원"에 대한 통지를 하는 경우 이 약관에 별도 규정이 없는 한 서비스 내 전자우편주소, 서신우편, 휴대전화, 휴대전화 문자메세지, 유선전화, '서비스'내 팝업 등으로 할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 "회원" 전체에 대한 통지의 경우 7일 이상 "회사"의 게시판에 게시함으로써 제1항의 통지에 갈음할 수 있습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 11조] 회사의 의무</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 관련법과 이 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적이고 안정적으로 "서비스"를 제공하기 위하여 최선을 다하여 노력합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 "회원"이 안전하게 "서비스"를 이용할 수 있도록 개인정보(신용정보 포함)보호를 위해 보안시스템을 갖추어야 하며 개인정보취급방침을 공시하고 준수합니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"는 서비스이용과 관련하여 "회원"으로부터 제기된 의견이나 불만이 정당하다고 인정할 경우에는 이를 처리하여야 합니다. "회원"이 제기한 의견이나 불만사항에 대해서는 게시판을 활용하거나 전자우편 등을 통하여 "회원"에게 처리과정 및 결과를 전달합니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 12조] 회원의 의무</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회원"은 다음 행위를 하여서는 안 됩니다.</p>
+                                                <ol>
+                                                    <li>회원가입 신청 또는 개인정보 변경 시 허위내용의 등록</li>
+                                                    <li>타인의 정보도용</li>
+                                                    <li>"회사"가 게시한 정보의 변경</li>
+                                                    <li>"회사"의 운영진, 직원 또는 관계자를 사칭하는 행위</li>
+                                                    <li>"회사"가 정한 정보 이외의 정보(컴퓨터 프로그램 등)등의 송신 또는 게시</li>
+                                                    <li>"회사"와 기타 제3자의 저작권 등 지적재산권에 대한 침해</li>
+                                                    <li>"회사" 및 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위</li>
+                                                    <li>외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 "서비스"에 공개 또는 게시하는 행위</li>
+                                                    <li>회사의 동의 없이 영리를 목적으로 "서비스"를 사용하는 행위</li>
+                                                    <li>기타 불법적이거나 부당한 행위</li>
+                                                </ol>
+                                            </li>
+                                            <li class="bullet_num" data-num="2."><p>"회원"은 관계법, 이 약관의 규정, 이용안내 및 "서비스"와 관련하여 공지한 주의사항, "회사"가 통지하는 사항 등을 준수하여야 하며, 기타 "회사"의 업무에 방해되는 행위를 하여서는 안 됩니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 13조] 서비스의 제공 등</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 본 서비스를 이용하는 "회원"을 등급별로 구분하여 이용시간, 이용회수, 서비스 메뉴 등의 이용에 차등을 둘 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>회사는 "서비스"를 일정범위로 분할하여 각 범위 별로 이용가능시간을 별도로 지정할 수 있습니다. 다만, 이러한 경우에는 그 내용을 사전에 공지합니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"서비스"는 연중무휴, 1일 24시간 제공함을 원칙으로 합니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>"회사"는 컴퓨터 등 정보통신설비의 보수점검, 교체 및 고장, 통신두절 또는 운영상 상당한 이유가 있는 경우 "서비스"의 제공을 일시적으로 중단할 수 있습니다. 이 경우 "회사"는 제10조 [회원에 대한 통지]에 정한 방법으로 "회원"에게 통지합니다. 다만, "회사"가 사전에 통지할 수 없는 부득이한 사유가 있는 경우 사후에 통지할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="5."><p>"회사"는 서비스의 제공에 필요한 경우 정기점검을 실시할 수 있으며, 정기점검시간은 서비스제공화면에 공지한 바에 따릅니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 14조] 서비스의 변경</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 상당한 이유가 있는 경우에 운영상, 기술상의 필요에 따라 제공하고 있는 전부 또는 일부 "서비스"를 변경할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"서비스"의 내용, 이용방법, 이용시간에 대하여 변경이 있는 경우에는 변경사유, 변경될 서비스의 내용 및 제공일자 등은 그 변경 전 7일 이상 해당 서비스 초기화면에 게시하여야 합니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"는 무료로 제공되는 서비스의 일부 또는 전부를 회사의 정책 및 운영의 필요상 수정, 중단, 변경할 수 있으며, 이에 대하여 관련법에 특별한 규정이 없는 한 "회원"에게 별도의 보상을 하지 않습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 15조] 정보의 제공 및 광고의 게제</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 "회원"이 "서비스" 이용 중 필요하다고 인정되는 다양한 정보를 공지사항이나 전자우편, 휴대전화, 휴대전화 문자메세지 등의 방법으로 "회원"에게 제공할 수 있습니다. 다만, "회원"은 관련법에 따른 거래관련 정보 및 긴급/필수고지사항 관련정보, 고객문의 등에 대한 답변 등을 제외하고는 언제든지 전자우편 등에 대해서 수신 거절을 할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>제1항의 정보를 전화 및 모사전송기기에 의하여 전송하려고 하는 경우에는 "회원"의 사전 동의를 받아서 전송합니다. 다만, "회원"의 거래관련 정보 및 긴급/필수고지사항 관련정보, 고객문의 등에 대한 회신에 있어서는 제외됩니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"는 "서비스"의 운영과 관련하여 서비스 화면, 홈페이지, 전자우편 등에 광고를 게재할 수 있습니다. 광고가 게재된 전자우편 등을 수신한 "회원"은 수신거절을 "회사"에게 할 수 있습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 16조] 게시물의 저작권</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회원"이 "서비스" 내에 게시한 "게시물"의 저작권은 해당게시물의 저작자에게 귀속됩니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회원"이 "서비스" 내에 게시하는 "게시물"은 검색결과 내지 "서비스" 및 관련 프로모션 등에 노출될 수 있으며, 해당 노출을 위해 필요한 범위 내에서는 일부 수정, 복제, 편집되어 게시될 수 있습니다. 이 경우, 회사는 저작권법 규정을 준수하며, "회원"은 언제든지 고객센터 또는 "서비스" 내 관리기능을 통해 해당 게시물에 대해 삭제, 검색결과 제외, 비공개 등의 조치를 취할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"는 제2항 이외의 방법으로 "회원"의 "게시물"을 이용하고자 하는 경우에는 전화, 팩스, 전자우편 등을 통해 사전에 "회원"의 동의를 얻어야 합니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 17조] 게시물의 관리</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회원"의 "게시물"이 "정보통신망법" 및 "저작권법"등 관련법에 위반되는 내용을 포함하는 경우, 권리자는 관련법이 정한 절차에 따라 해당 "게시물"의 게시중단 및 삭제 등을 요청할 수 있으며, "회사"는 관련법에 따라 조치를 취하여야 합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 전항에 따른 권리자의 요청이 없는 경우라도 권리침해가 인정될 만한 사유가 있거나 기타 회사 정책 및 관련법에 위반되는 경우 등 다음 각호에 해당하는 '게시물'에 대해 사전통지 없이 삭제하거나 이동 또는 등록 거부를 할 수 있습니다.</p>
+                                                <ol>
+                                                    <li>다른 회원 또는 제3자에게 심한 모욕을 주거나 명예를 손상시키는 내용인 경우</li>
+                                                    <li>공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크시키는 경우</li>
+                                                    <li>불법복제 또는 해킹을 조장하는 내용인 경우</li>
+                                                    <li>영리를 목적으로 하는 광고일 경우</li>
+                                                    <li>범죄와 결부된다고 객관적으로 인정되는 내용일 경우</li>
+                                                    <li>다른 이용자 또는 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우</li>
+                                                    <li>회사에서 규정한 게시물 운영정책에 어긋나거나, 게시판 성격에 부합하지 않는 경우</li>
+                                                    <li>기타 관계법령에 위배된다고 판단되는 경우</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+            
+                                        <strong>[제 18조] 권리의 귀속</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"서비스"에 대한 저작권 및 지적재산권은 "회사"에 귀속됩니다. 단, "회원"의 "게시물" 및 제휴계약에 따라 제공된 저작물 등은 제외합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 서비스와 관련하여 "회원"에게 "회사"가 정한 이용조건에 따라 계정, "아이디", 콘텐츠 등을 이용할 수 있는 이용권만을 부여하며, "회원"은 이를 양도, 판매, 담보제공 등의 처분행위를 할 수 없습니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 19조] 계약해제, 해지, 회원탈퇴 등</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회원"은 언제든지 서비스초기화면의 고객센터 또는 마이페이지 메뉴 등을 통하여 이용계약 해지 신청을 할 수 있으며, "회사"는 관련법 등이 정하는 바에 따라 이를 즉시 처리하여야 합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>후원회원인 경우, 홈페이지 회원 이용계약 해지와는 별도로 후원 중단을 원할 경우 중단 의사를 홈페이지를 통하거나 전화 등을 통해 의사를 밝혀야 하며, 후원 중단의 경우에 추후 각종 증명서 발급 등에 필요한 일부 개인정보는 회원관리 업무를 위해 관련법에 의거하여 보유합니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>홈페이지 회원이면서 후원회원인 경우, 홈페이지 탈퇴와 후원중단을 요청하는 경우에도 추후 각종 증명서 발급 등에 필요한 일부 개인정보는 회원관리 업무를 위해 관련법에 의거하여 보유합니다. 다만 홈페이지 회원 혹은 후원회원이 개인정보 삭제를 요청할 경우 등록되어 있는 개인정보를 폐기하며, 개인정보 폐기 후에는 추후 발생될 수 있는 각종 증명서 발급 등의 회원관리 업무를 지원하지 않습니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>"회원"이 계약을 해지할 경우, 관련법 및 개인정보취급방침에 따라 "회사"가 회원정보를 보유하는 경우를 제외하고는 해지 즉시 "회원"의 모든 데이터는 소멸됩니다.</p></li>
+                                            <li class="bullet_num" data-num="5."><p>"회원"이 계약을 해지하는 경우, "회원"이 공용게시판에 등록한 "게시물" 등은 삭제되지 않으니 사전에 삭제 후 탈퇴하시기 바랍니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 20조] 이용제한 등</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 "회원"이 이 약관의 의무를 위반하거나 "서비스"의 정상적인 운영을 방해한 경우, 경고, 일시정지, 영구이용정지 등으로 "서비스" 이용을 단계적으로 제한할 수 있습니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 전항에도 불구하고, "주민등록법"을 위반한 명의도용 및 결제도용, "저작권법" 및 "컴퓨터프로그램보호법"을 위반한 불법프로그램의 제공 및 운영방해, "정보통신망법"을 위반한 불법통신 및 해킹, 악성프로그램의 배포, 접속권한 초과행위 등과 같이 관련법을 위반한 경우에는 즉시 영구이용정지를 할 수 있습니다. 본 항에 따른 영구이용정지 시 "서비스" 이용을 통해 획득한 "포인트" 및 기타 혜택 등도 모두 소멸되며, "회사"는 이에 대해 별도로 보상하지 않습니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>본 조에 따라 "서비스" 이용을 제한하거나 계약을 해지하는 경우에는 "회사"는 제10조 [회원에 대한 통지]에 따라 통지합니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>"회원"은 본 조에 따른 이용제한 등에 대해 "회사"가 정한 절차에 따라 이의신청을 할 수 있습니다. 이 때 이의가 정당하다고 "회사"가 인정하는 경우 "회사"는 즉시 "서비스"의 이용을 재개합니다.</p></li>
+                                        </ul>
+                                        
+                                        <strong>[제 21조] 책임제한</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"는 천재지변 또는 이에 준하는 불가항력으로 인하여 "서비스"를 제공할 수 없는 경우에는 "서비스" 제공에 관한 책임이 면제됩니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"는 "회원"의 귀책사유로 인한 "서비스" 이용의 장애에 대하여는 책임을 지지 않습니다.</p></li>
+                                            <li class="bullet_num" data-num="3."><p>"회사"는 "회원"이 "서비스"와 관련하여 게재한 정보, 자료, 사실의 신뢰도, 정확성 등의 내용에 관하여는 책임을 지지 않습니다.</p></li>
+                                            <li class="bullet_num" data-num="4."><p>"회사"는 "회원" 간 또는 "회원"과 제3자 상호간에 "서비스"를 매개로 하여 거래 등을 한 경우에는 책임이 면제됩니다.</p></li>
+                                            <li class="bullet_num" data-num="5."><p>"회사"는 무료로 제공되는 서비스 이용과 관련하여 관련법에 특별한 규정이 없는 한 책임을 지지 않습니다.</p></li>
+                                            <li class="bullet_num" data-num="6."><p>"회사"는 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 발생한 손해에 대한 책임이 면제됩니다.</p></li>
+                                            <li class="bullet_num" data-num="7."><p>"회사"는 이용자의 컴퓨터 오류에 의해 손해가 발생한 경우, 또는 "회원"이 신상정보 및 전자우편 주소를 부실하게 기재하여 손해가 발생한 경우 책임을 지지 않습니다.</p></li>
+                                        </ul>
+                                        
+                                        <strong>[제 22조] 준거법 및 재판관할</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>"회사"와 "회원" 간 제기된 소송은 대한민국법을 준거법으로 합니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>"회사"와 "회원"간 발생한 분쟁에 관한 소송은 민사소송법 상의 관할법원에 제소합니다.</p></li>
+                                        </ul>
+            
+                                        <strong>[제 23조] 기부금의 사용</strong>
+                                        <ul>
+                                            <li class="bullet_num" data-num="1."><p>기부금은 월드비전을 통해 국내, 북한 및 전 세계의 빈곤에 처한 어려운 이웃에게 사용됩니다.</p></li>
+                                            <li class="bullet_num" data-num="2."><p>기부금 내역은 연 1회 후원자에게 사업보고서를 본 사이트에 공고 및 우편, 전자메일로 발송함으로써 투명하게 공개됩니다.</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#n" class="pop_close last_Tab" data-button="joinTerms_pop">팝업닫기</a>
+                        </div>
+
+                        <h3 class="titleA">회원가입 약관</h3>
+
+                        <ol class="step_area">
+                            <li class="step01"><span>01</span><p class="title">실명확인</p></li>
+                            <li class="step02 active"><span>02</span><p class="title">동의 및 정보입력</p></li>
+                            <li class="step03"><span>03</span><p class="title">가입완료</p></li>
+                        </ol>
+
+                        <div class="textArea">
+                            <p>개인정보보호를 위한 이용자 동의사항</p>
+                            <ul>
+                                <li class="bullet_num" data-num="1."><p>개인정보의 수집 · 이용목적</p>
+                                    <ul>
+                                        <li><strong class="pointB">고객문의 사항 접수 처리</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="bullet_num" data-num="2."><p>수집하는 개인정보의 항목</p>
+                                    <ul>
+                                        <li><strong class="pointB">필수항목 : 성명, 비밀번호, 제목, 작성일, 공개여부</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="bullet_num" data-num="3."><p>개인정보의 보유 및 이용기간</p>
+                                    <ul>
+                                        <li><strong class="pointB">보유기간 : 1년</strong></li>
+                                    </ul>
+                                </li>
+                                <li class="bullet_num" data-num="4."><p>동의를 거부할 권리 및 동의 거부에 따른 안내</p>
+                                    <ul>
+                                        <li><p>귀하는 본 안내에 따른 개인정보 수집에 대하여 거부하실 수 있는 권리가 있습니다.</p></li>
+                                        <li><p>본 개인정보 수집에 대하여 거부하시는 경우, 당사의 서비스를 이용하실 수 없습니다.</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="agree_text">
+                            <span>상기 내용을 숙지하시고 이용약관에 동의하십니까?</span>
+                            <div class="radiobox">
+                                <label for="agree1"><input type="radio" name="memagree1" id="agree1">동의함</label>
+                                <label for="disagree1"><input type="radio" name="memagree1" id="disagree1" checked="">동의하지 않음</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- .contents>.inner>.inner_top 본문내용 끝 -->
+
+                    <!--만족도-->
+                    <!-- <? include "../../ko23_include/satisfaction.html"; ?> -->
+                    <!-- 담당부서: .manager / 전화번호: .tel_num / 팩스번호: .fax_num / 이메일: .email_adr -->
+                    <section class="satisfaction">
+                        <h4 class="hide">담당자 및 홈페이지 만족도조사</h4>
+                        <div class="top">
+                            <dl class="manager">
+                                <dt>담당부서</dt>
+                                <dd>총무부</dd>
+                            </dl>
+                            <dl class="tel_num">
+                                <dt>전화번호</dt>
+                                <dd><a href="#n" tabindex="-1" class="mobile_telNo" data-tel="tel:070-5000-1218">070-5000-1218</a></dd>
+                            </dl>
+                            <dl class="refresh">
+                                <dt>최종업데이트 : </dt>
+                                <dd>2023. 05. 24</dd>
+                            </dl>
+                        </div>
+                        <div class="btm">
+                            <div>
+                                <p>홈페이지 만족도 <span>현재 페이지의 만족도를 평가해 주십시요. 의견을 수렴하여 빠른 시일 내에 반영하겠습니다.</span></p>
+                                <div class="radiobox">
+                                    <div>
+                                        <input type="radio" name="star" id="star05" checked="">
+                                        <label for="star05"><span>매우만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star04">
+                                        <label for="star04"><span>만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star03">
+                                        <label for="star03"><span>보통</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star02">
+                                        <label for="star02"><span>불만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star01">
+                                        <label for="star01"><span>매우불만족</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="satis_btn">
+                                <a href="#n" class="blue_btn">등록하기</a>
+                            </p>
+                        </div>
+                    </section>
+                    <!--//만족도-->
+                </div>
+                <!-- .contents>.inner -->
+            </div>
+            <!-- //contents -->
+        </div>
+    </section>
+    <!-- //sub.container  -->
+
+    <!-- footer -->
+    <!-- <? include "../../ko23_include/footer.html"; ?> -->
+    <div class="footer">
+        <!-- 관련기관 배너 -->
+        <section class="footer_banner">
+            <div class="wrap">
+                <h3 class="hide">관련기관 배너</h3>
+                <div class="banner">
+                    <ul class="banner_slide">
+                        <li><a href="http://www.motie.go.kr/" target="_blank" title="산업통상자원부 페이지로 새창 열림" tabindex="0"><img src="../../images/common/banner01.jpg" alt="산업통상자원부"></a></li>
+                        <li><a href="http://www.gov.kr" target="_blank" title="정부24 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner02.jpg" alt="정부24"></a></li>
+                        <li><a href="http://www.alio.go.kr" target="_blank" title="ALIO 공공기관 경영정보 공개시스템 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner03.jpg" alt="ALIO 공공기관 경영정보 공개시스템"></a></li>
+                        <li><a href="http://www.korea.go.kr/main" target="_blank" title="대한민국 정부포털 나에게 필요한 공공서비스 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner04.jpg" alt="대한민국 정부포털 나에게 필요한 공공서비스"></a></li>
+                        <li><a href="https://www.komipo.co.kr/kor/content/390/main.do?mnCd=FN120203" target="_blank" title="지역 특산물 코너 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner05.jpg" alt="지역 농·수·축산물 코너"></a></li>
+                        <li><a href="http://www.nongsarang.co.kr/" target="_blank" title="농사랑 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner06.jpg" alt="충남 농사랑"></a></li>
+                        <li><a href="http://1398.acrc.go.kr/case/ISGAcase" target="_blank" title="청탁금지법 통합검색 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner07.jpg" alt="청탁금지법 통합검색"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/corr/hpgCorrtReqStep1.do" target="_blank" title="청탁금지법위반신고 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner08.jpg" alt="청탁금지법위반신고"></a></li>
+                        <li><a href="http://www.acrc.go.kr/acrc/board.do?command=searchDetail&menuId=050205" target="_blank" title="공익신고 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner09.jpg" alt="공익신고"></a></li>
+                        <li><a href="http://www.epeople.go.kr/jsp/user/bw/front/UBwIntroduction.jsp" target="_blank" title="예산낭비 신고센터 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner10.jpg" alt="예산낭비 신고센터"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/req/hpgPssStep1.do" target="_blank" title="복지·보조금 부정 신고센터 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner11.jpg" alt="복지·보조금 부정 신고센터"></a></li>
+                        <li><a href="http://tv.mpss.go.kr/web/main/main.do" target="_blank" title="국민안전방송 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner12.jpg" alt="국민안전방송"></a></li>
+                    </ul>
+                    <div class="control">
+                        <button type="button" class="prev_btn">이전 슬라이드로 이동</button>
+                        <button type="button" class="next_btn">다음 슬라이드로 이동</button>
+                        <button type="button" class="ctr_btn pause">일시정지</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //관련기관 배너 -->
+        <footer id="footer">
+            <div class="top">
+                <div class="wrap">
+                    <div class="left">
+                            <a href="../con06/con06_01/privacy.html" class="pointC">ㆍ개인정보처리방침</a>
+                            <a href="../con02/con02_11/FN020909.html">ㆍ찾아오시는 길</a>
+                            <a href="../con06/con06_01/sitemap.html" class="f_sitemap">ㆍ사이트 맵</a>
+                            <a href="../con02/con02_10/FN021601.html">ㆍ부서별 전화번호</a>
+                        </div>
+                    <ul class="footer_link">
+                        <li><a href="https://blog.naver.com/komipo_official" target="_blank" title="BLOG 페이지 새창 열림" class="blog_tit">한국중부발전 공식 블로그</a></li>
+                        <li><a href="https://www.facebook.com/komipo" target="_blank" title="FACEBOOK 페이지 새창 열림" class="facebook_tit">한국중부발전 페이스북</a></li>
+                        <li><a href="https://www.instagram.com/komipo_official" target="_blank" title="INSTAGRAM 페이지 새창 열림" class="instagram_tit">한국중부발전 인스타그램</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCew6PRDs_1tIZ0tGvqgpDWw" target="_blank" title="YOUTUBE 페이지 새창 열림" class="youtube_tit">한국중부발전 유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm">
+                <div class="wrap">
+                    <div class="address">
+                        <a href="../../index.html" class="foot_logo">KOMIPO 한국중부발전</a>
+                        <address>
+                            <p>본사 : (33439)충청남도 보령시 보령북로 160 / </p><br/>
+                            <p>대표자명 : 김호빈 / </p>
+                            <p>사업자등록번호 : 120-86-19170 / </p><br/>
+                            <p>대표전화 : <a href="#n" tabindex="-1" data-tel="tel:070-7511-1114" class="mobile_telNo">070-7511-1114</a> / </p>
+                            <p>FAX : 070-7511-1046</p>
+                            <p class="copyright">COPYRIGHT © 2023 KOREA MIDLAND POWER Co., LTD. <br/>ALL RIGHTS RESERVED.</p>
+                        </address>
+                    </div>
+                    <div class="mark">
+                        <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"
+                            title="한국웹접근성인증평가원 새창열림" class="accessibility">국가공인 웹 접근성 품질인증마크</a>
+                        <a href="#n" title="ISMSP 인증서 새창열림" class="isms-p">ISMSP 인증마크</a>
+                        <a href="#n" title="S&P 보도자료 상세보기" class="awards_logo">S&P logo</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!--탑으로 이동버튼-->
+        <div class="top_move">
+            <span class="arrow"></span>
+        </div>
+        <!--//탑으로 이동버튼-->
+    </div>
+    <!-- //footer -->
+    
+    <script src="../../js/jquery-3.6.3.min.js"></script>    
+    <script src="../../js/jquery-ui.min.js"></script>    
+    <script src="../../js/jquery.rwdImageMaps.min.js"></script> <!-- 이미지맵 반응형 js -->
+    <script src="../../js/slick.min.js"></script>    
+    <script src="../../js/common.js"></script>    
+    <script src="../../js/sub.js"></script>    
+
+    <script>
+        // 반응형 이미지맵
+        $('img[usemap]').rwdImageMaps();
+    </script>
+    
+</body>
+</html>

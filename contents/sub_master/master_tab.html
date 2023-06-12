@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico"> <!-- 파비콘 -->
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../css/sub.css">
+    <link rel="stylesheet" type="text/css" href="../../css/rwd_sub.css">
+
+    <title>마스터(중부)</title>
+</head>
+<body>
+    <!-- skipMenu -->
+    <div title="스킵메뉴" class="skipMenu">
+        <a href="#gnbmenu"><span>주메뉴 바로가기</span></a>
+        <a href="#content"><span>본문 바로가기</span></a>
+        <a href="#footer"><span>푸터 바로가기</span></a>
+    </div>
+    <!-- //skipMenu -->
+
+    <!-- header -->
+    <!-- <? include "../../ko23_include/header.html"; ?> -->
+    <header id="header">
+        <div class="header_top">
+            <div class="wrap">
+                <ul class="quick_link">
+                    <li><a href="../../con04/con04_04/FN100402.html">견학신청</a></li>
+                    <li><a href="https://visit.komipo.co.kr:8070" target="_blank" title="한국중부발전 출입신청 새창 열림">출입신청</a></li>
+                    <li><a href="https://mail.komipo.co.kr" target="_blank" title="중부인메일 새창 열림">중부메일</a></li>
+                </ul>
+                <!-- .family_pop(전력사이트 + 언어 + 팝업) -->
+                <ul class="family_pop">
+                    <li class="famliysite"><button type="button" title="관련(공공기관)사이트 열기">관련(공공기관)사이트</button>
+                        <!-- 관련(공공기관)사이트 -->
+                        <div class="family_site pop_wrap">
+                            <div class="inner">
+                                <p class="title">관련(공공기관)사이트</p>
+                                <dl>
+                                    <dt>기업지원시스템</dt>
+                                    <dd>
+                                        <a href="http://srm.kepco.net/" target="_blank" title="입찰정보 시스템 새창 열림">입찰정보 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:7441/" target="_blank" title="계약이행 실적증명발급 새창 열림">계약이행 실적증명발급</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://easyu.kospo.co.kr/easyuUser/;jsessionid=Rfx8xNwd1brJnz7FqgdiQJyVAQtAZOpMdP9Ex3McT18KqCneg2eYxdLTUhhjghwU.nbcwwas1_servlet_EAS1" target="_blank" title="기자재 공급 유자격 통합관리 새창 열림">기자재 공급 유자격 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://withu.ewp.co.kr:8443/user" target="_blank" title="정비적격업체 통합관리 새창 열림">정비적격업체 통합관리</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://crm.komipo.co.kr:8030" target="_blank" title="시험성적서 검증 시스템 새창 열림">시험성적서 검증 시스템</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="https://rec.komipo.co.kr:8557/WebContent/jsp/main/main.jsp" target="_blank" title="공급인증서(REC)거래 새창 열림">공급인증서(REC)거래</a>
+                                    </dd>
+                                </dl>
+                                <dl class="type2">
+                                    <dt>전력그룹사</dt>
+                                    <dd>
+                                        <a href="http://www.kepco.co.kr" target="_blank" title="한국전력공사 새창 열림">한국전력공사</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.genco.kr" target="_blank" title="발전회사협력본부 새창 열림">발전회사협력본부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.khnp.co.kr" target="_blank" title="한국수력원자력㈜ 새창 열림">한국수력원자력㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kdn.com" target="_blank" title="한전KDN㈜ 새창 열림">한전KDN㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.koenergy.kr" target="_blank" title="한국남동발전㈜ 새창 열림">한국남동발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepco-enc.com" target="_blank" title="한국전력기술㈜ 새창 열림">한국전력기술㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.iwest.co.kr" target="_blank" title="한국서부발전㈜ 새창 열림">한국서부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kps.co.kr" target="_blank" title="한전KPS㈜ 새창 열림">한전KPS㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kospo.co.kr" target="_blank" title="한국남부발전㈜ 새창 열림">한국남부발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.knfc.co.kr" target="_blank" title="한전원자력연료㈜ 새창 열림">한전원자력연료㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.ewp.co.kr" target="_blank" title="한국동서발전㈜ 새창 열림">한국동서발전㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kepid.co.kr" target="_blank" title="한전산업개발㈜ 새창 열림">한전산업개발㈜</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.kpx.or.kr" target="_blank" title="한국전력거래소 새창 열림">한국전력거래소</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>국내유관기관</dt>
+                                    <dd>
+                                        <a href="http://www.motie.go.kr" target="_blank" title="산업통상자원부 새창 열림">산업통상자원부</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.acrc.go.kr" target="_blank" title="국민권익위원회 새창 열림">국민권익위원회</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.korea.go.kr" target="_blank" title="대한민국정부포털 새창 열림">대한민국정부포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.gov30.go.kr" target="_blank" title="정부3.0 새창 열림">정부3.0</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.data.go.kr" target="_blank" title="공공데이터포털 새창 열림">공공데이터포털</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.alio.go.kr" target="_blank" title="ALIO 새창 열림">ALIO</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.law.go.kr" target="_blank" title="법령정보센터 새창 열림">법령정보센터</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="http://www.moi.go.kr/frt/sub/a05/gwanboMain/screen.do" target="_blank" title="대한민국전자관보 새창 열림">대한민국전자관보</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <button type="button" class="close_btn" title="관련(공공기관)사이트 닫기">닫기</button>
+                        </div>
+                        <!-- //관련(공공기관)사이트 -->
+                    </li>
+                    <li class="lang"><button type="button" title="언어선택 열기">Language</button>
+                        <ul>
+                            <li><span class="on">KOREA</span></li>
+                            <li><a href="../../eng/index.html" target="_blank" title="영문페이지 새창 열림">ENGLISH</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_zone"><button type="button" title="알립니다 팝업 열기">알립니다!</button>
+                        <div class="popup_list pop_wrap">
+                            <div class="pop_slide inner">
+                                <p class="title">알립니다!</p>
+                                <ul>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner01.jpg" alt="2023년 4직급 신입직원 채용제도 개선사항 자세히 보기"></a></li>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner02.jpg" alt="전사·순직 군인 2048명의 유가족을 찾습니다! ☎044-200-7374/042-550-7387 유가족 찾기 바로가기 국민권익위원회 대한민국 국방부 국가보훈처"></a></li>
+                                    <li><a href="#n"><img src="../../images/common/pop_banner03.jpg" alt="기획재정부 신속한 위기대응 및 경제 살리기 코로나19 경제지원 비상경제회의 위기대응의 중심이 되어 최선을 다하겠습니다."></a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- // .family_pop(전력사이트 + 언어 + 팝업) -->
+            </div>
+        </div>
+        <div class="header_btm wrap">
+            <h1 class="logo"><a href="../../index.html">KOMIPO 한국중부발전</a></h1>
+            <button type="button" class="open_btn nav_open" data-name="MENU" title="메뉴열기">
+                <span class="line line01"></span>
+                <span class="line line02"></span>
+                <span class="line line03"></span>
+            </button>
+            <!-- gnbmenu -->
+            <nav class="gnbmenu" id="gnbmenu">
+                <ul class="depth1">
+                    <!-- 1depth 활성화 : .depth1>li>a 클래스 .now 추가 / 2dpeth 활성화 : .depth2>ul>li에 클래스 .now 추가 / 3depth 활성화 : .depth3>li에 클래스 .now 추가 -->
+                    <!-- depth1>li의 자식메뉴가 있다면 클래스.more_depth 추가 / .depth2>ul>li의 자식메뉴가 있다면 클래스 .more 추가-->
+                    <!-- 2depth 링크 연결 X-->
+                    <li class="menu01 more_depth"><a href="#n" data-name="소통채널" class="now">소통채널</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">소통채널</p>
+                                <span>한국중부발전이 공유하는 정보는 <br/>국민 여러분과의 소통 에너지입니다.</span>
+                                <a href="#n" target="_blank" title="알리오 홈페이지 새창 열림" class="quick_menu link01">
+                                    <dl>
+                                        <dt>알리오(ALIO)</dt>
+                                        <dd>경영에 대한 중요한 정보를 국민에게 제공하고 있습니다.</dd>
+                                    </dl>
+                                </a>
+                                <a href="#n" class="quick_menu link02">
+                                    <dl>
+                                        <dt>신문고</dt>
+                                        <dd>갑질 및 민원사항, 칭찬 사례 등 여러분의 의견을 듣겠습니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="more now"><a href="#n">사업실명제</a>
+                                    <ul class="depth3">
+                                        <li class="now"><a href="#n"><span>대상사업</span></a></li>
+                                        <li><a href="#n"><span>실명제목록</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 3depth가 없는 페이지이동 메뉴 -->
+                                <li><a href="#n">페이지 이동 메뉴</a></li>
+                                <!-- 3depth가 없는 새창 열림 메뉴 -->
+                                <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
+                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
+                                <li class="more"><a href="#n">정보공개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a></li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n" target="_blank" title="새창 열림">페이지 이동인 두줄짜리 메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu02"><a href="#n" data-name="회사소개" target="_blank" title="새창 열림">회사소개</a></li>
+                    <li class="menu03"><a href="#n" data-name="기업지원">기업지원</a></li>
+                    <li class="menu04 more_depth"><a href="#n" data-name="고객지원">고객지원</a>
+                        <div class="depth2">
+                            <div class="left_quick">
+                                <p class="title">고객지원</p>
+                                <span>더 좋은 미래를 열어가는 중부인은 다양한 <br/>모습으로 고객을 지원하고 있습니다.</span>
+                                <a href="#n" class="quick_menu link09">
+                                    <dl>
+                                        <dt>발전소 견학신청</dt>
+                                        <dd>전기가 어떤 과정을 거쳐 생산 되는지 궁금하셨죠?</dd>
+                                    </dl>
+                                </a>
+                                <a href="#n" target="_blank" title="퇴직자 경력증명서 발급시스템 페이지 새창 열림" class="quick_menu link10">
+                                    <dl>
+                                        <dt>퇴직자 경력증명서 발급시스템</dt>
+                                        <dd>중부발전 퇴직자를 위한 경력증명서 온라인 신청ㆍ발급 서비스 입니다.</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <ul>
+                                <!-- 3depth가 없는 페이지이동 메뉴 -->
+                                <li><a href="#n">페이지 이동 메뉴</a></li>
+                                <!-- 3depth가 없는 새창 열림 메뉴 -->
+                                <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
+                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
+                                <li class="more"><a href="#n">정보공개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                    <ul class="depth3">
+                                        <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
+                                        <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
+                                    </ul>
+                                </li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a></li>
+                                <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
+                                <li class="line2"><a href="#n" target="_blank" title="새창 열림">페이지 이동인 두줄짜리 메뉴</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 
+            <div class="nav_bg">
+                <div class="wrap">
+                    <p class="title">KOMIPO<br/><strong>한국중부발전</strong></p>
+                    <p class="text">한국중부발전</p>
+                </div>
+            </div> 
+            -->
+            <!-- //gnbmenu -->
+            <!-- util_Box -->
+            <div class="util_Box">
+                <ul>
+                    <li class="hd_search">
+                        <label for="searchtext">
+                            <input type="text" id="searchtext" placeholder="검색어를 입력해 주세요">
+                        </label>
+                        <button type="button" class="top_search_btn">검색하기</button>
+                    </li>
+                    <li><button type="button" onclick="location.href='../con06/con06_01/sitemap.html' " class="util_sitemap">사이트맵 열기</button></li>
+                </ul>
+                <div class="top_searchBox">
+                    <div class="inner">
+                        <div class="search_wrap">
+                            <label for="searchtext2">
+                                <input type="text" id="searchtext2" placeholder="검색어를 입력해 주세요">
+                            </label>
+                            <button type="button" onclick="location.href='../con06/con06_01/search.html' " class="top_search_btn">검색하기</button>
+                        </div>
+                        <dl>
+                            <dt>ㆍ 인기 검색어</dt>
+                            <dd><a href="#n">윤준석</a></dd>
+                            <dd><a href="#n">대기배출사업장 청정연료전황 지원사업</a></dd>
+                            <dd><a href="#n">메탄올</a></dd>
+                            <dd><a href="#n">지역할당</a></dd>
+                        </dl>
+                    </div>
+                    <button type="button" class="close_btn" title="알립니다 팝업 닫기">닫기</button>
+                </div>
+            </div>
+            <!-- //util_Box -->
+        </div>
+        <div class="shadow2"></div>
+    </header>
+    <div class="shadow"></div>
+    <div class="shadow3"></div>
+    <!-- //header -->
+    
+    <!-- sub.container  -->
+    <section class="container">
+        <div class="wrap">
+            <!-- left_menu -->
+            <!-- <? include "../../ko23_include/left_menu.html"; ?> -->
+            <div class="left_menu">
+                <div class="left_title">
+                    <p>소통채널</p>
+                </div>
+                <ul class="depth_01">
+                    <li class="more_depth open"><a href="#n" class="now">사업실명제</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li class="now"><a href="#n"><span>대상사업</span></a></li>
+                                <li><a href="#n"><span>실명제목록</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">정보공개</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>정보공개제도 안내</span></a></li>
+                                <li><a href="#n"><span>정보공개 처리기준</span></a></li>
+                                <li><a href="#n"><span>정보공개 담당자</span></a></li>
+                                <li><a href="#n"><span>과거 정보목록</span></a></li>
+                                <li><a href="https://www.open.go.kr/com/main/mainView.do" target="_blank" title="새창 열림"><span>정보공개 청구</span></a></li>
+                                <li><a href="#n"><span>비공개정보 세부기준</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">사전정보공표</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>리스트</span></a></li>
+                                <li><a href="#n"><span>상세보기</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="https://api.komipo.co.kr/" target="_blank" title="새창 열림">공공데이터</a></li>
+                    <li class="more_depth"><a href="#n">경영공시 개요</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>경영공시 안내</span></a></li>
+                                <li><a href="#n"><span>공시기준</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="no_depth"><a href="#n">경영공시</a></li>
+                    <li class="more_depth"><a href="#n">행정정보공표</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>업무추진비</span></a></li>
+                                <li><a href="#n"><span>사규</span></a></li>
+                                <li><a href="#n"><span>사규 제·개정 예고</span></a></li>
+                                <li><a href="#n"><span>계약정보공개</span></a></li>
+                                <li><a href="#n"><span>해외출장 및 연수보고</span></a></li>
+                                <li><a href="#n"><span>상품권 관리내역</span></a></li>
+                                <li><a href="#n"><span>인건비 예산과 집행현황</span></a></li>
+                                <li><a href="#n"><span>복지시설현황</span></a></li>
+                                <li><a href="#n"><span>친환경상품 구매실적/이행계획</span></a></li>
+                                <li><a href="#n"><span>협력기업 하도급 현황</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">반부패청렴센터</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>내부감사결과</span></a></li>
+                                <li><a href="#n"><span>외부감사결과</span></a></li>
+                                <li><a href="#n"><span>부패관련 징계 현황 공개</span></a></li>
+                                <li><a href="#n"><span>공무수행사인 현황</span></a></li>
+                                <li><a href="#n"><span>청렴도측정 및 부패방지 시책평가 결과</span></a></li>
+                                <li><a href="#n"><span>청탁금지법 상담내역</span></a></li>
+                                <li><a href="#n"><span>청렴 365 자료실</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">신고채널</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>레드휘슬(익명신고)</span></a></li>
+                                <li><a href="#n"><span>신문고(실명신고)</span></a></li>
+                                <li><a href="#n"><span>공익신고</span></a></li>
+                                <li><a href="#n"><span>이해충돌신고</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">프라이버시센터</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>프라이버시센터 소개</span></a></li>
+                                <li><a href="#n"><span>개인정보 보호 정책</span></a></li>
+                                <li><a href="#n"><span>개인정보 보호 활동</span></a></li>
+                                <li><a href="#n"><span>개인정보 처리요구</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">열린혁신 아이디어 발전소</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>열린혁신 아이디어 발전소</span></a></li>
+                                <li><a href="#n"><span>규제혁신 아이디어제안</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="more_depth"><a href="#n">인재채용</a>
+                        <div class="depth_02">
+                            <ul>
+                                <li><a href="#n"><span>인사제도 안내</span></a></li>
+                                <li><a href="#n"><span>지원가이드</span></a></li>
+                                <li><a href="#n"><span>채용문의</span></a></li>
+                                <li><a href="#n"><span>채용공고</span></a></li>
+                                <li><a href="#n"><span>친인척 채용인원 공개</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- //left_menu -->
+            <!--LNB-->
+            <!-- <? include "../../ko23_include/lnb.html"; ?> -->
+            <div class="lnb">
+                <div class="wrap">
+                    <ul class="lnb_inner">
+                        <li class="home"><a href="../../index.html">home</a></li>
+                        <li class="depth01">
+                            <a href="#n"><span>소통채널</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">소통채널</a></li>
+                                <li><a href="#n">회사소개</a></li>
+                                <li><a href="#n">기업지원</a></li>
+                                <li><a href="#n">고객지원</a></li>
+                                <li><a href="https://www.komipo.co.kr/esg/main/main.do" target="_blank" title="새창 열림">ESG경영</a></li>
+                                <li><a href="#n">기업홍보</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth02">
+                            <a href="#n"><span>사업실명제</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">사업실명제</a></li>
+                                <li><a href="#n">정보공개</a></li>
+                                <li><a href="#n">사전정보공표</a></li>
+                                <li><a href="#n" target="_blank" title="새창 열림">공공데이터</a></li>
+                                <li><a href="#n">경영공시 개요</a></li>
+                                <li><a href="#n">경영공시</a></li>
+                                <li><a href="#n">행정정보공표</a></li>
+                                <li><a href="#n">반부패청렴센터</a></li>
+                                <li><a href="#n">신고채널</a></li>
+                                <li><a href="#n">프라이버시센터</a></li>
+                                <li><a href="#n">열린혁신 아이디어 발전소</a></li>
+                                <li><a href="#n">인재채용</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth03">
+                            <a href="#n"><span>대상사업</span></a>
+                            <ul class="lnb_more">
+                                <li class="now"><a href="#n">대상사업</a></li>
+                                <li><a href="#n">실명제목록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="share_box">
+                        <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                            <ul class="share_list">
+                                <li><button type="button" class="share_urlbtn">URL로 공유하기</button></li>
+                                <li><button type="button" class="share_facebookbtn">Facebook으로 공유하기</button></li>
+                                <li><button type="button" class="share_mailbtn">메일로 공유하기</button></li>
+                            </ul>
+                        </li>
+                        <li><button type="button" class="print_btn">프린트하기</button></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//LNB-->
+
+            <!-- contents -->
+            <div id="content" class="contents">
+                <!-- sub_visual & path -->
+                <!-- <? include "../../ko23_include/sub_visual.html"; ?> -->
+                <div class="sub_visual sub01">
+                    <div class="inner">
+                        <h2>소개</h2>
+                        <ul class="path">
+                            <li><a href="#n" class="home">home</a></li> 
+                            <li><a href="#n">회사소개</a></li>
+                            <li><a href="#n">회사개요</a></li>
+                            <li><a href="#n">소개</a></li>
+                        </ul>
+                        <ul class="share_box">
+                            <li><button type="button" class="share_btn" title="공유 목록 열기">공유하기</button>
+                                <ul class="share_list">
+                                    <li><button type="button" class="share_urlbtn">URL로 공유하기</button></li>
+                                    <li><button type="button" class="share_facebookbtn">Facebook으로 공유하기</button></li>
+                                    <li><button type="button" class="share_mailbtn">메일로 공유하기</button></li>
+                                </ul>
+                            </li>
+                            <li><button type="button" class="print_btn">프린트하기</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //sub_visual & path -->
+            
+                <!-- .contents>.inner -->
+                <div class="inner"> 
+                    <!-- .contents>.inner>.inner_top 본문내용 시작 -->
+                    <div class="inner_top">
+                        
+                        <h3 class="titleS"><span>컨텐츠 영역 최상단 타이틀 명</span></h3>
+                        <div class="near_link">
+                            <a href="#n" class="prev" target="_blank" title="새창 열림"><span>정보공개 모니터단</span></a>
+                            <a href="#n" class="next"><span>업무처리절차</span></a>
+                        </div>
+
+                        <div class="tab_wrap">
+                            <button type="button" class="now_tab">탭구조</button>
+                            <ul class="tabA f3 tab_link">
+                                <li><a href="master_title.html" data-name="타이틀, 텍스트">타이틀, 텍스트</a></li>
+                                <li><a href="master_board.html" data-name="게시판">게시판</a></li>
+                                <li><a href="master_table.html" data-name="테이블">테이블</a></li>
+                                <li class="current"><a href="master_tab.html" data-name="탭구조" title="선택된 탭메뉴">탭구조</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!-- 탭버튼 세팅 -->
+                        <!-- 탭 사용 시 아래 설명 주석은 빼기
+                        링크이동 없는 탭 : .tab / 링크이동 탭 : .tab_link
+                        .now_tab에는 현재 페이지의 메뉴명(첫번째 탭 타이틀) 입력
+                        탭구조는 tabA > tabB > depth_box 순서
+                        .tabB은 .tab_wrap안에 있어야 함(.tab_wrap 중복 사용 가능)
+                        .tab 속 a태그 클릭시 a태그의 data-tab과 .box_con의 id값이 일치하는 div에 클래스 current추가
+                        링크이동 탭 일 경우 div의 id값은 삭제해야 깔끔
+                        -->
+                        <div class="tab_wrap">
+                            <button type="button" class="now_tab">탭메뉴01</button>
+                            <ul class="tabA f3 tab">
+                                <li class=" current"><a href="#n" data-tab="box01A" data-name="탭메뉴01" title="선택된 탭메뉴">탭메뉴01</a></li>
+                                <li><a href="#n" data-tab="box02A" data-name="탭메뉴02">탭메뉴02</a></li>
+                                <li><a href="#n" data-tab="box03A" data-name="탭메뉴03">탭메뉴03</a></li>
+                            </ul>
+                            
+                            <div id="box01A" class="box_con current">
+                                <ul class="tabB tab">
+                                    <li class="current"><a href="#n" data-tab="box01B" title="선택된 탭메뉴">2019</a></li>
+                                    <li><a href="#n" data-tab="box02B">2018</a></li>
+                                    <li><a href="#n" data-tab="box03B">2017</a></li>
+                                    <li><a href="#n" data-tab="box04B">2016</a></li>
+                                    <li><a href="#n" data-tab="box05B">2015</a></li>
+                                    <li><a href="#n" data-tab="box06B">2014</a></li>
+                                    <li><a href="#n" data-tab="box07B">2013</a></li>
+                                    <li><a href="#n" data-tab="box08B">2012</a></li>
+                                    <li><a href="#n" data-tab="box09B">2011</a></li>
+                                    <li><a href="#n" data-tab="box10B">2010</a></li>
+                                </ul>
+                        
+                                <div id="box01B" class="box_con current">
+                                    <ul class="depth_box f4 tab">
+                                        <li class="current"><a href="#n" data-tab="history01" class="bullet01" title="선택된 탭메뉴">감사계획</a></li>
+                                        <li><a href="#n" data-tab="history02" class="bullet01">공직기강 감찰결과</a></li>
+                                        <li><a href="#n" data-tab="history03" class="bullet01">공직복무관리 추진계획</a></li>
+                                        <li><a href="#n" data-tab="history04" class="bullet01">민원처리 절차</a></li>
+                                        <li><a href="#n" data-tab="history05" class="bullet01">반부패 경쟁력 추진 현황</a></li>
+                                        <li><a href="#n" data-tab="history06" class="bullet01">반부패 경쟁력평가 결과</a></li>
+                                        <li><a href="#n" data-tab="history07" class="bullet01">연간 감사결과</a></li>
+                                        <li><a href="#n" data-tab="history08" class="bullet01">이사회 참석률</a></li>
+                                    </ul>
+
+                                    <div id="history01" class="box_con current">감사계획</div>
+                                    <div id="history02" class="box_con">공직기강 감찰결과</div>
+                                    <div id="history03" class="box_con">공직복무관리 추진계획</div>
+                                    <div id="history04" class="box_con">민원처리 절차</div>
+                                    <div id="history05" class="box_con">반부패 경쟁력 추진 현황</div>
+                                    <div id="history06" class="box_con">반부패 경쟁력평가 결과</div>
+                                    <div id="history07" class="box_con">연간 감사결과</div>
+                                    <div id="history08" class="box_con">이사회 참석률</div>
+                                </div>
+                                <div id="box02B" class="box_con">b</div>
+                                <div id="box03B" class="box_con">c</div>
+                                <div id="box04B" class="box_con">d</div>
+                                <div id="box05B" class="box_con">e</div>
+                                <div id="box06B" class="box_con">f</div>
+                                <div id="box07B" class="box_con">g</div>
+                                <div id="box08B" class="box_con">h</div>
+                                <div id="box09B" class="box_con">i</div>
+                                <div id="box10B" class="box_con">j</div>
+                            </div>
+
+                            <div id="box02" class="box_con"></div>
+                            <div id="box03" class="box_con"></div>
+                        </div>
+
+                        
+
+
+                    </div>
+                    <!-- .contents>.inner>.inner_top 본문내용 끝 -->
+
+                    <!--만족도-->
+                    <!-- <? include "../../ko23_include/satisfaction.html"; ?> -->
+                    <!-- 담당부서: .manager / 전화번호: .tel_num / 팩스번호: .fax_num / 이메일: .email_adr -->
+                    <section class="satisfaction">
+                        <h4 class="hide">담당자 및 홈페이지 만족도조사</h4>
+                        <div class="top">
+                            <dl class="manager">
+                                <dt>담당부서</dt>
+                                <dd>총무부</dd>
+                            </dl>
+                            <dl class="tel_num">
+                                <dt>전화번호</dt>
+                                <dd><a href="#n" tabindex="-1" class="mobile_telNo" data-tel="tel:070-5000-1218">070-5000-1218</a></dd>
+                            </dl>
+                            <dl class="refresh">
+                                <dt>최종업데이트 : </dt>
+                                <dd>2023. 05. 24</dd>
+                            </dl>
+                        </div>
+                        <div class="btm">
+                            <div>
+                                <p>홈페이지 만족도 <span>현재 페이지의 만족도를 평가해 주십시요. 의견을 수렴하여 빠른 시일 내에 반영하겠습니다.</span></p>
+                                <div class="radiobox">
+                                    <div>
+                                        <input type="radio" name="star" id="star05" checked="">
+                                        <label for="star05"><span>매우만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star04">
+                                        <label for="star04"><span>만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star03">
+                                        <label for="star03"><span>보통</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star02">
+                                        <label for="star02"><span>불만족</span></label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="star" id="star01">
+                                        <label for="star01"><span>매우불만족</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="satis_btn">
+                                <a href="#n" class="blue_btn">등록하기</a>
+                            </p>
+                        </div>
+                    </section>
+                    <!--//만족도-->
+                </div>
+                <!-- .contents>.inner -->
+            </div>
+            <!-- //contents -->
+        </div>
+    </section>
+    <!-- //sub.container  -->
+
+    <!-- footer -->
+    <!-- <? include "../../ko23_include/footer.html"; ?> -->
+    <div class="footer">
+        <!-- 관련기관 배너 -->
+        <section class="footer_banner">
+            <div class="wrap">
+                <h3 class="hide">관련기관 배너</h3>
+                <div class="banner">
+                    <ul class="banner_slide">
+                        <li><a href="http://www.motie.go.kr/" target="_blank" title="산업통상자원부 페이지로 새창 열림" tabindex="0"><img src="../../images/common/banner01.jpg" alt="산업통상자원부"></a></li>
+                        <li><a href="http://www.gov.kr" target="_blank" title="정부24 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner02.jpg" alt="정부24"></a></li>
+                        <li><a href="http://www.alio.go.kr" target="_blank" title="ALIO 공공기관 경영정보 공개시스템 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner03.jpg" alt="ALIO 공공기관 경영정보 공개시스템"></a></li>
+                        <li><a href="http://www.korea.go.kr/main" target="_blank" title="대한민국 정부포털 나에게 필요한 공공서비스 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner04.jpg" alt="대한민국 정부포털 나에게 필요한 공공서비스"></a></li>
+                        <li><a href="https://www.komipo.co.kr/kor/content/390/main.do?mnCd=FN120203" target="_blank" title="지역 특산물 코너 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner05.jpg" alt="지역 농·수·축산물 코너"></a></li>
+                        <li><a href="http://www.nongsarang.co.kr/" target="_blank" title="농사랑 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner06.jpg" alt="충남 농사랑"></a></li>
+                        <li><a href="http://1398.acrc.go.kr/case/ISGAcase" target="_blank" title="청탁금지법 통합검색 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner07.jpg" alt="청탁금지법 통합검색"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/corr/hpgCorrtReqStep1.do" target="_blank" title="청탁금지법위반신고 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner08.jpg" alt="청탁금지법위반신고"></a></li>
+                        <li><a href="http://www.acrc.go.kr/acrc/board.do?command=searchDetail&menuId=050205" target="_blank" title="공익신고 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner09.jpg" alt="공익신고"></a></li>
+                        <li><a href="http://www.epeople.go.kr/jsp/user/bw/front/UBwIntroduction.jsp" target="_blank" title="예산낭비 신고센터 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner10.jpg" alt="예산낭비 신고센터"></a></li>
+                        <li><a href="https://1398.acrc.go.kr/hpg/req/hpgPssStep1.do" target="_blank" title="복지·보조금 부정 신고센터 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner11.jpg" alt="복지·보조금 부정 신고센터"></a></li>
+                        <li><a href="http://tv.mpss.go.kr/web/main/main.do" target="_blank" title="국민안전방송 페이지로 새창열림" tabindex="0"><img src="../../images/common/banner12.jpg" alt="국민안전방송"></a></li>
+                    </ul>
+                    <div class="control">
+                        <button type="button" class="prev_btn">이전 슬라이드로 이동</button>
+                        <button type="button" class="next_btn">다음 슬라이드로 이동</button>
+                        <button type="button" class="ctr_btn pause">일시정지</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //관련기관 배너 -->
+        <footer id="footer">
+            <div class="top">
+                <div class="wrap">
+                    <div class="left">
+                            <a href="../con06/con06_01/privacy.html" class="pointC">ㆍ개인정보처리방침</a>
+                            <a href="../con02/con02_11/FN020909.html">ㆍ찾아오시는 길</a>
+                            <a href="../con06/con06_01/sitemap.html" class="f_sitemap">ㆍ사이트 맵</a>
+                            <a href="../con02/con02_10/FN021601.html">ㆍ부서별 전화번호</a>
+                        </div>
+                    <ul class="footer_link">
+                        <li><a href="https://blog.naver.com/komipo_official" target="_blank" title="BLOG 페이지 새창 열림" class="blog_tit">한국중부발전 공식 블로그</a></li>
+                        <li><a href="https://www.facebook.com/komipo" target="_blank" title="FACEBOOK 페이지 새창 열림" class="facebook_tit">한국중부발전 페이스북</a></li>
+                        <li><a href="https://www.instagram.com/komipo_official" target="_blank" title="INSTAGRAM 페이지 새창 열림" class="instagram_tit">한국중부발전 인스타그램</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCew6PRDs_1tIZ0tGvqgpDWw" target="_blank" title="YOUTUBE 페이지 새창 열림" class="youtube_tit">한국중부발전 유튜브</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm">
+                <div class="wrap">
+                    <div class="address">
+                        <a href="../../index.html" class="foot_logo">KOMIPO 한국중부발전</a>
+                        <address>
+                            <p>본사 : (33439)충청남도 보령시 보령북로 160 / </p><br/>
+                            <p>대표자명 : 김호빈 / </p>
+                            <p>사업자등록번호 : 120-86-19170 / </p><br/>
+                            <p>대표전화 : <a href="#n" tabindex="-1" data-tel="tel:070-7511-1114" class="mobile_telNo">070-7511-1114</a> / </p>
+                            <p>FAX : 070-7511-1046</p>
+                            <p class="copyright">COPYRIGHT © 2023 KOREA MIDLAND POWER Co., LTD. <br/>ALL RIGHTS RESERVED.</p>
+                        </address>
+                    </div>
+                    <div class="mark">
+                        <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"
+                            title="한국웹접근성인증평가원 새창열림" class="accessibility">국가공인 웹 접근성 품질인증마크</a>
+                        <a href="#n" title="ISMSP 인증서 새창열림" class="isms-p">ISMSP 인증마크</a>
+                        <a href="#n" title="S&P 보도자료 상세보기" class="awards_logo">S&P logo</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!--탑으로 이동버튼-->
+        <div class="top_move">
+            <span class="arrow"></span>
+        </div>
+        <!--//탑으로 이동버튼-->
+    </div>
+    <!-- //footer -->
+    
+    <script src="../../js/jquery-3.6.3.min.js"></script>    
+    <script src="../../js/jquery-ui.min.js"></script>    
+    <script src="../../js/slick.min.js"></script>    
+    <script src="../../js/common.js"></script>    
+    <script src="../../js/sub.js"></script>    
+    
+</body>
+</html>
