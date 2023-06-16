@@ -66,39 +66,6 @@ $(document).ready(function(){
 		});
 	}
 
-	// 토클 클릭으로 열고닫기
-	lnb_mobile()
-	function lnb_mobile(){
-		$('.lnb_inner>li').on('click', function(){
-			var lnb_status = $(this).hasClass('open');
-			var lnb_status_m = $('.lnb_inner>li').hasClass('open');
-			// console.log(lnb_status);
-			// console.log(lnb_status_m);
-			if(lnb_status == false && lnb_status_m == false){
-				$(".lnb_inner>li").removeClass('open');
-				$(".lnb_more").stop().hide();
-				$(this).addClass('open');
-				$(this).children('ul').stop().show();
-			}else if(lnb_status == true && lnb_status_m == true){
-				$(this).removeClass('open');
-				$(this).children('ul').stop().hide();
-			}else if(lnb_status == false && lnb_status_m == true){
-				$(".lnb_inner>li").removeClass('open');
-				$(".lnb_more").stop().hide();
-				$(this).addClass('open');
-				$(this).children('ul').stop().show();
-			}
-		});
-		$('.lnb_more>li:last-child').on('focusout', function(){
-			$(this).removeClass('open');
-			$('.lnb_more').stop().hide();
-		});
-		$("#content, .sub_visual").on('click', function(){
-			$(".lnb_inner>li").removeClass('open');
-			$(".lnb_more").stop().hide();
-		});
-	}
-
 	//달력
 	$(".calendar").datepicker({
 		inline: true,
@@ -140,10 +107,23 @@ $(document).ready(function(){
 	})
 
 	$('.tab_wrap .now_tab').on('click', function () {
-		$(this).toggleClass('click');
-		$(this).next('.tab').stop().toggle();
-		$(this).next('.tab_link').stop().toggle();
+		var nowTabStatue = $(this).hasClass('click');
+		if(nowTabStatue == false){ // 열기
+			$(this).addClass('click');
+			$(this).next('.tab').stop().show().css('display','flex');
+			$(this).next('.tab_link').stop().show().css('display','flex');
+		}else{ // 닫기
+			$(this).removeClass('click');
+			$(this).next('.tab').stop().hide();
+			$(this).next('.tab_link').stop().hide();
+		}
 	});
+
+	// 현재 활성화 메뉴 스크롤 좌측에 위치하도록
+	var $tabLeft = $('.tabB').find('.current').position().left;
+	$('.tabB').scrollLeft($tabLeft);
+
+	
 
 	// 이미지 확대보기 팝업 열고 닫기
 	$('.view_btn').on('click', function(){

@@ -1,4 +1,5 @@
 @import url(common.css);
+@import url(layout.css);
 
 main{padding-top: 150px;}
 main .cts_inner{width: 100%;max-width: 1720px;margin: 0 auto;}

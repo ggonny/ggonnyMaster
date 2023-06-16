@@ -167,10 +167,10 @@
             <!-- gnbmenu -->
             <nav class="gnbmenu" id="gnbmenu">
                 <ul class="depth1">
-                    <!-- 1depth 활성화 : .depth1>li>a 클래스 .now 추가 / 2dpeth 활성화 : .depth2>ul>li에 클래스 .now 추가 / 3depth 활성화 : .depth3>li에 클래스 .now 추가 -->
-                    <!-- depth1>li의 자식메뉴가 있다면 클래스.more_depth 추가 / .depth2>ul>li의 자식메뉴가 있다면 클래스 .more 추가-->
+                    <!-- 1depth 활성화 : .depth1>li 클래스 .now 추가 / 2dpeth 활성화 : .depth2>ul>li에 클래스 .now 추가 / 3depth 활성화 : .depth3>li에 클래스 .now 추가 -->
+                    <!-- li의 자식메뉴가 있다면 클래스.more_depth 추가(js로 자동추가) -->
                     <!-- 2depth 링크 연결 X-->
-                    <li class="menu01 more_depth"><a href="#n" data-name="소통채널" class="now">소통채널</a>
+                    <li class="depth1_list now"><a href="www.naver.com" data-name="소통채널">소통채널</a>
                         <div class="depth2">
                             <div class="left_quick">
                                 <p class="title">소통채널</p>
@@ -189,25 +189,26 @@
                                 </a>
                             </div>
                             <ul>
-                                <li class="more now"><a href="#n">사업실명제</a>
+                                <li class="now"><a href="master_title.html">마스터 정리</a>
                                     <ul class="depth3">
-                                        <li class="now"><a href="#n"><span>대상사업</span></a></li>
-                                        <li><a href="#n"><span>실명제목록</span></a></li>
+                                        <li class="now"><a href="master_title.html"><span>타이틀, 텍스트</span></a></li>
+                                        <li><a href="master_board.html"><span>게시판</span></a></li>
+                                        <li><a href="master_table.html"><span>테이블</span></a></li>
+                                        <li><a href="master_tab.html"><span>탭 구조</span></a></li>
                                     </ul>
                                 </li>
                                 <!-- 3depth가 없는 페이지이동 메뉴 -->
                                 <li><a href="#n">페이지 이동 메뉴</a></li>
                                 <!-- 3depth가 없는 새창 열림 메뉴 -->
                                 <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
-                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
-                                <li class="more"><a href="#n">정보공개</a>
+                                <li><a href="#n">정보공개</a>
                                     <ul class="depth3">
                                         <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
                                         <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
                                     </ul>
                                 </li>
                                 <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
-                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
                                     <ul class="depth3">
                                         <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
                                         <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
@@ -220,9 +221,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="menu02"><a href="#n" data-name="회사소개" target="_blank" title="새창 열림">회사소개</a></li>
-                    <li class="menu03"><a href="#n" data-name="기업지원">기업지원</a></li>
-                    <li class="menu04 more_depth"><a href="#n" data-name="고객지원">고객지원</a>
+                    <li class="depth1_list"><a href="#n" data-name="회사소개" target="_blank" title="새창 열림">회사소개</a></li>
+                    <li class="depth1_list"><a href="#n" data-name="기업지원" target="_blank" title="새창 열림">기업지원</a></li>
+                    <li class="depth1_list"><a href="#n" data-name="고객지원">고객지원</a>
                         <div class="depth2">
                             <div class="left_quick">
                                 <p class="title">고객지원</p>
@@ -245,15 +246,14 @@
                                 <li><a href="#n">페이지 이동 메뉴</a></li>
                                 <!-- 3depth가 없는 새창 열림 메뉴 -->
                                 <li><a href="#n" target="_blank" title="새창 열림">새창 열림 메뉴</a></li>
-                                <!-- 3depth가 있는 메뉴 : li에 클래스 .more 추가, 자식ul에 클래스 .depth3 -->
-                                <li class="more"><a href="#n">정보공개</a>
+                                <li><a href="#n">정보공개</a>
                                     <ul class="depth3">
                                         <li><a href="#n"><span>페이지이동 메뉴</span></a></li>
                                         <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
                                     </ul>
                                 </li>
                                 <!-- 2depth가 두줄짜리 메뉴 : li에 클래스 .line2 추가 -->
-                                <li class="more line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
+                                <li class="line2"><a href="#n">페이지 이동인 두줄짜리 메뉴</a>
                                     <ul class="depth3">
                                         <li><a href="#n"><span>페이지 이동인 두줄짜리 메뉴</span></a></li>
                                         <li><a href="#n" target="_blank" title="새창 열림"><span>새창 열림 메뉴</span></a></li>
@@ -2617,7 +2617,7 @@
     </div>
     <!-- //footer -->
     
-    <script src="../../js/jquery-3.6.3.min.js"></script>    
+    <script src="../../js/jquery-3.7.0.min.js"></script>    
     <script src="../../js/jquery-ui.min.js"></script>    
     <script src="../../js/slick.min.js"></script>    
     <script src="../../js/common.js"></script>    
