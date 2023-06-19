@@ -270,6 +270,7 @@ $(document).ready(function () {
 			//스크롤제어 막기
 			scrollDisable();
 
+			$('.shadow2').show();
 			$(this).addClass('close');
 			$(this).attr('title', '메뉴닫기');
 			$headerTop.stop().animate({right: '0'}, 400);
@@ -284,6 +285,7 @@ $(document).ready(function () {
 			//스크롤제어 풀기
 			scrollAble();
 
+			$('.shadow2').hide();
 			$(this).removeClass('close');
 			$(this).attr('title', '메뉴열기');
 			$headerTop.stop().animate({right: '-200%'}, 400);

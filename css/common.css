@@ -221,7 +221,7 @@ input[readonly], textarea[readonly]{background:#f4f4f4}
 
 /* 쉐도우 */
 .shadow{position:fixed;left: 0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.7);z-index: 250;display: none;}
-.shadow2{position: fixed;left: 0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.7);z-index: 440;display: none;}
+.shadow2{position: fixed;left: 0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.7);display: none;}
 .shadow3{position:fixed;left: 0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.7);z-index: 250;display: none;}
 .shadow_pop{position:fixed;left: 0;top:0;width: 100%;height: 100%;background: rgba(0,0,0,.7);z-index: 510;display: block;}
 
