@@ -121,7 +121,7 @@
 .lnb_inner>li:last-child>a{background: url(../images/sub/lnb_more_on.png) right 20px top 20px no-repeat;color: #3763bb;font-weight: 500;}
 .lnb_inner>li.home{width: 55px;min-width: auto;}
 .lnb_inner>li.home>a{font-size: 0;line-height: 0;background: url(../images/sub/lnb_home.png) center no-repeat;height: 100%;padding: 0;}
-.lnb_more{position: absolute;left: -5px;top:45px;border: 1px solid #ddd;width: calc(100% + 10px);max-height: 260px;overflow-y: auto;padding: 10px 0;display: none;background: #fff;z-index: 80;}
+.lnb_more{position: absolute;left: -5px;top:45px;border: 1px solid #ddd;width: calc(100% + 10px);padding: 10px 0;display: none;background: #fff;z-index: 80;}
 /* .lnb_more:before{content: '';width: 10px;height: 10px;background: #fff;border: 1px solid #ddd;border-bottom: 0;border-right: 0;transform: rotate(45deg) translateX(-50%);position: absolute;left: 50%;top: -2px;z-index: -1;} */
 .lnb_more>li>a{display: block;font-size: 15px;padding: 8px 18px;background-color: #fff;transition: background-color .3s, color .4s;}
 .lnb_more>li>a[target="_blank"]{background: url(../images/common/new_win.png) right 20px top 12px no-repeat;padding-right: 42px;}
