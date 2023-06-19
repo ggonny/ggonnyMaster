@@ -66,6 +66,39 @@ $(document).ready(function(){
 		});
 	}
 
+	// 토클 클릭으로 열고닫기
+	lnb_mobile()
+	function lnb_mobile(){
+		$('.lnb_inner>li').on('click', function(){
+			var lnb_status = $(this).hasClass('open');
+			var lnb_status_m = $('.lnb_inner>li').hasClass('open');
+			// console.log(lnb_status);
+			// console.log(lnb_status_m);
+			if(lnb_status == false && lnb_status_m == false){
+				$(".lnb_inner>li").removeClass('open');
+				$(".lnb_more").stop().hide();
+				$(this).addClass('open');
+				$(this).children('ul').stop().show();
+			}else if(lnb_status == true && lnb_status_m == true){
+				$(this).removeClass('open');
+				$(this).children('ul').stop().hide();
+			}else if(lnb_status == false && lnb_status_m == true){
+				$(".lnb_inner>li").removeClass('open');
+				$(".lnb_more").stop().hide();
+				$(this).addClass('open');
+				$(this).children('ul').stop().show();
+			}
+		});
+		$('.lnb_more>li:last-child').on('focusout', function(){
+			$(this).removeClass('open');
+			$('.lnb_more').stop().hide();
+		});
+		$("#content, .sub_visual").on('click', function(){
+			$(".lnb_inner>li").removeClass('open');
+			$(".lnb_more").stop().hide();
+		});
+	}
+
 	//달력
 	$(".calendar").datepicker({
 		inline: true,
@@ -120,8 +153,11 @@ $(document).ready(function(){
 	});
 
 	// 현재 활성화 메뉴 스크롤 좌측에 위치하도록
-	var $tabLeft = $('.tabB').find('.current').position().left;
-	$('.tabB').scrollLeft($tabLeft);
+	var $tabB = $('.tabB');
+	if($tabB.length){
+		$tabBleft = $tabB.find('.current').position().left;
+		$('.tabB').scrollLeft($tabBleft);
+	}
 
 	
 
