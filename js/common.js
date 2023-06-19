@@ -181,12 +181,14 @@ $(document).ready(function () {
 			// 모바일메뉴 리셋
 			$lnbShowBtn.removeClass('close');
 			$lnbShowBtn.attr('title', '메뉴열기');
-			$headerTop.stop().animate({right: '-200%'}, 400);
-			$gnbMenu.stop().animate({right: '-200%'}, 400);
+			$headerTop.css('right', '-200%');
+			$gnbMenu.css('right', '-200%');
 
 			setTimeout(function () {
 				$('.util_Box').css('z-index', '450');
 			}, 100);
+
+			$('.shadow2').hide();
 		} else{
 			// pc메뉴 리셋
 			$lnbDepth1List.removeClass('hover');
@@ -279,7 +281,7 @@ $(document).ready(function () {
 			$('.util_Box').css('z-index','400');
 			
 			// 현재 활성화 메뉴 스크롤 상단에 위치하도록
-			let $mobile_menuTop = $lnbDepth2List.find('.now').offset().top;
+			let $mobile_menuTop = $lnbDepth2List.find('.now').position().top;
 			$lnbDepth2.scrollTop($mobile_menuTop);
 		}else{ //닫기
 			//스크롤제어 풀기
