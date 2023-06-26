@@ -216,8 +216,7 @@ $(document).ready(function () {
 				$('.shadow').show();
 
 			}else{
-				$lnbDepth1List.removeClass('hover');
-				$(this).addClass('hover');
+
 			}
 		}else{ // Mobile 1366이하
 
