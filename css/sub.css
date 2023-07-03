@@ -630,6 +630,8 @@ td.select_in.f2 select{width: calc(50% - 5px)!important;max-width: 205px;}
 .pop_lock .blue_btn{width: 120px;margin-right: 0;border: 0;vertical-align: middle;}
 .pop_open[data-button='lock_board']{position: relative;padding-left: 20px;}
 .pop_open[data-button='lock_board'] i{height: 16px;display: inline-block;position: absolute;left: 0;top: 46%;transform: translateY(-50%);}
+table .lock a{position: relative;padding-left: 20px;}
+table .lock i{height: 16px;display: inline-block;position: absolute;left: 0;top: 46%;transform: translateY(-50%);}
 
 /* 셀렉트 구분에 따라 내용 변경 */
 .select_funcDiv{display: none;}

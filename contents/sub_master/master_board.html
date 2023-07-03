@@ -541,10 +541,11 @@
                         <div class="tab_wrap">
                             <ul class="tabB tab">
                                 <li class="current"><a href="#n" data-tab="board01" title="선택된 탭메뉴">공지게시판(기본)</a></li>
-                                <li><a href="#n" data-tab="board02">비밀번호 팝업 게시판</a></li>
+                                <li><a href="#n" data-tab="board02">Q&A(비밀번호 팝업) 게시판</a></li>
+                                <li><a href="#n" data-tab="board11">글쓰기, 회원가입단계</a></li>
                                 <li><a href="#n" data-tab="board03">의견, 댓글 게시판</a></li>
                                 <li><a href="#n" data-tab="board04">토글게시판</a></li>
-                                <li><a href="#n" data-tab="board05">QNA게시판</a></li>
+                                <li><a href="#n" data-tab="board05">FAQ게시판</a></li>
                                 <li><a href="#n" data-tab="board06">상태표시 게시판</a></li>
                                 <li><a href="#n" data-tab="board07">우측 아이템 게시판</a></li>
                                 <li><a href="#n" data-tab="board08">다운로드게시판</a></li>
@@ -827,117 +828,573 @@
                             </div>
         
                             <div id="board02" class="box_con">
-                                <!-- 비밀번호 팝업 게시판 -->
-        
-                                <form action="/" name="" method="post">
-                                    <fieldset>
-                                        <legend>게시물 검색</legend>
-        
-                                        <div class="searchArea">
-                                            <label for="searchCnd">검색어 유형</label>
-                                            <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
-                                                <option>제목</option>
-                                                <option>내용</option>
-                                                <option>작성자</option>
-                                            </select>
-                                            <label for="search02">검색어 입력</label>
-                                            <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
-                                            <div class="btn_area">
-                                                <a href="#n" class="black_btn">검색</a>
+                                <!-- Q&A(비밀번호 팝업) 게시판 -->
+                                <div class="tab_wrap">
+                                    <ul class="tabA tab">
+                                        <li class="current"><a href="#n" data-name="회원전용 홈페이지" data-tab="board02_01" title="선택된 탭메뉴">회원전용 홈페이지</a></li>
+                                        <li><a href="#n" data-name="비회원전용 홈페이지" data-tab="board02_02">비회원전용 홈페이지</a></li>
+                                    </ul>
+
+                                    <!-- 회원전용 홈페이지 -->
+                                    <div id="board02_01" class="box_con current">
+                                        <h4 class="titleB">회원전용 홈페이지(로그인해서 들어오는 경우: 비밀글 비밀번호 팝업창 X)</h4>
+
+                                        <form action="/" name="" method="post">
+                                            <fieldset>
+                                                <legend>게시물 검색</legend>
+                
+                                                <div class="searchArea">
+                                                    <label for="searchCnd">검색어 유형</label>
+                                                    <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                        <option>제목</option>
+                                                        <option>내용</option>
+                                                        <option>작성자</option>
+                                                    </select>
+                                                    <label for="search02">검색어 입력</label>
+                                                    <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                                    <div class="btn_area">
+                                                        <a href="#n" class="black_btn">검색</a>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                
+                                        <div class="table_top">
+                                            <div class="total">
+                                                <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
                                             </div>
                                         </div>
-                                    </fieldset>
-                                </form>
-        
-                                <div class="table_top">
-                                    <div class="total">
-                                        <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
-                                    </div>
-                                </div>
-        
-                                <!-- 반응형시 우측에 붙는 요소 td에 클래스 .right_item를 추가해 주세요 -->
-                                <div class="tableScroll">
-                                    <table class="tableL mob_tableL">
-                                        <caption>채용문의 게시판 리스트 확인(번호, 제목, 작성일, 상태 )</caption>
-                                        <colgroup>
-                                            <col style="width:80px">
-                                            <col />
-                                            <col style="width:120px">
-                                            <col style="width:120px">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">번호</th>
-                                                <th scope="col">제목</th>
-                                                <th scope="col">작성일</th>
-                                                <th scope="col">상태</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr onclick="location.href='#n'">
-                                                <td class="t_num">4</td>
-                                                <td class="t_title"><a href="#n" class="ellipsis1">채용문의 드립니다.</a></td>
-                                                <td data-name="작성일"><span>2022.07.01</span></td>
-                                                <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
-                                            </tr>
-                                            <tr onclick="location.href='#n'">
-                                                <td class="t_num">3</td>
-                                                <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
-                                                <td data-name="작성일"><span>2022.07.01</span></td>
-                                                <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
-                                            </tr>
-                                            <tr onclick="location.href='#n'">
-                                                <td class="t_num">2</td>
-                                                <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
-                                                <td data-name="작성일"><span>2022.07.01</span></td>
-                                                <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
-                                            </tr>
-                                            <tr onclick="location.href='#n'">
-                                                <td class="t_num">1</td>
-                                                <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
-                                                <td data-name="작성일"><span>2022.07.01</span></td>
-                                                <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                        
-                                <div class="paging">
-                                    <button type="button" class="first"><span>처음페이지로</span></button>
-                                    <button type="button" class="prev"><span>이전페이지로</span></button>
-                                    <a href="#n" class="num on">1</a>
-                                    <a href="#n" class="num">2</a>
-                                    <a href="#n" class="num">3</a>
-                                    <a href="#n" class="num">4</a>
-                                    <a href="#n" class="num">5</a>
-                                    <a href="#n" class="num">6</a>
-                                    <a href="#n" class="num">7</a>
-                                    <a href="#n" class="num">8</a>
-                                    <a href="#n" class="num">9</a>
-                                    <a href="#n" class="num">10</a>
-                                    <button type="button" class="next"><span>다음페이지로</span></button>
-                                    <button type="button" class="last"><span>마지막페이지로</span></button>
-                                </div>
-                                
-                                <div class="btn_area mt40">
-                                    <a href="#n" class="blue_btn">글쓰기</a>
-                                </div>
-        
-                                <!-- 비밀번호 팝업 -->
-                                <div id="lock_board" class="pop_layer" role="dialog">
-                                    <p class="pop_title">비밀번호 입력</p>
-                                    <div class="pop_inner">
-                                        <div class="cts pop_lock">
-                                            <label class="first_Tab"><input type="password" title="비밀번호 입력" /></label>
-                                            <label><input type="button" value="확인" class="blue_btn"></label>
+                
+                                        <!-- 반응형시 우측에 붙는 요소 td에 클래스 .right_item를 추가해 주세요 -->
+                                        <div class="tableScroll">
+                                            <table class="tableL mob_tableL">
+                                                <caption>채용문의 게시판 리스트 확인(번호, 제목, 작성일, 상태 )</caption>
+                                                <colgroup>
+                                                    <col style="width:80px">
+                                                    <col />
+                                                    <col style="width:120px">
+                                                    <col style="width:120px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">번호</th>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">작성일</th>
+                                                        <th scope="col">상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">4</td>
+                                                        <td class="t_title"><a href="#n" class="ellipsis1">채용문의 드립니다.</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
+                                                    </tr>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">3</td>
+                                                        <td class="t_title lock"><a href="#n" class="ellipsis1"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
+                                                    </tr>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">2</td>
+                                                        <td class="t_title lock"><a href="#n" class="ellipsis1"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
+                                                    </tr>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">1</td>
+                                                        <td class="t_title lock"><a href="#n" class="ellipsis1"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
+                                                                        
+                                        <div class="paging">
+                                            <button type="button" class="first"><span>처음페이지로</span></button>
+                                            <button type="button" class="prev"><span>이전페이지로</span></button>
+                                            <a href="#n" class="num on">1</a>
+                                            <a href="#n" class="num">2</a>
+                                            <a href="#n" class="num">3</a>
+                                            <a href="#n" class="num">4</a>
+                                            <a href="#n" class="num">5</a>
+                                            <a href="#n" class="num">6</a>
+                                            <a href="#n" class="num">7</a>
+                                            <a href="#n" class="num">8</a>
+                                            <a href="#n" class="num">9</a>
+                                            <a href="#n" class="num">10</a>
+                                            <button type="button" class="next"><span>다음페이지로</span></button>
+                                            <button type="button" class="last"><span>마지막페이지로</span></button>
+                                        </div>
+                                        
+                                        <div class="btn_area mt40">
+                                            <a href="#n" class="blue_btn">글쓰기</a>
+                                        </div>
+
+                                        <hr class="mt40 mb40">
+                                        <h4 class="titleB">회원전용 홈페이지(로그인해서 들어오는 경우: 비밀글 비밀번호 입력X)</h4>
+                                        
+                                        <div class="table_top text top_pill">
+                                            <p class="alert_p">욕설, 비방글, 개인정보가 포함된 게시글은 사전에 작성자 동의 없이 삭제됩니다.</p>
+                                            <p class="top_detail"><em class="pointR01">*</em> 는 필수항목입니다.</p>
+                                        </div>
+
+                                        <table class="tableW">
+                                            <caption>채용문의 게시판 문의 입력(제목, 작성자, 작성일, 공개여부, 내용, 첨부파일, 비밀번호 )</caption>
+                                            <colgroup>
+                                                <col style="width:185px;">
+                                                <col />
+                                                <col style="width:185px;">
+                                                <col />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col"><label for="title"><span class="pill"><em class="ico">필수항목</em>제목</span></label></th>
+                                                    <td data-name="제목" colspan="3" class="pill">
+                                                        <input type="text" class="w1P" id="title" maxlength="40" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><span>작성자</span></th>
+                                                    <td data-name="작성자"><span>홍길동</span></td>
+                                                    <th scope="col"><span>작성일</span></th>
+                                                    <td data-name="작성일"><span>2023.07.03</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><span class="pill"><em class="ico">필수항목</em>공개여부</span></th>
+                                                    <td colspan="3" data-name="공개여부" class="pill">
+                                                        <div class="radiobox">
+                                                            <label for="rbox_openGubunA"><input id="rbox_openGubunA" name="rbox_openGubun" type="radio" value="0">공개</label>
+                                                            <label  for="rbox_openGubunB"><input id="rbox_openGubunB" name="rbox_openGubun" type="radio" value="1" checked>비공개</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><label for="cts_text"><span class="pill"><em class="ico">필수항목</em>내용</span></label></th>
+                                                    <td data-name="내용" colspan="3" class="pill">
+                                                        <textarea id="cts_text"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><label for="file-name"><span>첨부파일</span></label></th>
+                                                    <td data-name="첨부파일" colspan="3" class="attach_td">
+                                                        <p class="table_p">※ 첨부파일은 <em class="pointB01">최대 5개</em> 까지 입니다.</p>
+                                                        <div class="file_box">
+                                                            <div class="file_list">
+                                                                <input type="text" readonly class="file-name" id="file-name">
+                                                                <label for="upload01" class="file-label file_add">찾아보기</label>
+                                                                <input type="file" id="upload01" class="file-upload">
+                                                            </div>
+                                        
+                                                            <div class="btn_area">
+                                                                <button type="button" class="add_btn"><span>추가</span></button>
+                                                                <button type="button" class="del_btn"><span>삭제</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <div class="btn_area mt40">
+                                            <a href="#n" class="border_btn">취소</a>
+                                            <a href="#n" class="border_btn">목록</a>
+                                            <a href="#n" class="blue_btn">등록</a>
+                                        </div>
+
+                                        <hr class="mt40 mb40">
+
+                                        <h4 class="titleB">답변대기 상태의 뷰페이지, 회원연동 홈페이지 (삭제, 수정 가능 -> 비밀번호 팝업 X)</h4>
+                                        <h3 class="titleA mt0">문의</h3>
+                                        <table class="tableV">
+                                            <caption>Q&amp;A 게시판 내용 확인(제목, 작성자, 작성일, 내용, 첨부파일)</caption>
+                                            <colgroup>
+                                                <col style="width:185px;">
+                                                <col>
+                                                <col style="width:185px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_title">임신·출산 진료비 결제 시 승인방법은 어떻게 되나요?</td>
+                                                </tr>  
+                                                <tr>
+                                                    <th scope="col"><span>작성자</span></th>
+                                                    <td class="t_left"><span>홍*동</span></td>
+                                                    <th scope="col"><span>작성일</span></th>
+                                                    <td class="t_left"><span>2023.04.18</span></td>
+                                                </tr>                     
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_wrap">
+                                                        <div class="view_cts">
+                        
+                                                            <p>
+                                                                내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 
+                                                            </p>
+                                                            <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                        
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+                                                    <th scope="col"><span>첨부파일</span></th>
+                                                    <td colspan="3" class="attach_td t_left">
+                                                        <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                        <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                        <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                        <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                        <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                                    </td>
+                                                </tr>                     
+                                            </tbody>
+                                        </table>
+                                        <div class="btn_area mt40">
+                                            <a href="#n" class="border_btn">목록</a>
+                                            <a href="#n" class="gray_btn">삭제</a>
+                                            <a href="#n" class="black_btn">수정</a>    
+                                        </div>
+
+                                        <hr class="mt40 mb40">
+
+                                        <h4 class="titleB">답변완료 상태의 뷰페이지(삭제, 수정 버튼은 관리자만 사용 가능)</h4>
+        
+                                        <h3 class="titleA mt0">문의</h3>
+                                        <table class="tableV">
+                                            <caption>Q&amp;A 게시판 내용 확인(제목, 작성자, 작성일, 내용, 첨부파일)</caption>
+                                            <colgroup>
+                                                <col style="width:185px;">
+                                                <col>
+                                                <col style="width:185px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_title">임신·출산 진료비 결제 시 승인방법은 어떻게 되나요?</td>
+                                                </tr>  
+                                                <tr>
+                                                    <th scope="col"><span>작성자</span></th>
+                                                    <td class="t_left"><span>홍*동</span></td>
+                                                    <th scope="col"><span>작성일</span></th>
+                                                    <td class="t_left"><span>2023.04.16</span></td>
+                                                </tr>                     
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_wrap">
+                                                        <div class="view_cts">
+                        
+                                                            <p>
+                                                                내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 
+                                                            </p>
+                                                            <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                        
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+                                                    <th scope="col"><span>첨부파일</span></th>
+                                                    <td colspan="3" class="attach_td t_left">
+                                                        <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                        <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                        <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                        <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                        <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                                    </td>
+                                                </tr>                     
+                                            </tbody>
+                                        </table>
+                        
+                                        <h3 class="titleA">답변</h3>
+                                        <table class="tableV">
+                                            <caption>Q&amp;A 게시판 내용 확인(제목, 작성자, 작성일, 내용, 첨부파일)</caption>
+                                            <colgroup>
+                                                <col style="width:185px;">
+                                                <col>
+                                                <col style="width:185px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_title">답변사항입니다</td>
+                                                </tr>  
+                                                <tr>
+                                                    <th scope="col"><span>작성자</span></th>
+                                                    <td class="t_left"><span>관리자</span></td>
+                                                    <th scope="col"><span>작성일</span></th>
+                                                    <td class="t_left"><span>2023.05.06</span></td>
+                                                </tr>                     
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_wrap">
+                                                        <div class="view_cts">
+                        
+                                                            <p>
+                                                                내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 
+                                                            </p>
+                                                            <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                        
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+                                                    <th scope="col"><span>첨부파일</span></th>
+                                                    <td colspan="3" class="attach_td t_left">
+                                                        <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                        <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                        <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                        <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                        <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                                    </td>
+                                                </tr>                     
+                                            </tbody>
+                                        </table>
+                        
+                                        <div class="btn_area mt40">
+                                            <a href="#n" class="border_btn">목록</a>
+                                        </div>
+
                                     </div>
-                                    <a href="#n" class="pop_close last_Tab" data-button="lock_board">팝업닫기</a>
+                                    <!-- //회원전용 홈페이지 -->
+
+                                    <!-- 비회원전용 홈페이지 -->
+                                    <div id="board02_02" class="box_con">
+                                        <h4 class="titleB">비회원전용 (로그인 없는 경우 : 비밀글 비밀번호 팝업창 O)</h4>
+
+                                        <form action="/" name="" method="post">
+                                            <fieldset>
+                                                <legend>게시물 검색</legend>
+                
+                                                <div class="searchArea">
+                                                    <label for="searchCnd">검색어 유형</label>
+                                                    <select id="searchCnd" class="w170" title="검색어 유형를 선택하세요">
+                                                        <option>제목</option>
+                                                        <option>내용</option>
+                                                        <option>작성자</option>
+                                                    </select>
+                                                    <label for="search02">검색어 입력</label>
+                                                    <input type="text" id="search02" class="search_text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                                                    <div class="btn_area">
+                                                        <a href="#n" class="black_btn">검색</a>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                
+                                        <div class="table_top">
+                                            <div class="total">
+                                                <p>Total : <em class="count">430</em> (<em class="count">1</em>/43)</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- 반응형시 우측에 붙는 요소 td에 클래스 .right_item를 추가해 주세요 -->
+                                        <div class="tableScroll">
+                                            <table class="tableL mob_tableL">
+                                                <caption>채용문의 게시판 리스트 확인(번호, 제목, 작성일, 상태 )</caption>
+                                                <colgroup>
+                                                    <col style="width:80px">
+                                                    <col />
+                                                    <col style="width:120px">
+                                                    <col style="width:120px">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">번호</th>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">작성일</th>
+                                                        <th scope="col">상태</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">4</td>
+                                                        <td class="t_title"><a href="#n" class="ellipsis1">채용문의 드립니다.</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
+                                                    </tr>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">3</td>
+                                                        <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
+                                                    </tr>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">2</td>
+                                                        <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state03">답변완료</span></td>
+                                                    </tr>
+                                                    <tr onclick="location.href='#n'">
+                                                        <td class="t_num">1</td>
+                                                        <td class="t_title lock"><a href="#n" class="ellipsis1 pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기"><i><img src="../../images/sub/lock_ico.png" alt="비밀글"></i>채용문의</a></td>
+                                                        <td data-name="작성일"><span>2022.07.01</span></td>
+                                                        <td data-name="상태" class="right_item"><span class="state state02">답변대기</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                
+                                        <div class="paging">
+                                            <button type="button" class="first"><span>처음페이지로</span></button>
+                                            <button type="button" class="prev"><span>이전페이지로</span></button>
+                                            <a href="#n" class="num on">1</a>
+                                            <a href="#n" class="num">2</a>
+                                            <a href="#n" class="num">3</a>
+                                            <a href="#n" class="num">4</a>
+                                            <a href="#n" class="num">5</a>
+                                            <a href="#n" class="num">6</a>
+                                            <a href="#n" class="num">7</a>
+                                            <a href="#n" class="num">8</a>
+                                            <a href="#n" class="num">9</a>
+                                            <a href="#n" class="num">10</a>
+                                            <button type="button" class="next"><span>다음페이지로</span></button>
+                                            <button type="button" class="last"><span>마지막페이지로</span></button>
+                                        </div>
+                                        
+                                        <div class="btn_area mt40">
+                                            <a href="#n" class="blue_btn">글쓰기</a>
+                                        </div>
+
+                                        <hr class="mt40 mb40">
+                                                                
+                                        <h4 class="titleB">비회원전용 (로그인 없는 경우: 비밀글 비밀번호 입력O)</h4>
+                                        <table class="tableW">
+                                            <caption>채용문의 게시판 문의 입력(제목, 작성자, 작성일, 공개여부, 내용, 첨부파일, 비밀번호 )</caption>
+                                            <colgroup>
+                                                <col style="width:185px;">
+                                                <col />
+                                                <col style="width:185px;">
+                                                <col />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col"><label for="title"><span class="pill"><em class="ico">필수항목</em>제목</span></label></th>
+                                                    <td data-name="제목" colspan="3" class="pill">
+                                                        <input type="text" class="w1P" id="title" maxlength="40" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><span>작성자</span></th>
+                                                    <td data-name="작성자"><span>홍길동</span></td>
+                                                    <th scope="col"><span>작성일</span></th>
+                                                    <td data-name="작성일"><span>2023.07.03</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><span class="pill"><em class="ico">필수항목</em>공개여부</span></th>
+                                                    <td colspan="3" data-name="공개여부" class="pill">
+                                                        <div class="radiobox">
+                                                            <label for="rbox_openGubunA"><input id="rbox_openGubunA" name="rbox_openGubun" type="radio" value="0">공개</label>
+                                                            <label  for="rbox_openGubunB"><input id="rbox_openGubunB" name="rbox_openGubun" type="radio" value="1" checked>비공개</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><label for="cts_text"><span class="pill"><em class="ico">필수항목</em>내용</span></label></th>
+                                                    <td data-name="내용" colspan="3" class="pill">
+                                                        <textarea id="cts_text"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><label for="file-name"><span>첨부파일</span></label></th>
+                                                    <td data-name="첨부파일" colspan="3" class="attach_td">
+                                                        <p class="table_p">※ 첨부파일은 <em class="pointB01">최대 5개</em> 까지 입니다.</p>
+                                                        <div class="file_box">
+                                                            <div class="file_list">
+                                                                <input type="text" readonly class="file-name" id="file-name">
+                                                                <label for="upload01" class="file-label file_add">찾아보기</label>
+                                                                <input type="file" id="upload01" class="file-upload">
+                                                            </div>
+                                        
+                                                            <div class="btn_area">
+                                                                <button type="button" class="add_btn"><span>추가</span></button>
+                                                                <button type="button" class="del_btn"><span>삭제</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col"><label for="userpwd"><span class="pill"><em class="ico">필수항목</em>비밀번호</span></label></th>
+                                                    <td data-name="비밀번호" colspan="3" class="pill">
+                                                        <input id="userpwd" type="password" title="비밀번호" minlength="9" autocomplete="off">
+                                                        <p class="table_p">※ 글 수정과 삭제시 필요합니다. (특수문자,영문,숫자 조합으로 9글자이상 가능합니다.)</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <hr class="mt40 mb40">
+
+                                        <h4 class="titleB">답변대기 상태의 뷰페이지, 비회원 홈페이지 (삭제, 수정 가능, 비밀번호 팝업창 -> 비밀번호 팝업 O)</h4>
+                                        <h3 class="titleA mt0">문의</h3>
+                                        <table class="tableV">
+                                            <caption>Q&amp;A 게시판 내용 확인(제목, 작성자, 작성일, 내용, 첨부파일)</caption>
+                                            <colgroup>
+                                                <col style="width:185px;">
+                                                <col>
+                                                <col style="width:185px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_title">임신·출산 진료비 결제 시 승인방법은 어떻게 되나요?</td>
+                                                </tr>  
+                                                <tr>
+                                                    <th scope="col"><span>작성자</span></th>
+                                                    <td class="t_left"><span>홍*동</span></td>
+                                                    <th scope="col"><span>작성일</span></th>
+                                                    <td class="t_left"><span>2023.04.18</span></td>
+                                                </tr>                     
+                                                <tr>
+                                                    <td colspan="4" class="t_left view_wrap">
+                                                        <div class="view_cts">
+                        
+                                                            <p>
+                                                                내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 
+                                                            </p>
+                                                            <p>내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px 내용영역 패딩 40px </p>
+                        
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+                                                    <th scope="col"><span>첨부파일</span></th>
+                                                    <td colspan="3" class="attach_td t_left">
+                                                        <a href="#n" class="attach_btn pdf">첨부파일01.pdf</a>
+                                                        <a href="#n" class="attach_btn hwp">첨부파일02.hwp</a>
+                                                        <a href="#n" class="attach_btn excel">첨부파일03.excel</a>
+                                                        <a href="#n" class="attach_btn ppt">첨부파일04.ppt</a>
+                                                        <a href="#n" class="attach_btn word">첨부파일05.word</a>
+                                                    </td>
+                                                </tr>                     
+                                            </tbody>
+                                        </table>
+                        
+                                        <div class="btn_area mt40">
+                                            <a href="#n" class="border_btn">목록</a>
+                                            <a href="#n" class="gray_btn pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기">삭제</a>
+                                            <a href="#n" class="black_btn pop_open" data-button="lock_board" title="비밀글 비밀번호 입력창 열기">수정</a>    
+                                        </div>
+
+                                        
+                                        <!-- 비밀번호 팝업 -->
+                                        <div id="lock_board" class="pop_layer" role="dialog">
+                                            <p class="pop_title">비밀번호 입력</p>
+                                            <div class="pop_inner">
+                                                <div class="cts pop_lock">
+                                                    <label class="first_Tab"><input type="password" title="비밀번호 입력" /></label>
+                                                    <label><input type="button" value="확인" class="blue_btn"></label>
+                                                </div>
+                                            </div>
+                                            <a href="#n" class="pop_close last_Tab" data-button="lock_board">팝업닫기</a>
+                                        </div>
+                                        <!-- //비밀번호 팝업 -->
+        
+                                    </div>
+                                    <!-- //비회원전용 홈페이지 -->
                                 </div>
-                                <!-- //비밀번호 팝업 -->
-        
-                                <hr class="mt40 mb40">
-        
+                                <!-- //Q&A(비밀번호 팝업) 게시판 -->
+                            </div>
+
+                            <div id="board11" class="box_con">
+                                <!-- 글쓰기, 회원가입단계 -->
                                 <ol class="step_area">
                                     <li class="step01 active"><span>01</span><p class="title">개인정보수집 및 이용동의</p></li>
                                     <li class="step02"><span>02</span><p class="title">본인인증</p></li>
@@ -1010,7 +1467,6 @@
                                 <!-- 인증하기 -->
         
                                 <hr class="mt40 mb40">
-        
                                 
                                 <ol class="step_area">
                                     <li class="step01"><span>01</span><p class="title">개인정보수집 및 이용동의</p></li>
@@ -1026,7 +1482,7 @@
                                     <p class="alert_p">욕설, 비방글, 개인정보가 포함된 게시글은 사전에 작성자 동의 없이 삭제됩니다.</p>
                                     <p class="top_detail"><em class="pointR01">*</em> 는 필수항목입니다.</p>
                                 </div>
-                                
+
                                 <table class="tableW">
                                     <caption>채용문의 게시판 문의 입력(제목, 작성자, 작성일, 공개여부, 내용, 첨부파일, 비밀번호 )</caption>
                                     <colgroup>
@@ -1043,10 +1499,10 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="col"><span class="pill"><em class="ico">필수항목</em>작성자</span></th>
-                                            <td data-name="작성자" class="pill"><span>홍길동</span></td>
+                                            <th scope="col"><span>작성자</span></th>
+                                            <td data-name="작성자"><span>홍길동</span></td>
                                             <th scope="col"><span>작성일</span></th>
-                                            <td data-name="작성일"><span>2022.07.07</span></td>
+                                            <td data-name="작성일"><span>2023.07.03</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="col"><span class="pill"><em class="ico">필수항목</em>공개여부</span></th>
@@ -1081,13 +1537,6 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <th scope="col"><label for="userpwd"><span class="pill"><em class="ico">필수항목</em>비밀번호</span></label></th>
-                                            <td data-name="비밀번호" colspan="3" class="pill">
-                                                <input id="userpwd" type="password" title="비밀번호" minlength="9" autocomplete="off">
-                                                <p class="table_p">※ 글 수정과 삭제시 필요합니다. (특수문자,영문,숫자 조합으로 9글자이상 가능합니다.)</p>
-                                            </td>
-                                        </tr>
                                     </tbody>
                                 </table>
                                 
@@ -1096,8 +1545,7 @@
                                     <a href="#n" class="border_btn">목록</a>
                                     <a href="#n" class="blue_btn">등록</a>
                                 </div>
-        
-                                <!-- //비밀번호 팝업 게시판 -->
+                                <!-- //글쓰기, 회원가입단계 -->
                             </div>
         
                             <div id="board03" class="box_con">
@@ -1426,7 +1874,7 @@
                             </div>
         
                             <div id="board05" class="box_con">
-                                <!-- QNA게시판 -->
+                                <!-- FAQ게시판 -->
         
                                 <form action="/" name="" method="post">
                                     <fieldset>
@@ -1527,7 +1975,7 @@
                                     <button type="button" class="last"><span>마지막페이지로</span></button>
                                 </div>
                                 
-                                <!-- //QNA게시판 -->
+                                <!-- //FAQ게시판 -->
                             </div>
         
                             <div id="board06" class="box_con">
@@ -1930,7 +2378,7 @@
                                             <th scope="row"><span>작성자</span></th>
                                             <td data-name="작성자" class="t_left"><span>신민경</span></td>
                                             <th scope="row"><span>작성일</span></th>
-                                            <td data-name="작성일" class="t_left"><span>2022.07.07</span></td>
+                                            <td data-name="작성일" class="t_left"><span>2023.07.03</span></td>
                                         </tr>                      
                                         <tr>
                                             <td data-name="내용" colspan="4" class="t_left view_wrap">
@@ -2419,7 +2867,7 @@
                                             <th scope="row"><span>작성자</span></th>
                                             <td data-name="작성자" class="t_left"><span>민희준</span></td>
                                             <th scope="row"><span>작성일</span></th>
-                                            <td data-name="작성일" class="t_left"><span>2022.07.07</span></td>
+                                            <td data-name="작성일" class="t_left"><span>2023.07.03</span></td>
                                         </tr>
                                         <tr>
                                             <td data-name="내용" colspan="4" class="t_left view_wrap">
