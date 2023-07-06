@@ -36,6 +36,16 @@ $(document).ready(function(){
 		}
 	});
 
+	// leftMenu title값 넣어주기
+	$('.depth_01>li>a').each(function(){
+		$depthState = $(this).hasClass('now');
+		if($depthState == true){
+			$(this).attr("title", "메뉴 닫기");
+		}else{
+			$(this).attr("title", "메뉴 열기");
+		}
+	});
+
 	// leftMenu 열고닫기
 	leftMenuControl()
 	function leftMenuControl(){
@@ -51,10 +61,13 @@ $(document).ready(function(){
 				$(this).parent('li').addClass('open');
 				$(this).addClass('now');
 				$(this).siblings('div').stop().show();
+				$('.depth_01>.more_depth>a').attr("title", "메뉴 열기");
+				$(this).attr("title", "메뉴 닫기");
 			}else if(left_status == true && left_status_m == true){ // 열린 뎁스 선택
 				$(this).parent('li').removeClass('open');
 				$(this).removeClass('now');
 				$(this).siblings('div').stop().hide();
+				$(this).attr("title", "메뉴 열기");
 			}else if(left_status == false && left_status_m == true){ // 열린 상태에서 다른 뎁스 선택
 				$(".depth_01>li").removeClass('open');
 				$(".depth_01>li>a").removeClass('now');
@@ -62,9 +75,20 @@ $(document).ready(function(){
 				$(this).parent('li').addClass('open');
 				$(this).addClass('now');
 				$(this).siblings('div').stop().show();
+				$('.depth_01>.more_depth>a').attr("title", "메뉴 열기");
+				$(this).attr("title", "메뉴 닫기");
 			}
 		});
 	}
+
+	// lnb title값 넣어주기
+	$('.lnb_inner>li>a').each(function(){
+		if($(this).hasClass('now') == true){
+			$(this).attr("title", "메뉴 닫기");
+		}else{
+			$(this).attr("title", "메뉴 열기");
+		}
+	});
 
 	// 토클 클릭으로 열고닫기
 	lnb_mobile()
@@ -79,14 +103,19 @@ $(document).ready(function(){
 				$(".lnb_more").stop().hide();
 				$(this).addClass('open');
 				$(this).children('ul').stop().show();
+				$('.lnb_inner>li>a').attr("title", "메뉴 열기");
+				$(this).children('a').attr("title", "메뉴 닫기");
 			}else if(lnb_status == true && lnb_status_m == true){
 				$(this).removeClass('open');
 				$(this).children('ul').stop().hide();
+				$(this).children('a').attr("title", "메뉴 열기");
 			}else if(lnb_status == false && lnb_status_m == true){
 				$(".lnb_inner>li").removeClass('open');
 				$(".lnb_more").stop().hide();
 				$(this).addClass('open');
 				$(this).children('ul').stop().show();
+				$('.lnb_inner>li>a').attr("title", "메뉴 열기");
+				$(this).children('a').attr("title", "메뉴 닫기");
 			}
 		});
 		$('.lnb_more>li:last-child').on('focusout', function(){
@@ -129,34 +158,30 @@ $(document).ready(function(){
 		var window_w = $(window).width();
 		if (window_w < 768) {//PC
 			$('.tab_wrap .now_tab').removeClass('click');
-			$('.tab').stop().hide();
-
-			// 탭 속 탭 .tabB는 예외
-			$('.tab_wrap .tab.tabB').css('display','flex');
-			$('.tab_wrap .tab.tabB').show();
-			$('.tab.depth_box').css('display','flex');
-			$('.tab.depth_box').show();
+			$('.tabA').removeClass('open');
 		}
 	})
 
 	$('.tab_wrap .now_tab').on('click', function () {
 		var nowTabStatue = $(this).hasClass('click');
 		if(nowTabStatue == false){ // 열기
+			$('.tab_wrap .now_tab').removeClass('click');
+			$('.tabA').removeClass('open');
 			$(this).addClass('click');
-			$(this).next('.tab').stop().show().css('display','flex');
-			$(this).next('.tab_link').stop().show().css('display','flex');
+			$(this).next('.tabA').addClass('open');
 		}else{ // 닫기
 			$(this).removeClass('click');
-			$(this).next('.tab').stop().hide();
-			$(this).next('.tab_link').stop().hide();
+			$(this).next('.tabA').removeClass('open');
 		}
 	});
 
 	// 현재 활성화 메뉴 스크롤 좌측에 위치하도록
 	var $tabB = $('.tabB');
 	if($tabB.length){
-		$tabBleft = $tabB.find('.current').position().left;
-		$('.tabB').scrollLeft($tabBleft);
+		var tabB_Left = $('.tabB li.current').position().left;
+			currentLeft = $('.tabB').position().left;
+
+		$('.tabB').scrollLeft(tabB_Left-currentLeft);
 	}
 
 	

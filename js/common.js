@@ -209,12 +209,15 @@ $(document).ready(function () {
 		var thisMoreDepth = $(this).hasClass('more_depth'); // 하위메뉴가 있으면 true
 		var thisDepth1 = $(this).hasClass('depth1_list'); // 1depth 호버시 (pc)
 		if(mobileChk === false) { // PC
-			if(thisMoreDepth == true && thisDepth1 == true){ 
+			if(thisMoreDepth == true && thisDepth1 == true){  // 2depth있을 경우
 				$lnbDepth1List.removeClass('hover');
 				$(this).addClass('hover');
 				$('.nav_bg').stop().show();
 				$('.shadow').show();
-
+			}else if(thisMoreDepth == false && thisDepth1 == true){ // 1depth만 있을 경우
+				$lnbDepth1List.removeClass('hover');
+				$(this).addClass('hover');
+				$('.shadow').hide();
 			}else{
 
 			}
@@ -262,6 +265,12 @@ $(document).ready(function () {
 		}else{
 
 		}
+	});
+	
+	$lnbLastTit.on('focusout', function(){
+		$lnbDepth1List.removeClass('hover');
+		$('.nav_bg').stop().hide();
+		$('.shadow').hide();
 	});
 
 	// 모바일 햄버거버튼
@@ -562,26 +571,6 @@ $(document).ready(function () {
 		mobile_tel();
 		lnb_lock();
 		clearMenu();
-
-		if($('html').hasScrollBar()){ // 스크롤 존재
-			if ($window.width() > (767 - scrollWidth)) { //767-17(스크롤너비)
-				$('.tab_wrap .tab, .tab_wrap .tab_link').css('display','flex');
-			}else{
-				$('.tab_wrap .tab, .tab_wrap .tab_link').css('display','none');
-				// 탭 속 탭 .tab는 예외
-				$('.tab_wrap .tab.tabB').show().css('display','flex');
-				$('.tab.depth_box').show().css('display','flex');
-			}
-		}else{ // 스크롤 없을 때
-			if ($window.width() > 767) {
-				$('.tab_wrap .tab, .tab_wrap .tab_link').css('display','flex');
-			}else{
-				$('.tab_wrap .tab, .tab_wrap .tab_link').css('display','none');
-				// 탭 속 탭 .tab는 예외
-				$('.tab_wrap .tab.tabB').show().css('display','flex');
-				$('.tab.depth_box').show().css('display','flex');
-			}
-		}
 	});
 
 	// 배너 슬라이드
