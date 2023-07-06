@@ -121,6 +121,7 @@ $(document).ready(function(){
 		$('.lnb_more>li:last-child').on('focusout', function(){
 			$(this).removeClass('open');
 			$('.lnb_more').stop().hide();
+			$('.lnb_inner>li>a').attr("title", "메뉴 열기");
 		});
 		$("#content, .sub_visual").on('click', function(){
 			$(".lnb_inner>li").removeClass('open');
