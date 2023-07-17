@@ -348,7 +348,7 @@ $(document).ready(function () {
 			prevFocusableElement.focus();
 		  }
 		};
-	  };
+	};
 
 	pop_align();
 	function pop_align() {

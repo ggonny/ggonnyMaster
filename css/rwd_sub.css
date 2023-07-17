@@ -85,8 +85,6 @@
 
   .eng_cts .sub_visual h3{max-width: none;}
 
-  .near_link{padding: 0 30px;}
-
   .satisfaction .top{padding-top: 10px;}
   .satisfaction .top dl{margin-top: 5px;}
 
@@ -491,7 +489,7 @@
   .mob_tableL thead{display: none;}
   .mob_tableL tbody tr{display: flex;flex-wrap: wrap;position: relative;border-bottom: 1px solid #d9d9d9;padding: 15px 10px 10px;}
   .mob_tableL td{border-left: 0;border-bottom: 0;height: auto;padding: 0;}
-  .mob_tableL tbody td{margin-bottom: 5px;margin-right: 10px;position: relative;padding-right: 10px;font-size: 15px;}
+  .mob_tableL tbody td{margin-bottom: 5px;margin-right: 10px;position: relative;padding-right: 10px;font-size: 15px;display: inline-block;}
   .mob_tableL tbody td:before{content: attr(data-name)' : ';color: #242424;}
   .mob_tableL tbody td:last-child{margin-right: 0;padding-right: 0;}
   .mob_tableL .t_num{position: relative;letter-spacing: 0;color: #242424;margin: 0;padding: 0;}
@@ -511,7 +509,7 @@
 
   .qna_table .t_head{display: none;}
   .qna_table .t_body .title_btn{padding: 15px 10px 10px;flex-wrap: wrap;}
-  .qna_table .t_body .title_btn span{min-height: auto;min-width: auto!important;margin-bottom: 5px;margin-right: 10px;position: relative;padding-right: 10px;}
+  .qna_table .t_body .title_btn span{min-height: auto;height: auto;min-width: auto!important;margin-bottom: 5px;margin-right: 10px;position: relative;padding-right: 10px;}
   .qna_table .t_body .title_btn span:last-child{margin-right: 0;padding-right: 0;}
   .qna_table .t_body .title_btn span:before{content: attr(data-name)' : ';}
   .qna_table .t_body .title_btn .t_num{position: relative;letter-spacing: 0;margin: 0;padding: 0;}
@@ -1223,6 +1221,7 @@
   .tabA.open{display: flex;flex-direction: column;}
   .tabA li{width: 100% !important;background-color: #fff;margin-bottom: 0;border: 0!important;border-top: 1px solid #dbdbdb!important;}
   .tabA li:first-child{border-top: 0!important;}
+  .tabA li a{max-height: none;height: auto;min-height: 50px;padding: 10px;}
   .tabA li a:before{display: none;}
   .tabA li a:hover{color: #0760cf;}
   .tabA li.current a{background-color: #fff;color: #1d8be0;font-weight: 600;}

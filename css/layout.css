@@ -210,7 +210,7 @@ footer .footer_link a.youtube_tit{width: 15px;background-position: -218px 0;}
 footer .btm .address{display: flex;align-items: center;letter-spacing: 0;}
 footer .btm .address p{display: inline-block;}
 footer .btm .address br{display: none;}
-footer .btm .address address{margin-left: 60px;padding-right: 30px;}
+footer .btm .address address{margin-left: 60px;padding-right: 30px;width: 100%;}
 footer .btm .address .copyright{margin-top: 5px;display: block;}
 footer .btm .address .copyright br{display: none;}
 footer .btm .mark{display: flex;gap: 30px;}
@@ -383,8 +383,11 @@ footer .btm .mark a.awards_logo{width: 146px;height: 47px;background-position: -
   
   .footer_banner .banner{position: relative;}
   .footer_banner .banner_slide{width: 100%;padding: 0 40px;}
-  .footer_banner .control{position: absolute;top: 50%;transform: translateY(-50%);width: 100%;justify-content: space-between;}
+  .footer_banner .control{position: absolute;top: 50%;left: 0;transform: translateY(-50%);width: 100%;justify-content: space-between;}
   .footer_banner .control .ctr_btn.pause{display: none;}
+  .footer_banner .control button{position: absolute;}
+  .footer_banner .control .prev_btn{left: 0;}
+  .footer_banner .control .next_btn{right: 0;}
   footer{font-size: 13px;}
   footer .wrap{padding: 20px;}
   footer .top .wrap{flex-direction: column;align-items: center;}
