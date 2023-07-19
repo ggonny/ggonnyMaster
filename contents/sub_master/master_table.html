@@ -587,7 +587,7 @@
                                             <th scope="col"><span class="pill"><em class="ico">필수항목</em>생년월일</span></th>
                                             <td data-name="생년월일" class="birth_box pill">
                                                 <div>
-                                                    <input type="text" id="birdth_y" maxlength="4" title="출생년도 입력">
+                                                    <input type="tel" id="birdth_y" maxlength="4" title="출생년도 입력">
                                                     <label for="birdth_y">년</label>
                                                     <em>&nbsp;</em>
                                                     <select id="birdth_m" title="출생월 선택">
@@ -672,7 +672,7 @@
                                         <tr>
                                             <th scope="col"><label for="date_select"><span class="pill"><em class="ico">필수항목</em>날짜선택</span></label></th>
                                             <td data-name="날짜선택" class="pill">
-                                                <input type="text" id="date_select" class="calendar" title="날짜 선택">
+                                                <input type="text" id="date_select" class="calendar" title="날짜 선택" onfocus="this.blur()">
                                             </td>
                                         </tr>
                                         <tr>

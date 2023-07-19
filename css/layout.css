@@ -69,7 +69,7 @@
 .popup_list .pop_slide>ul{margin: 25px -15px 0;}
 .popup_list .pop_slide>ul .slick-list li{padding: 0 10px;}
 .popup_list .pop_slide .slick-dots{display: flex;gap: 12px;position: absolute;right: 15px;top: -42px;}
-.popup_list .pop_slide .slick-dots button{all: unset;display: block;width: 12px;height: 12px;background: #d1d1d1;border-radius: 50%;font-size: 0;line-height: 0;text-indent: -9999px;cursor: pointer;}
+.popup_list .pop_slide .slick-dots button{all: unset;display: block;width: 12px;height: 12px;min-width: 12px;padding: 0;background: #d1d1d1;border-radius: 50%;font-size: 0;line-height: 0;text-indent: -9999px;cursor: pointer;}
 .popup_list .pop_slide .slick-dots .slick-active button{background: #1c8be0;}
 .popup_list .pop_slide .slick-dots button:before{display: none;}
 .popup_list .pop_slide .slick-dots button:focus{outline: 2px solid #242424 ;}

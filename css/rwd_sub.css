@@ -1982,7 +1982,7 @@
   .satisfaction .top dl dt{margin-right: 18px;}
   .satisfaction .top dl dt:after{height: 10px;top: 3px;right: -9px;}
   .satisfaction dl.depart, .satisfaction dl.manager, .satisfaction dl.tel_num, .satisfaction dl.fax_num, .satisfaction dl.email_adr{background: none;padding-left: 0;}
-  .satisfaction dl.refresh{background-size: 14px;padding-left: 15px;}
+  .satisfaction dl.refresh{background-size: 14px;padding-left: 15px;background-position: left -3px top 2px;}
   .satisfaction .btm .satis_btn .blue_btn{font-size: 14px;width: 100%;display: block;}
   .satisfaction .radiobox{width: calc(100% - 120px);margin-top: -5px;}
   .satisfaction .radiobox div{min-width: 165px;}
@@ -2041,7 +2041,7 @@
   .join_tab ul li p:before{display: none;}
   .join_tab ul li.tab p:before{display: none;}
 
-  .birth_box input[type="text"]{width: calc(100% - 18px);}
+  .birth_box input[type="tel"]{width: calc(100% - 18px);}
   .birth_box select{width: calc(50% - 20px);margin-top: 5px;}
   .birth_box label{display: inline-block;margin-top: 5px!important;}
   .birth_box label:first-of-type{margin-top: 0!important;}

@@ -500,7 +500,7 @@ table.tableA .bl{border-left: 1px solid #d9d9d9 !important;}
 .tableW th label{display: block;}
 
 .birth_box{height: auto!important;}
-.birth_box input[type="text"],.birth_box select{width: 65px;min-width: 65px;}
+.birth_box input[type="tel"],.birth_box select{width: 65px;min-width: 65px;}
 .birth_box div{display: inline-block;}
 .birth_box .radiobox{margin: 4px 0 4px;display: inline-block;}
 .idDupCk{color: #fff;background-color: #294463;text-align: center;padding: 9px 8px;height: 35px;font-size: 13px;display: inline-block;}
