@@ -150,7 +150,7 @@ $(document).ready(function () {
 	// PC, 모바일 체크
 	var mobileChk = false; // 모바일일때 true
 	function deviceChk() {
-		if ($(window).width() > 1366) {
+		if ($(window).width() > 1366 - scrollWidth) {
 			$('#header').removeClass('mobile').addClass('pc');
 			mobileChk = false;
 			scrollAble();
@@ -177,7 +177,7 @@ $(document).ready(function () {
 		$lnbLastTit = $header.find('.util_sitemap') // gnb메뉴의 마지막 요소
 
 	var clearMenu = function(){
-		if ($(window).width() > 1366) {
+		if ($(window).width() > 1366 - scrollWidth) {
 			// 모바일메뉴 리셋
 			$lnbShowBtn.removeClass('close');
 			$lnbShowBtn.attr('title', '메뉴열기');
