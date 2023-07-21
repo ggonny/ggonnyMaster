@@ -257,6 +257,7 @@ footer .btm .mark a.awards_logo{width: 146px;height: 47px;background-position: -
   .header_top .family_pop{width: 100%;}
   .header_top .family_pop>li{width: calc(100% / 3);text-align: center;position: relative;}
   .header_top .family_pop>li:after{content: '';width: 1px;height: 18px;background: #526d82;position: absolute;right: 0;top: 16px;}
+  .header_top .family_pop>li:last-child:after{display: none;}
   .header_top .family_pop>li>button{min-width: auto;color: #fff!important;padding: 6px 38px 4px 30px!important;line-height: 40px;}
   .header_top .family_pop>li>button:after{background-position: -24px -210px!important;top: 24px;}
   .header_top .family_pop>li>button:before{top: 18px;left: 6px;}

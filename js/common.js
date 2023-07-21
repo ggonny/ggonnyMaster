@@ -44,109 +44,6 @@ $(document).ready(function () {
 		}
 	}
 
-	// 관련(공공기관)사이트
-	$('.famliysite>button').on('click', function(){
-		$('.shadow2').show();
-		$('.family_site').slideDown(400);
-		setTimeout(function (){
-			$('.family_pop .close_btn').addClass('on');
-		}, 400);
-	});
-	$('.famliysite .close_btn').on('click', function(){
-		$('.shadow2').hide();
-		$('.family_pop .close_btn').removeClass('on');
-		$('.family_site').slideUp(400);
-	});
-
-	// 언어선택
-	$('.lang>button').on('click', function(){
-		if($(this).parent().hasClass('close')){
-			$(this).parent().removeClass('close');
-			$('.lang ul').slideUp();
-			$(this).attr('title','언어선택 열기')
-		}else{
-			$(this).parent().addClass('close');
-			$('.lang ul').slideDown();
-			$(this).attr('title','언어선택 닫기')
-		}
-	});
-
-	$(document).click(function(e){ 
-		if (!$(e.target).is('.lang>button')) { 
-			$('.lang').removeClass('close');
-			$('.lang ul').slideUp();
-			$('.lang>button').attr('title','언어선택 열기')
-		} 
-	});
-
-
-	// 알립니다 팝업
-	$('.popup_zone>button').on('click', function(){
-		$('.shadow2').show();
-		$('.popup_list').slideDown(400);
-		setTimeout(function (){
-			$('.family_pop .close_btn').addClass('on');
-		}, 400);
-		$('.pop_slide ul').slick('setPosition');
-	});
-	$('.popup_zone .close_btn').on('click', function(){
-		$('.shadow2').hide();
-		$('.popup_list').slideUp(400);
-		$('.family_pop .close_btn').removeClass('on');
-	});
-
-	var pop_slide = $('.pop_slide ul').slick({
-		infinite: true,
-		speed: 600,
-		autoplaySpeed: 3000,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: false,
-		dots: true,
-		draggable: false,
-		pauseOnHover:true,
-		pauseOnFocus: false,
-		// prevArrow: $('.pop_slide .prev_btn'),
-        // nextArrow: $('.pop_slide .next_btn'),
-		responsive: [
-            {  
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2
-                } 
-            },
-			{  
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1
-                } 
-            }
-        ]
-	});
-
-	
-	// 검색버튼 열고닫기
-	$('.hd_search .top_search_btn').on('click', function(){
-		var window_w = $(window).width();
-
-		if(window_w <= 1366){
-			$('.shadow2').show();
-			$('.util_Box .top_searchBox').stop().slideDown(400);
-			setTimeout(function (){
-				$('.util_Box .top_searchBox .close_btn').addClass('on');
-			}, 400);
-		}else{
-			// 절대경로 수정후 개발팀에게 따로 전달 230223 /fr/search/search.do
-			location.href="../../con06/con06_01/search.html";
-		}
-	});
-	$('.top_searchBox .close_btn').on('click', function(){
-		$('.shadow2').hide();
-		$('.util_Box .top_searchBox').stop().slideUp(400);
-		$('.util_Box .top_searchBox .close_btn').removeClass('on');
-	});
-
-
 	// PC, 모바일 체크
 	var mobileChk = false; // 모바일일때 true
 	function deviceChk() {
@@ -306,6 +203,124 @@ $(document).ready(function () {
 			}, 100);
 		}
 	});
+
+	// 관련(공공기관)사이트
+	$('.famliysite>button').on('click', function(){
+		if(mobileChk === true) { // Mobile
+			$('.shadow2').css('z-index','440');
+		}
+		$('.shadow2').show();
+		$('.family_site').slideDown(400);
+		setTimeout(function (){
+			$('.family_pop .close_btn').addClass('on');
+		}, 400);
+	});
+	$('.famliysite .close_btn').on('click', function(){
+		if(mobileChk === false) { // PC
+			$('.shadow2').hide().css('z-index','0');
+		}else{
+			$('.shadow2').css('z-index','0');
+		}
+
+		$('.family_pop .close_btn').removeClass('on');
+		$('.family_site').slideUp(400);
+	});
+
+	// 언어선택
+	$('.lang>button').on('click', function(){
+		if($(this).parent().hasClass('close')){
+			$(this).parent().removeClass('close');
+			$('.lang ul').slideUp();
+			$(this).attr('title','언어선택 열기')
+		}else{
+			$(this).parent().addClass('close');
+			$('.lang ul').slideDown();
+			$(this).attr('title','언어선택 닫기')
+		}
+	});
+
+	$(document).click(function(e){ 
+		if (!$(e.target).is('.lang>button')) { 
+			$('.lang').removeClass('close');
+			$('.lang ul').slideUp();
+			$('.lang>button').attr('title','언어선택 열기')
+		} 
+	});
+
+	// 알립니다 팝업
+	$('.popup_zone>button').on('click', function(){
+		if(mobileChk === true) { // Mobile
+			$('.shadow2').css('z-index','440');
+		}
+
+		$('.shadow2').show();
+		$('.popup_list').slideDown(400);
+		setTimeout(function (){
+			$('.family_pop .close_btn').addClass('on');
+		}, 400);
+		$('.pop_slide ul').slick('setPosition');
+	});
+	$('.popup_zone .close_btn').on('click', function(){
+		if(mobileChk === false) { // PC
+			$('.shadow2').hide().css('z-index','0');
+		}else{
+			$('.shadow2').css('z-index','0');
+		}
+
+		$('.popup_list').slideUp(400);
+		$('.family_pop .close_btn').removeClass('on');
+	});
+
+	var pop_slide = $('.pop_slide ul').slick({
+		infinite: true,
+		speed: 600,
+		autoplaySpeed: 3000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		dots: true,
+		draggable: false,
+		pauseOnHover:true,
+		pauseOnFocus: false,
+		// prevArrow: $('.pop_slide .prev_btn'),
+        // nextArrow: $('.pop_slide .next_btn'),
+		responsive: [
+            {  
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                } 
+            },
+			{  
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                } 
+            }
+        ]
+	});
+
+	// 검색버튼 열고닫기
+	$('.hd_search .top_search_btn').on('click', function(){
+		var window_w = $(window).width();
+
+		if(window_w <= 1366){
+			$('.shadow2').show();
+			$('.util_Box .top_searchBox').stop().slideDown(400);
+			setTimeout(function (){
+				$('.util_Box .top_searchBox .close_btn').addClass('on');
+			}, 400);
+		}else{
+			// 절대경로 수정후 개발팀에게 따로 전달 230223 /fr/search/search.do
+			location.href="../../con06/con06_01/search.html";
+		}
+	});
+	$('.top_searchBox .close_btn').on('click', function(){
+		$('.shadow2').hide();
+		$('.util_Box .top_searchBox').stop().slideUp(400);
+		$('.util_Box .top_searchBox .close_btn').removeClass('on');
+	});
+
 
 	// 팝업 포커스 트랩
 	const trapFocus = (element, prevFocusableElement = document.activeElement) => {
