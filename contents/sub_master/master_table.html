@@ -545,6 +545,7 @@
                                 <li><a href="#n" data-tab="table_style03">연락처 테이블</a></li>
                                 <li><a href="#n" data-tab="table_style04">기본 테이블</a></li>
                                 <li><a href="#n" data-tab="table_style05">셀렉트 구분에 따라 테이블 변경</a></li>
+                                <li><a href="#n" data-tab="table_style06">계좌추가 버튼 클릭시 테이블 생성</a></li>
                             </ul>
         
                             <div id="table_style01" class="box_con current">
@@ -1426,6 +1427,156 @@
                                 <!-- //회원 구분: 전문강사 -->
                                 <!-- //셀렉트 구분에 따라 테이블 변경 -->
                             </div>
+
+                            <div id="table_style06" class="box_con">
+                                <!-- 계좌추가 버튼 클릭시 테이블 생성 -->
+                                <table class="tableW mt30">
+                                    <caption>비즈니스파트너 사업자 계좌이체거래약정 등록</caption>
+                                    <colgroup>
+                                        <col style="width: 185px;">
+                                        <col>
+                                        <col style="width: 185px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="col"><label for="infoA05"><span class="pill"><em class="ico">필수항목</em>은행명</span></label></th>
+                                            <td data-name="은행명" class="pill">
+                                                <input type="text" class="w250" id="infoA05" title="은행명" />
+                                            </td>
+                                            <th scope="col"><label for="infoA06"><span class="pill"><em class="ico">필수항목</em>계좌번호</span></label></th>
+                                            <td data-name="계좌번호" class="pill">
+                                                <input type="number" class="w250" id="infoA06" title="계좌번호" />
+                                                <p class="table_p">'-' 없이 <em class="pointR">숫자</em>만 입력해 주세요.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><label for="infoA07"><span class="pill"><em class="ico">필수항목</em>예금주</span></label></th>
+                                            <td data-name="예금주" class="pill">
+                                                <input type="text" class="w250" id="infoA07" title="예금주" />
+                                            </td>
+                                            <th scope="col"><label for="infoA08"><span class="pill"><em class="ico">필수항목</em>약정자와의 관계</span></label>
+                                            </th>
+                                            <td data-name="약정자와의 관계" class="pill">
+                                                <input type="text" class="w250" id="infoA08" title="약정자와의 관계" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><span class="pill"><em class="ico">필수항목</em>상생결제시스템 <br>약정 여부</span></th>
+                                            <td data-name="상생결제시스템 약정 여부" class="pill" colspan="3">
+                                                <div class="radiobox">
+                                                    <input id="chkbox_GubunA01" name="chkbox_GubunA" type="checkbox" value="0"><label
+                                                        for="chkbox_GubunA01">국민</label>
+                                                    <input id="chkbox_GubunA02" name="chkbox_GubunA" type="checkbox" value="1"><label
+                                                        for="chkbox_GubunA02">기업</label>
+                                                    <input id="chkbox_GubunA03" name="chkbox_GubunA" type="checkbox" value="2"><label
+                                                        for="chkbox_GubunA03">NH농협</label>
+                                                    <input id="chkbox_GubunA04" name="chkbox_GubunA" type="checkbox" value="3"><label
+                                                        for="chkbox_GubunA04">신한</label>
+                                                    <input id="chkbox_GubunA05" name="chkbox_GubunA" type="checkbox" value="3"><label
+                                                        for="chkbox_GubunA05">우리</label>
+                                                    <input id="chkbox_GubunA06" name="chkbox_GubunA" type="checkbox" value="3"><label
+                                                        for="chkbox_GubunA06">KEB하나</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col"><label for="file-nameA02"><span class="pill"><em class="ico">필수항목</em>통장 사본</span></label>
+                                            </th>
+                                            <td data-name="통장 사본" class="attach_td pill" colspan="3">
+                                                <div class="file_box">
+                                                    <div class="file_list pt0">
+                                                        <input type="text" readonly class="file-name" id="file-nameA02">
+                                                        <label for="upload02" class="file-label file_add">찾아보기</label>
+                                                        <input type="file" id="upload02" class="file-upload" title="파일 첨부하기">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="account_btn">
+                                    <button class="add_btn" id="addAccount">계좌추가</button>
+                                </div>
+                                
+                                <div class="add_account_wrap">
+                                    <table class="tableW mt30">
+                                        <caption>비즈니스파트너 사업자 계좌이체거래약정 변경</caption>
+                                        <colgroup>
+                                            <col style="width: 185px;">
+                                            <col>
+                                            <col style="width: 185px;">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col"><label for="infoA07_2"><span class="pill"><em class="ico">필수항목</em>은행명</span></label>
+                                                </th>
+                                                <td data-name="은행명" class="pill">
+                                                    <input type="text" class="w250" id="infoA07_2" title="은행명" />
+                                                </td>
+                                                <th scope="col"><label for="infoA08_2"><span class="pill"><em class="ico">필수항목</em>계좌번호</span></label>
+                                                </th>
+                                                <td data-name="계좌번호" class="pill">
+                                                    <input type="number" class="w250" id="infoA08_2" title="계좌번호" />
+                                                    <p class="table_p">'-' 없이 <em class="pointR">숫자</em>만 입력해 주세요.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col"><label for="infoA09_2"><span class="pill"><em class="ico">필수항목</em>예금주</span></label>
+                                                </th>
+                                                <td data-name="예금주" class="pill">
+                                                    <input type="text" class="w250" id="infoA09_2" title="예금주" />
+                                                </td>
+                                                <th scope="col"><label for="infoA10_2"><span class="pill"><em class="ico">필수항목</em>약정자와의
+                                                            관계</span></label></th>
+                                                <td data-name="약정자와의 관계" class="pill">
+                                                    <input type="text" class="w250" id="infoA10_2" title="약정자와의 관계" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col"><span class="pill"><em class="ico">필수항목</em>상생결제시스템 <br>약정 여부</span></th>
+                                                <td data-name="상생결제시스템 약정 여부" class="pill" colspan="3">
+                                                    <div class="radiobox">
+                                                        <input id="chkbox_GubunA01_2" name="chkbox_GubunA" type="checkbox" value="0"><label
+                                                            for="chkbox_GubunA01_2">국민</label>
+                                                        <input id="chkbox_GubunA02_2" name="chkbox_GubunA" type="checkbox" value="1"><label
+                                                            for="chkbox_GubunA02_2">기업</label>
+                                                        <input id="chkbox_GubunA03_2" name="chkbox_GubunA" type="checkbox" value="2"><label
+                                                            for="chkbox_GubunA03_2">NH농협</label>
+                                                        <input id="chkbox_GubunA04_2" name="chkbox_GubunA" type="checkbox" value="3"><label
+                                                            for="chkbox_GubunA04_2">신한</label>
+                                                        <input id="chkbox_GubunA05_2" name="chkbox_GubunA" type="checkbox" value="3"><label
+                                                            for="chkbox_GubunA05_2">우리</label>
+                                                        <input id="chkbox_GubunA06_2" name="chkbox_GubunA" type="checkbox" value="3"><label
+                                                            for="chkbox_GubunA06_2">KEB하나</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col"><label for="file-nameA02_2"><span class="pill"><em class="ico">필수항목</em>통장
+                                                            사본</span></label></th>
+                                                <td data-name="통장 사본" class="attach_td pill" colspan="3">
+                                                    <div class="file_box">
+                                                        <div class="file_list pt0">
+                                                            <input type="text" readonly class="file-name" id="file-nameA02_2">
+                                                            <label for="upload02_2" class="file-label file_add">찾아보기</label>
+                                                            <input type="file" id="upload02_2" class="file-upload" title="파일 첨부하기">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                
+                                    <div class="account_btn">
+                                        <button class="add_btn">계좌추가</button>
+                                        <button class="del_btn" id="delAccount">계좌삭제</button>
+                                    </div>
+                                </div>
+                                <!-- //계좌추가 버튼 클릭시 테이블 생성 -->
+                            </div>
                         </div>
 
 
@@ -1576,6 +1727,20 @@
     <script src="../../js/slick.min.js"></script>    
     <script src="../../js/common.js"></script>    
     <script src="../../js/sub.js"></script>    
-    
+    <script>
+    // 230801계좌추가, 삭제
+	$("#addAccount").on("click", function() {
+		const addButton = $(this).parent();
+		addButton.hide();
+
+		$('.add_account_wrap').show();
+	});
+	$('#delAccount').on('click', function(){
+		const addButton = $('#addAccount').parent();
+		$('.add_account_wrap').hide();
+
+		addButton.show();
+	});
+    </script>
 </body>
 </html>

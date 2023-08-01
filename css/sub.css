@@ -637,6 +637,13 @@ table .lock i{height: 16px;display: inline-block;position: absolute;left: 0;top:
 .select_funcDiv{display: none;}
 .select_funcDiv.on{display: block;}
 
+/* 계좌추가 버튼 */
+.account_btn{display: flex;justify-content: center;margin-top: 30px;}
+.account_btn>button:not(:first-child){margin-left: 10px;}
+.account_btn>button{font-size: 15px;width: 120px;height: 42px;color: #fff;padding: 11px 10px 11px 30px;}
+.account_btn .add_btn:after, .account_btn .add_btn:before, .account_btn .del_btn:before{left: 25px;width: 12px;}
+.add_account_wrap{display: none;margin-top: 30px;border-top: 1px dashed #c7c7c7;}
+
 /*만족도 평가*/
 .satisfaction{border: 1px solid #d9d9d9;background-color:#fff;margin-top:auto!important;}
 .satisfaction .top{background-color:#ecf2f5;border-bottom:1px solid #d9d9d9;display: flex;padding: 15px 30px 14px 34px;align-items: center;flex-wrap: wrap;}
@@ -2576,3 +2583,4 @@ margin-top: -24px;}
 .eng_cts .left_menu .left_title{font-size: 28px;padding-right: 20px;}
 .eng_cts .left_menu .depth_01>li>a{padding: 17px 46px 14px 0;font-size: 16px;}
 .eng_cts .left_menu .depth_02>ul>li>a{font-size: 15px;}
+
