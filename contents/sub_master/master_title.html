@@ -948,6 +948,29 @@
                             <a href="#n" class="pop_close last_Tab" data-button="joinTerms_pop">팝업닫기</a>
                         </div>
 
+                        <h3 class="titleA">달력</h3>
+                        <div class="reserve_top">
+                            <div class="now_date">
+                                <button onclick="prevMonth()" class="btn prev" aria-label="이전 달">⇦</button>
+                                <p id="currentMonthYear" aria-live="polite"></p>
+                                <button onclick="nextMonth()" class="btn next" aria-label="다음 달">⇨</button>
+                            </div>
+                        
+                        </div>
+                        <table id="calendar" class="calender_table" role="grid" aria-labelledby="currentMonthYear">
+                            <thead>
+                                <tr>
+                                    <th id="sunday" abbr="일요일" scope="col" class="sun">일</th>
+                                    <th id="monday" abbr="월요일" scope="col">월</th>
+                                    <th id="tuesday" abbr="화요일" scope="col">화</th>
+                                    <th id="wednesday" abbr="수요일" scope="col">수</th>
+                                    <th id="thursday" abbr="목요일" scope="col">목</th>
+                                    <th id="friday" abbr="금요일" scope="col">금</th>
+                                    <th id="saturday" abbr="토요일" scope="col" class="sat">토</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calendarBody"></tbody>
+                        </table>
 
                     </div>
                     <!-- .contents>.inner>.inner_top 본문내용 끝 -->
@@ -1101,6 +1124,155 @@
         // 반응형 이미지맵
         $('img[usemap]').rwdImageMaps();
     </script>
-    
+    <script>
+        let currentDate = new Date();
+
+        // 달력을 생성하는 함수
+        function generateCalendar(year, month) {
+            const calendarBody = document.getElementById('calendarBody');
+            calendarBody.innerHTML = '';
+
+            // 해당 월의 첫 날과 마지막 날 구하기
+            const firstDayOfMonth = new Date(year, month, 1);
+            const lastDayOfMonth = new Date(year, month + 1, 0);
+
+            let currentDate = new Date(firstDayOfMonth);
+
+            // 월의 첫 날이 일요일이 아닌 경우, 이전 달의 날짜를 채우기 위해 날짜를 조정
+            while (currentDate.getDay() !== 0) {
+                currentDate.setDate(currentDate.getDate() - 1);
+            }
+
+            // 달력에 날짜 채우기
+            while (currentDate <= lastDayOfMonth) {
+                const weekRow = document.createElement('tr');
+
+                for (let i = 0; i < 7; i++) {
+                    const td = document.createElement('td');
+                    td.setAttribute('role', 'gridcell');
+
+                    if (currentDate.getMonth() === month) {
+                        const link = document.createElement('a');
+                        link.href = '#';
+                        link.textContent = currentDate.getDate();
+                        link.setAttribute('aria-label', `${currentDate.getFullYear()}년 ${currentDate.getMonth() + 1}월 ${currentDate.getDate()}일`);
+                        link.className = 'date';
+                        link.addEventListener('click', function () {
+                            selectDate(this);
+                        });
+
+                        // tabIndex 설정하여 포커스 가능하게 만듦
+                        link.tabIndex = 0;
+
+                        // 현재 달에 클래스 .day 추가
+                        td.tabIndex = 0;
+                        td.className = 'day';
+
+                        td.appendChild(link);
+                    } else {
+                        td.setAttribute('aria-hidden', 'true');
+                    }
+
+                    weekRow.appendChild(td);
+                    currentDate.setDate(currentDate.getDate() + 1);
+                }
+
+                calendarBody.appendChild(weekRow);
+            }
+        }
+
+        // 달력 초기화 및 표시
+        generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+        updateMonthYearLabel(currentDate.getFullYear(), currentDate.getMonth());
+
+        // 이전 달로 이동
+        function prevMonth() {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+            updateMonthYearLabel(currentDate.getFullYear(), currentDate.getMonth());
+            todayCheck();
+        }
+
+        // 다음 달로 이동
+        function nextMonth() {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+            updateMonthYearLabel(currentDate.getFullYear(), currentDate.getMonth());
+            todayCheck();
+        }
+
+        // 날짜 선택 시 호출되는 함수
+        function selectDate(link) {
+            const selectedDate = parseInt(link.textContent);
+            const allLinks = document.querySelectorAll('#calendar a');
+
+            // 선택된 날짜를 표시하기 위해 모든 날짜에서 .selected 클래스 제거
+            for (let i = 0; i < allLinks.length; i++) {
+                allLinks[i].parentNode.classList.remove('selected');
+            }
+
+            // 선택된 날짜에 .selected 클래스 추가
+            link.parentNode.classList.add('selected');
+            alert(`선택된 날짜: ${currentDate.getFullYear()}년 ${currentDate.getMonth() + 1}월 ${selectedDate}일`);
+        }
+
+        // 현재 년, 월 레이블 업데이트
+        function updateMonthYearLabel(year, month) {
+            const monthYearLabel = document.getElementById('currentMonthYear');
+            const monthNames = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+            monthYearLabel.innerHTML = `${year}년 <strong>${monthNames[month]}</strong>`;
+        }
+
+        // 오늘 날짜 표시하기
+        todayCheck();
+        function todayCheck() {
+            const today = new Date();
+            if (currentDate.getMonth() === today.getMonth() && currentDate.getFullYear() === today.getFullYear()) {
+                for (let currentDate of document.querySelectorAll('#calendar a')) {
+                    if (+currentDate.innerText === today.getDate()) {
+                        currentDate.parentNode.classList.add('today');
+                        break;
+                    }
+                }
+            }
+        };
+
+    </script>
+    <style>
+        /* 달력상단 */
+        .reserve_top{display: flex;margin-top: 24px;margin-bottom: 8px;padding: 0 20px 0 10px;}
+        .reserve_link .btn{min-width: 130px;height: 36px;display: inline-block;border-radius: 8px;border: 1px solid #ddd;font-size: 14px;}
+        .now_date{display: flex;position: relative;align-items: center;justify-content: center;}
+        .now_date .btn{width: 36px;height: 36px;background-image: url(../../images/sub/cal_arrow.png);background-position: center;background-repeat: no-repeat;border-radius: 8px;font-size: 0;line-height: 0;text-indent: -9999px;display: block;}
+        .now_date .btn.prev{transform: rotate(180deg);}
+        .now_date p{font-size: 34px;font-weight: 500;color: #333;padding: 0 10px;line-height: 36px;min-width: 210px;text-align: center;}
+        .now_date p strong{color: #1c8adf;font-weight: 500;}
+        .schedule_filter{display: flex;align-items: center;gap: 22px;margin-left: auto;}
+        .schedule_filter li{display: flex;align-items: center;}
+        .schedule_filter input[type="radio"]{width: 20px;height: 20px;margin: 0;}
+        .schedule_filter label{padding-top: 2px;padding-left: 6px;}
+        .schedule_btn{margin-left: 85px;text-align: center;background: #0a1d83;color: #fff;min-width: 118px;border-radius: 4px;}
+
+        /* 달력하단 */
+        .calender_table{border-radius: 12px;border-collapse: separate;overflow: hidden;border: 3px solid #03539f;}
+        .calender_table thead{text-align: center;}
+        .calender_table thead th{font-weight: 500;color: #2a2929;padding: 7px 0px;border-bottom: 2px solid #a0a0a0;border-right: 1px solid #d6d6d6;}
+        .calender_table thead th:last-child{border-right: 0;}
+        .calender_table thead th.sun{background: #fff1f1;color: #fb0202;border-bottom-color: #e47c7e;}
+        .calender_table thead th.sat{background: #f1f8ff;color: #1b67e6;border-bottom-color: #7ba5e5;}
+        .calender_table tbody tr{background: #fff;}
+        .calender_table tbody td{height:105px;max-height: 105px;text-align: left;vertical-align: top;padding: 38px 10px 10px;border-right: 1px solid #d6d6d6;border-bottom: 1px solid #d6d6d6;position: relative;}
+        .calender_table tbody tr:last-child td{border-bottom: 0;}
+        .calender_table tbody td:last-child{border-right: 0;}
+        .calender_table tbody tr td:first-child .date{color: #fb0202;}
+        .calender_table tbody tr td:last-child .date{color: #1b67e6;}
+        .calender_table tbody tr td .date{position: absolute;right: 12px;top:6px;font-size: 15px;font-weight: 500;z-index: 1;}
+        .calender_table .day{position: relative;cursor: pointer;transition: all .2s;}
+        .calender_table .day:focus,.calender_table .day:hover,.calender_table .selected{background: #fff0d7!important;}
+        .calender_table .day:focus:after,.calender_table .selected:after{content: '';width: 100%;height: 100%;display: block;position: absolute;left: 0;top: 0;border: 3px solid #e54b32;}
+        .calender_table .day.today{background: #e5f4ff;}
+        .calender_table .day.more:before{content: '';width: 25px;height: 25px;background: url(../../images/sub/schedule_more.png) center no-repeat;position: absolute;right: 0;bottom: 0;z-index: 1;}
+        .calender_table .day.more .plan_list li:nth-child(n+3){display: none;}
+    </style>
 </body>
 </html>
